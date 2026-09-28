@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[chapterSlug]\u002F[sectionSlug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

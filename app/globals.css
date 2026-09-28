@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap");
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --bg: #f0fdf4;
+  --bg-card: #ffffff;
+  --fg: #1a2e1a;
+  --fg-secondary: #4a6741;
+  --border: #d1e7d1;
+  --accent: #047857;
+  --accent-light: #d1fae5;
+  --gold: #d97706;
+  --gold-light: #fef3c7;
+  --shadow: 0 2px 12px rgba(4, 120, 87, 0.08);
+  --shadow-lg: 0 8px 30px rgba(4, 120, 87, 0.12);
+}
+
+.dark {
+  --bg: #0a1f14;
+  --bg-card: #132a1c;
+  --fg: #e8f5e9;
+  --fg-secondary: #a5d6a7;
+  --border: #1b4332;
+  --accent: #34d399;
+  --accent-light: #064e3b;
+  --gold: #fbbf24;
+  --gold-light: #422006;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: "Inter", system-ui, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* ===== URDU TYPOGRAPHY ===== */
+.urdu-text {
+  font-family: "Noto Nastaliq Urdu", serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 3.2;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+}
+
+.urdu-heading {
+  font-family: "Noto Nastaliq Urdu", serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.4;
+}
+
+/* ===== MOBILE-FIRST UTILITIES ===== */
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+
+/* ===== CARD HOVER ===== */
+.card-hover {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card-hover:active {
+  transform: scale(0.98);
+}
+@media (hover: hover) {
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+}
