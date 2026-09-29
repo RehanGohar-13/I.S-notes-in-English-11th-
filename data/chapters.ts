@@ -16,163 +16,608 @@ export interface Chapter {
 }
 
 export const chapters: Chapter[] = [
-  // ==================== CHAPTER 1 ====================
+  // ==================== CHAPTER 1 (100% ENGLISH) ====================
   {
     slug: "chapter-1",
     number: 1,
     titleEn: "Quran & Hadith Sciences",
-    titleUr: "قرآن مجید و حدیثِ نبوی ﷺ",
+    titleUr: "Quran & Hadith Sciences",
     icon: "📖",
     sections: [
+      // ----------------- SECTION A -----------------
       {
         slug: "uloom-ul-quran",
-        titleEn: "Sciences of the Quran (Uloom ul Quran)",
-        titleUr: "علوم القرآن",
+        titleEn: "Sciences of the Quran (Uloom-ul-Quran)",
+        titleUr: "Sciences of the Quran",
         page: 1,
         content: `
-<h3 class="urdu-heading text-xl font-bold mb-4" style="color: var(--accent);">حاصلاتِ تعلّم</h3>
-<p class="urdu-text mb-2">اس سبق کو پڑھنے کے بعد طلبہ اس قابل ہو جائیں گے کہ وہ:</p>
-<ul class="urdu-text mb-6 space-y-2 pr-4">
-  <li>• قرآن مجید کے فضائل اور خصوصیات (عالمگیریت، ابدیت، جامعیت، اور کاملیت) جان سکیں۔</li>
-  <li>• قرآن مجید کے اسمائے مبارکہ اور ان کے معانی کے بارے میں آگاہ ہو سکیں۔</li>
-  <li>• مکی، مدنی سورتوں کی تعریف اور خصوصیات جانتے ہوئے آیاتِ احکام کے بنیادی تصور سے آگاہ ہو سکیں۔</li>
-  <li>• اس بات پر ایمان پختہ کر سکیں کہ قرآن مجید ایک آسمانی اور معجزاتی کتاب ہے۔</li>
-  <li>• قرآن مجید کے معجزہ ہونے پر یقین رکھتے ہوئے قرآن مجید کو آخری اور ابدی سرچشمہ ہدایت سمجھتے ہوئے اس کی تعلیمات پر عمل پیرا ہو سکیں۔</li>
-</ul>
+<div class="space-y-8 text-left">
 
-<h3 class="urdu-heading text-xl font-bold mb-3" style="color: var(--accent);">قرآن مجید کی خصوصیات</h3>
-<p class="urdu-text mb-4">علوم القرآن سے مراد وہ علوم ہیں جو مفسرین قرآن نے مضامینِ قرآن سے اخذ کیے ہیں۔ مکی و مدنی سورتیں، محکمات و متشابہات، سورتوں اور آیات کے شانِ نزول، حروفِ مقطعات اور ناسخ و منسوخ وغیرہ۔</p>
-<p class="urdu-text mb-4">قرآن مجید اللہ تعالیٰ کا کلام اور اس کی آخری کتاب ہے جو اللہ تعالیٰ نے اپنے آخری نبی حضرت محمد رسول اللہ ﷺ پر تقریباً تئیس (23) سال کے عرصے میں نازل فرمائی۔ قرآن مجید اللہ تعالیٰ کی طرف سے انسانوں کی ہدایت کا پیغام ہے اور نبی کریم ﷺ کے معجزات میں سے سب سے بڑا معجزہ ہے، جو قیامت تک زندہ رہے گا۔ قرآن مجید سابقہ آسمانی کتابوں کی تعلیمات کا خلاصہ اور نچوڑ ہے۔ اللہ تعالیٰ نے قرآن مجید کو دیگر آسمانی کتب کا نگران بھی قرار دیا ہے۔ قرآن مجید بے شمار خصوصیات کا حامل اور ہر اعتبار سے بے مثل کلام ہے۔ قرآن کریم کی نمایاں خصوصیات درج ذیل ہیں:</p>
+  <!-- Student Learning Outcomes -->
+  <div class="p-5 rounded-xl border" style="background-color: var(--accent-light); border-color: var(--accent);">
+    <h3 class="text-lg font-bold mb-3 flex items-center gap-2" style="color: var(--accent);">
+      🎯 Student Learning Outcomes (SLOs)
+    </h3>
+    <p class="text-sm mb-2 font-medium">After studying this lesson, students will be able to:</p>
+    <ul class="text-sm space-y-1.5 list-disc list-inside opacity-90">
+      <li>Understand the virtues and distinct characteristics of the Holy Quran (Universality, Eternity, Comprehensiveness, and Perfection).</li>
+      <li>Learn the sacred names of the Holy Quran along with their comprehensive meanings.</li>
+      <li>Distinguish between Makki and Madani Surahs and understand the fundamental concept of Verses of Legal Rulings (<em>Ayat al-Ahkam</em>).</li>
+      <li>Strengthen their faith in the divine origin and miraculous nature of the Holy Quran.</li>
+      <li>Acknowledge the Holy Quran as the final, eternal source of guidance and resolve to practice its teachings in daily life.</li>
+    </ul>
+  </div>
 
-<h4 class="urdu-heading text-lg font-bold mb-2" style="color: var(--gold);">عالمگیریت</h4>
-<p class="urdu-text mb-3">عالمگیریت سے مراد ہے کہ قرآن مجید کا مخاطب پوری انسانیت ہے۔ پہلی آسمانی کتابیں کسی خاص قوم، علاقے یا نسل کے لیے نازل ہوئی تھیں لیکن قرآن مجید ایک ایسی عالمگیر کتاب ہے جو ہر قسم کے علوم و معارف کا خزینہ ہے اور اللہ تعالیٰ کی منشا جاننے کا ذریعہ ہے۔ قرآن مجید کی متعدد آیات میں ''یٰۤاَیُّهَا النَّاسُ'' کے الفاظ سے تمام انسانیت کو مخاطب کیا گیا ہے۔ اسی طرح یہ صراحت کی گئی ہے کہ قرآن مجید تمام انسانوں کے لیے ہدایت کا پیغام اور نصیحت ہے، ارشاد باری تعالیٰ ہے:</p>
-<blockquote class="urdu-text mb-3 p-4 rounded-xl border-r-4" style="background-color: var(--accent-light); border-color: var(--accent);">
-  <strong>هٰذَا بَلٰغٌ لِّلنَّاسِ</strong> <em>(سُورَةُ إِبْرٰهِيْمَ: 52)</em><br/>
-  <strong>ترجمہ:</strong> یہ (قرآن) انسانوں کے لیے (اللہ تعالیٰ کا) پیغام ہے۔
-</blockquote>
-<p class="urdu-text mb-6">الغرض قرآن مجید کی تعلیمات ہر دور، ہر علاقے اور ہر نسل کے لیے ہیں اور یہی اس کی عالمگیریت ہے۔</p>
+  <!-- Introduction -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">1. Introduction to Uloom-ul-Quran</h3>
+    <p class="text-sm leading-relaxed mb-3">
+      <strong>Uloom-ul-Quran (Sciences of the Quran)</strong> refers to the vast branch of Islamic knowledge that commentators (<em>Mufassiroon</em>) have derived directly from the contents, style, and context of the Quran. This includes topics such as Makki and Madani Surahs, clear (<em>Muhkamat</em>) and allegorical (<em>Mutashabihat</em>) verses, background of revelation (<em>Asbab al-Nuzul</em>), disjointed letters (<em>Huroof-e-Muqatta'at</em>), and abrogating and abrogated verses (<em>Nasikh wa Mansookh</em>).
+    </p>
+    <p class="text-sm leading-relaxed mb-3">
+      The Holy Quran is the literal Word of Allah and His final divine book, revealed to the Last Prophet, <strong>Hazrat Muhammad ﷺ</strong>, over a period of approximately <strong>twenty-three (23) years</strong>. It serves as universal guidance for all of humanity and stands as the greatest living miracle of the Prophet ﷺ until the Day of Judgment.
+    </p>
+    <p class="text-sm leading-relaxed">
+      The Holy Quran summarizes, consolidates, and perfects the core teachings of all previous heavenly scriptures. Furthermore, Allah Almighty has designated the Holy Quran as the guardian and overseer (<em>Muhaimin</em>) over all preceding revelations.
+    </p>
+  </section>
 
-<h4 class="urdu-heading text-lg font-bold mb-2" style="color: var(--gold);">کاملیت</h4>
-<p class="urdu-text mb-3">کاملیت کا معنی ہے کہ قرآن مجید کی ہدایات کامل اور مکمل ہیں۔ وحی کا وہ سلسلہ جو حضرت آدم علیہ السلام سے شروع ہوا تھا وہ نبی کریم ﷺ پر آ کر ختم ہو گیا۔ آپ ﷺ پر دین مکمل کر دیا گیا ہے۔ آپ ﷺ پر نازل کردہ کتاب قرآن مجید سابقہ تمام آسمانی کتابوں کی تعلیمات کی کامل ترین شکل ہے۔ قرآن مجید ایک مکمل ضابطۂ حیات ہے۔ ارشاد باری تعالیٰ ہے:</p>
-<blockquote class="urdu-text mb-3 p-4 rounded-xl border-r-4" style="background-color: var(--accent-light); border-color: var(--accent);">
-  <strong>اِنْ هُوَ اِلَّا ذِكْرٌ لِّلْعٰلَمِيْنَ</strong> <em>(سُورَةُ التَّكْوِيْرِ: 27)</em><br/>
-  <strong>ترجمہ:</strong> (قرآن) تو تمام جہان والوں کے لیے نصیحت ہے۔
-</blockquote>
+  <!-- Key Characteristics -->
+  <section>
+    <h3 class="text-xl font-bold mb-4" style="color: var(--accent);">2. Distinctive Characteristics of the Holy Quran</h3>
 
-<h4 class="urdu-heading text-lg font-bold mb-2" style="color: var(--gold);">جامعیت</h4>
-<p class="urdu-text mb-3">جامعیت سے مراد ہے کہ قرآن مجید میں تمام شعبوں کے لیے مکمل راہ نمائی ہے۔ قرآن مجید زندگی کے تمام پہلوؤں کے لیے ہدایت اور جامع کتاب ہے۔ بعض آسمانی کتابوں میں صرف اخلاقی ہدایات کا بیان تھا، بعض میں صرف عقائد و عبادات اور دعاؤں کا بیان تھا اور بعض میں صرف قانونی مسائل ذکر ہوئے تھے لیکن قرآن مجید ایک ایسی جامع کتاب ہے جس میں عقائد، عبادات، معاملات، معاشرت، اخلاقیات اور قوانین کا جامع بیان موجود ہے۔ ارشاد باری تعالیٰ ہے:</p>
-<blockquote class="urdu-text mb-3 p-4 rounded-xl border-r-4" style="background-color: var(--accent-light); border-color: var(--accent);">
-  <strong>وَنَزَّلْنَا عَلَيْكَ الْكِتٰبَ تِبْيَانًا لِّكُلِّ شَيْءٍ</strong> <em>(سُورَةُ النَّحْلِ: 89)</em><br/>
-  <strong>ترجمہ:</strong> اور ہم نے آپ ﷺ پر ایسی کتاب نازل فرمائی ہے جس میں ہر چیز کا واضح بیان ہے۔
-</blockquote>
-<p class="urdu-text mb-6">الغرض قرآن مجید ایک ایسی جامع کتاب ہے جس میں تمام مسائل کے حل کے لیے راہ نمائی موجود ہے۔</p>
+    <!-- 1. Universality -->
+    <div class="mb-5 p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="text-base font-bold mb-2 flex items-center gap-2" style="color: var(--gold);">
+        🌍 (i) Universality (عالمگیریت — Alamgeeriyat)
+      </h4>
+      <p class="text-sm leading-relaxed mb-3">
+        Universality means that the Holy Quran addresses the whole of mankind, not a specific race, nation, or region. While previous divine scriptures were sent to specific communities for a limited period, the Quran is an all-encompassing book containing endless treasures of wisdom and divine intent for all generations.
+      </p>
+      <p class="text-sm leading-relaxed mb-3">
+        In numerous verses, the Quran directly addresses humanity using the universal phrase <em>"Ya Ayyuhan-Naas"</em> (O Mankind!).
+      </p>
+      <blockquote class="p-4 rounded-lg border-l-4 text-sm italic mb-2" style="background-color: var(--accent-light); border-color: var(--accent);">
+        <p class="font-bold mb-1 text-base text-right font-serif">هٰذَا بَلٰغٌ لِّلنَّاسِ</p>
+        <p>"This [Quran] is a notification for the people..." <em>(Surah Ibrahim, 14:52)</em></p>
+      </blockquote>
+      <p class="text-xs opacity-80">Hence, Quranic teachings apply universally across all eras, geographical locations, and civilizations.</p>
+    </div>
 
-<h4 class="urdu-heading text-lg font-bold mb-2" style="color: var(--gold);">ابدیت</h4>
-<p class="urdu-text mb-6">ابدیت سے مراد ہے کہ قرآن مجید کی تعلیمات ہمیشہ ہمیشہ کے لیے ہیں۔ یہ کتاب ہدایت، دین و دنیا کی سعادت کا سرچشمہ اور تمام امور کے لیے میزان ہے۔ قرآن مجید کی تعلیمات ہر زمانے کے لیے قابلِ عمل ہیں۔ قرآن مجید کی تعلیمات ایسی فطری ہیں کہ ہر عہد کے انسان کو یوں محسوس ہوتا ہے کہ یہ تعلیمات اس کی راہ نمائی کے لیے نازل ہوئی ہیں۔ قرآن مجید کی تعلیمات قیامت تک کے لوگوں کے لیے یکساں نفع بخش اور قابلِ عمل ہیں۔</p>
+    <!-- 2. Perfection / Completeness -->
+    <div class="mb-5 p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="text-base font-bold mb-2" style="color: var(--gold);">
+        ✨ (ii) Perfection & Completeness (کاملیت — Kamiliyat)
+      </h4>
+      <p class="text-sm leading-relaxed mb-3">
+        Perfection implies that the guidance in the Holy Quran is entirely complete, flawless, and conclusive. The long chain of divine revelation (<em>Wahi</em>) that began with Hazrat Adam (AS) reached its absolute culmination with Prophet Muhammad ﷺ.
+      </p>
+      <p class="text-sm leading-relaxed mb-3">
+        The religion of Islam was completed upon him, making the Holy Quran the perfected compilation of divine wisdom and an unalterable, complete code of life (<em>Zabita-e-Hayat</em>).
+      </p>
+      <blockquote class="p-4 rounded-lg border-l-4 text-sm italic" style="background-color: var(--accent-light); border-color: var(--accent);">
+        <p class="font-bold mb-1 text-base text-right font-serif">اِنْ هُوَ اِلَّا ذِكْرٌ لِّلْعٰلَمِيْنَ</p>
+        <p>"It is not except a reminder to the worlds." <em>(Surah At-Takweer, 81:27)</em></p>
+      </blockquote>
+    </div>
 
-<h3 class="urdu-heading text-xl font-bold mb-3" style="color: var(--accent);">قرآن مجید کے اسمائے مبارکہ</h3>
-<p class="urdu-text mb-4">قرآن مجید کے متعدد ذاتی اور صفاتی نام ہیں جن میں سے چند درج ذیل ہیں:</p>
+    <!-- 3. Comprehensiveness -->
+    <div class="mb-5 p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="text-base font-bold mb-2" style="color: var(--gold);">
+        📚 (iii) Comprehensiveness (جامعیت — Jami'iyyat)
+      </h4>
+      <p class="text-sm leading-relaxed mb-3">
+        Comprehensiveness indicates that the Holy Quran provides complete guidance for every single sphere of human existence. While some earlier scriptures focused solely on moral advice, others on supplications, or strictly on legal codes, the Quran unites beliefs (<em>Aqa'id</em>), acts of worship (<em>Ibadat</em>), interpersonal transactions (<em>Mu'amalat</em>), social etiquette (<em>Mu'asharat</em>), morality (<em>Akhlaqiyyat</em>), and state laws into a unified whole.
+      </p>
+      <blockquote class="p-4 rounded-lg border-l-4 text-sm italic" style="background-color: var(--accent-light); border-color: var(--accent);">
+        <p class="font-bold mb-1 text-base text-right font-serif">وَنَزَّلْنَا عَلَيْكَ الْكِتٰبَ تِبْيَانًا لِّكُلِّ شَيْءٍ</p>
+        <p>"And We have sent down to you the Book as clarification for all things..." <em>(Surah An-Nahl, 16:89)</em></p>
+      </blockquote>
+    </div>
 
-<div class="overflow-x-auto mb-6">
-<table class="w-full text-sm border-collapse">
-  <thead>
-    <tr style="background-color: var(--accent); color: white;">
-      <th class="p-2 text-center rounded-tr-lg">نمبر</th>
-      <th class="p-2 text-right">اسمِ مبارک</th>
-      <th class="p-2 text-right">معنی / مفہوم</th>
-      <th class="p-2 text-center">نمبر</th>
-      <th class="p-2 text-right">اسمِ مبارک</th>
-      <th class="p-2 text-right rounded-tl-lg">معنی / مفہوم</th>
-    </tr>
-  </thead>
-  <tbody class="urdu-text text-sm" style="line-height: 2.4;">
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">1</td>
-      <td class="p-2 text-right font-bold">الْقُرْآنُ</td>
-      <td class="p-2 text-right">سب سے زیادہ پڑھی جانے والی کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">2</td>
-      <td class="p-2 text-right font-bold">الذِّكْرُ</td>
-      <td class="p-2 text-right">وعظ و نصیحت پر مبنی کتاب</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border); background-color: var(--bg);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">3</td>
-      <td class="p-2 text-right font-bold">الْفُرْقَانُ</td>
-      <td class="p-2 text-right">حق اور باطل میں امتیاز کرنے والی کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">4</td>
-      <td class="p-2 text-right font-bold">الْكِتَابُ</td>
-      <td class="p-2 text-right">اللہ تعالیٰ کی خاص کتاب</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">5</td>
-      <td class="p-2 text-right font-bold">التَّنْزِيْلُ</td>
-      <td class="p-2 text-right">اللہ تعالیٰ کی جانب سے نازل کردہ کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">6</td>
-      <td class="p-2 text-right font-bold">النُّوْرُ</td>
-      <td class="p-2 text-right">روشنی دکھانے والی کتاب</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border); background-color: var(--bg);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">7</td>
-      <td class="p-2 text-right font-bold">الْبُرْهَانُ</td>
-      <td class="p-2 text-right">واضح دلیل</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">8</td>
-      <td class="p-2 text-right font-bold">الْمُبِيْنُ</td>
-      <td class="p-2 text-right">کھلی اور واضح راہ نمائی</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">9</td>
-      <td class="p-2 text-right font-bold">الْعَزِيْزُ</td>
-      <td class="p-2 text-right">زبردست کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">10</td>
-      <td class="p-2 text-right font-bold">الْكَرِيْمُ</td>
-      <td class="p-2 text-right">عزت والی کتاب</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border); background-color: var(--bg);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">11</td>
-      <td class="p-2 text-right font-bold">الشِّفَاءُ</td>
-      <td class="p-2 text-right">شفاء دینے والی کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">12</td>
-      <td class="p-2 text-right font-bold">الْعِلْمُ</td>
-      <td class="p-2 text-right">علم و معرفت کا خزانہ</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">13</td>
-      <td class="p-2 text-right font-bold">الْحَكِيْمُ</td>
-      <td class="p-2 text-right">حکمت و دانائی سے بھرپور کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">14</td>
-      <td class="p-2 text-right font-bold">الْمَجِيْدُ</td>
-      <td class="p-2 text-right">بزرگی والی کتاب</td>
-    </tr>
-    <tr>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">15</td>
-      <td class="p-2 text-right font-bold">الْمُبَارَكُ</td>
-      <td class="p-2 text-right">بابرکت کتاب</td>
-      <td class="p-2 text-center font-bold" style="color: var(--accent);">16</td>
-      <td class="p-2 text-right font-bold">الْحَقُّ</td>
-      <td class="p-2 text-right">حق و صداقت کا بیان</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    <!-- 4. Eternity / Perpetuity -->
+    <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="text-base font-bold mb-2" style="color: var(--gold);">
+        ⏳ (iv) Eternity / Perpetuity (ابدیت — Abadiyyat)
+      </h4>
+      <p class="text-sm leading-relaxed">
+        Eternity signifies that the teachings, values, and laws of the Holy Quran are valid for all times to come. It serves as an everlasting criterion (<em>Meezan</em>) for distinguishing right from wrong. Its teachings align with pure human nature (<em>Fitrah</em>), ensuring that every generation finds fresh, practical solutions to modern problems without any need for revision or replacement.
+      </p>
+    </div>
+  </section>
 
-<h3 class="urdu-heading text-xl font-bold mb-3" style="color: var(--accent);">مکی اور مدنی سورتیں</h3>
-<p class="urdu-text mb-3">قرآن مجید میں ۱۱۴ سورتیں ہیں۔ جو سورتیں ہجرتِ مدینہ سے پہلے نازل ہوئیں وہ مکی سورتیں کہلاتی ہیں۔ مکہ مکرمہ میں نبی کریم ﷺ کے مخاطب مشرکینِ مکہ تھے چنانچہ مکی سورتوں میں توحید، رسالت اور آخرت کے مباحث بیان کیے گئے ہیں۔ نبی کریم ﷺ اور مسلمانوں کو صبر و استقامت کی تلقین کی گئی ہے، گزشتہ امتوں کے واقعات بیان کیے گئے ہیں، عقائد کی درستی اور اخلاق کی اصلاح پر زور دیا گیا ہے اور بت پرستی کی مدلل تردید کی گئی ہے۔ کئی سورتوں میں اہل عرب کی فصاحت و بلاغت کے تناظر میں قرآن مجید کے لفظی محاسن اور معجزانہ شان کا اظہار کیا گیا ہے۔</p>
-<p class="urdu-text mb-3">ہجرتِ مدینہ کے بعد نازل ہونے والی سورتوں کو مدنی سورتیں کہا جاتا ہے۔ نبی کریم ﷺ نے مدینہ منورہ تشریف لاتے ہی اسلامی ریاست کی بنیاد رکھی، لہٰذا مدنی سورتوں میں جہاد و قتال کے احکام، حقوق و فرائض اور خاندانی و تمدنی قوانین بیان ہوئے ہیں۔ مدنی سورتوں میں عموماً <strong>''يٰۤاَيُّهَا الَّذِيْنَ اٰمَنُوْا''</strong> کے الفاظ سے اہل ایمان سے خطاب کیا گیا ہے۔ مدنی سورتوں کا اندازِ بیان سادہ اور سلیس ہے۔</p>
+  <!-- Sacred Names Table -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">3. Sacred Names of the Holy Quran</h3>
+    <p class="text-sm leading-relaxed mb-4">
+      The Holy Quran mentions multiple personal and attributive titles that highlight its nature, prestige, and divine function:
+    </p>
 
-<h3 class="urdu-heading text-xl font-bold mb-3" style="color: var(--accent);">آیاتِ احکام</h3>
-<p class="urdu-text mb-3">آیاتِ احکام سے مراد قرآن مجید کی وہ آیات ہیں جن میں اسلامی شریعت کے احکام اور قوانین بیان کیے گئے ہیں۔ ان آیات میں عبادات، معاملات، اخلاقیات، معاشیات، معاشرت اور حدود و قصاص جیسے موضوعات شامل ہیں۔ آیاتِ احکام کو فقہائے اسلام، اسلامی قانون کے اصولوں کی بنیاد کے طور پر استعمال کرتے ہیں۔</p>
-<p class="urdu-text mb-3">ہمیں چاہیے کہ قرآن مجید کی عالمگیریت، کاملیت، جامعیت اور ابدیت پر یقین رکھتے ہوئے نہ صرف اس کو سمجھیں بلکہ اس پر عمل بھی کریں کیونکہ قرآن مجید ایک دستورِ حیات ہے، جس کے ذریعے اللہ تعالیٰ قوموں کو عروج و زوال سے ہم کنار کرتا ہے۔</p>
+    <div class="overflow-x-auto rounded-xl border" style="border-color: var(--border);">
+      <table class="w-full text-xs sm:text-sm text-left border-collapse">
+        <thead>
+          <tr style="background-color: var(--accent); color: white;">
+            <th class="p-3 font-bold border-b">#</th>
+            <th class="p-3 font-bold border-b">Sacred Name</th>
+            <th class="p-3 font-bold border-b">English Meaning & Significance</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y" style="divide-color: var(--border);">
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">1</td>
+            <td class="p-3 font-semibold">Al-Quran (الْقُرْآنُ)</td>
+            <td class="p-3">The Most Frequently Recited Book in existence.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">2</td>
+            <td class="p-3 font-semibold">Al-Dhikr (الذِّكْرُ)</td>
+            <td class="p-3">The Reminder, full of admonition and counsel.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">3</td>
+            <td class="p-3 font-semibold">Al-Furqan (الْفُرْقَانُ)</td>
+            <td class="p-3">The Criterion that decisively separates truth from falsehood.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">4</td>
+            <td class="p-3 font-semibold">Al-Kitab (الْكِتَابُ)</td>
+            <td class="p-3">The Supreme Divine Book of Allah.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">5</td>
+            <td class="p-3 font-semibold">Al-Tanzeel (التَّنْزِيْلُ)</td>
+            <td class="p-3">The Divine Revelation sent down from on high.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">6</td>
+            <td class="p-3 font-semibold">Al-Noor (النُّوْرُ)</td>
+            <td class="p-3">The Illuminating Light that guides humanity out of darkness.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">7</td>
+            <td class="p-3 font-semibold">Al-Burhan (الْبُرْهَانُ)</td>
+            <td class="p-3">The Clear and Undeniable Proof.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">8</td>
+            <td class="p-3 font-semibold">Al-Mubeen (الْمُبِيْنُ)</td>
+            <td class="p-3">The Manifest and Self-Evident Guidance.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">9</td>
+            <td class="p-3 font-semibold">Al-Azeez (الْعَزِيْزُ)</td>
+            <td class="p-3">The Mighty and Inimitable Book that cannot be defeated.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">10</td>
+            <td class="p-3 font-semibold">Al-Kareem (الْكَرِيْمُ)</td>
+            <td class="p-3">The Noble and Generous Scripture.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">11</td>
+            <td class="p-3 font-semibold">Al-Shifa (الشِّفَاءُ)</td>
+            <td class="p-3">The Source of Spiritual and Moral Healing.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">12</td>
+            <td class="p-3 font-semibold">Al-Ilm (الْعِلْمُ)</td>
+            <td class="p-3">The True Reservoir of Knowledge and Divine Insight.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">13</td>
+            <td class="p-3 font-semibold">Al-Hakeem (الْحَكِيْمُ)</td>
+            <td class="p-3">The Book full of Wisdom and Prudence.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">14</td>
+            <td class="p-3 font-semibold">Al-Majeed (الْمَجِيْدُ)</td>
+            <td class="p-3">The Glorious and Sublime Revelation.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">15</td>
+            <td class="p-3 font-semibold">Al-Mubarak (الْمُبَارَكُ)</td>
+            <td class="p-3">The Blessed Scripture loaded with eternal benefit.</td>
+          </tr>
+          <tr class="hover:bg-emerald-500/5">
+            <td class="p-3 font-bold" style="color: var(--accent);">16</td>
+            <td class="p-3 font-semibold">Al-Haqq (الْحَقُّ)</td>
+            <td class="p-3">The Absolute Truth and Pure Reality.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-<div class="p-4 rounded-xl border-2 border-dashed mt-6 mb-4" style="border-color: var(--gold); background-color: var(--gold-light);">
-  <p class="text-sm font-bold" style="color: var(--gold);">⚠️ Note: Content continues on Page 4. The scraper stopped mid-sentence at "تاریخ گواہ". Remaining content will be added when available.</p>
+  <!-- Makki vs Madani Surahs -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">4. Makki and Madani Surahs</h3>
+    <p class="text-sm leading-relaxed mb-4">
+      The Holy Quran consists of <strong>114 Surahs</strong>. Scholars categorize these based on the major turning point in Islamic history: the <strong>Migration (Hijrah) to Madinah</strong>.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+        <h4 class="font-bold text-sm mb-2" style="color: var(--accent);">📍 Makki Surahs (Revealed before Hijrah)</h4>
+        <ul class="text-xs space-y-1.5 list-disc list-inside opacity-90 leading-relaxed">
+          <li><strong>Primary Audience:</strong> Polytheists (<em>Mushrikeen</em>) of Makkah.</li>
+          <li><strong>Core Themes:</strong> Oneness of Allah (<em>Tawheed</em>), Prophethood (<em>Risalat</em>), Resurrection, and the Day of Judgment (<em>Akhirat</em>).</li>
+          <li><strong>Style & Characteristics:</strong> Highly eloquent, brief, rhyming verses refuting idolatry; narratives of previous nations; moral reform and perseverance under persecution.</li>
+        </ul>
+      </div>
+
+      <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+        <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">🏛️ Madani Surahs (Revealed after Hijrah)</h4>
+        <ul class="text-xs space-y-1.5 list-disc list-inside opacity-90 leading-relaxed">
+          <li><strong>Primary Audience:</strong> Believers (<em>Mu'minoon</em>), People of the Book, and Hypocrites.</li>
+          <li><strong>Core Themes:</strong> Establishment of the Islamic state, legal rulings, family laws, civil conduct, inheritance, treaties, and rules of engagement (<em>Jihad</em>).</li>
+          <li><strong>Style & Characteristics:</strong> Clear, elaborate, and structured tone; frequently addresses believers with: <em>"O you who have believed!"</em> (یٰۤاَیُّهَا الَّذِیْنَ اٰمَنُوْا).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ayat al-Ahkam -->
+  <section>
+    <h3 class="text-xl font-bold mb-2" style="color: var(--accent);">5. Verses of Legal Rulings (Ayat al-Ahkam)</h3>
+    <p class="text-sm leading-relaxed mb-3">
+      <strong>Ayat al-Ahkam</strong> are those specific verses of the Holy Quran that prescribe legal injunctions, statutory duties, and commandments of Shariah. These encompass rituals of worship, financial transactions, matrimonial laws, criminal justice, and penal sanctions (<em>Hudood & Qisas</em>).
+    </p>
+    <p class="text-sm leading-relaxed">
+      Islamic jurists (<em>Fuqaha</em>) rely on these verses as the primary bedrock for formulating Islamic Jurisprudence (<em>Fiqh</em>). History bears witness that nations that adhered to Quranic ordinances achieved unmatched prosperity and leadership in this world and eternal success in the hereafter.
+    </p>
+  </section>
+
+  <!-- Solved Exercises -->
+  <section class="mt-10 pt-6 border-t" style="border-color: var(--border);">
+    <h3 class="text-2xl font-extrabold mb-6" style="color: var(--accent);">📝 Textbook Exercise (Solved)</h3>
+
+    <!-- Question 1: MCQs -->
+    <div class="mb-8">
+      <h4 class="font-bold text-base mb-4" style="color: var(--gold);">Q1: Choose the correct option.</h4>
+      
+      <div class="space-y-4 text-sm">
+        <div class="p-3 rounded-lg border" style="background-color: var(--bg-card); border-color: var(--border);">
+          <p class="font-semibold mb-2">(i) The greatest miracle of the Holy Prophet Muhammad ﷺ is:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs opacity-90">
+            <span class="p-2 rounded font-bold" style="background-color: var(--accent-light); color: var(--accent);">✔ (A) The Holy Quran</span>
+            <span>(B) Isra and Mi'raj</span>
+            <span>(C) Splitting of the Moon</span>
+            <span>(D) Vision of the Sun</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-lg border" style="background-color: var(--bg-card); border-color: var(--border);">
+          <p class="font-semibold mb-2">(ii) Regarding previous heavenly scriptures, the Holy Quran is a:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs opacity-90">
+            <span>(A) Translation</span>
+            <span class="p-2 rounded font-bold" style="background-color: var(--accent-light); color: var(--accent);">✔ (B) Guardian/Overseer (Muhaimin)</span>
+            <span>(C) Commentary</span>
+            <span>(D) Preface</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-lg border" style="background-color: var(--bg-card); border-color: var(--border);">
+          <p class="font-semibold mb-2">(iii) The definitive solutions and guidance for all problems till the Day of Judgment reside in:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs opacity-90">
+            <span>(A) The Torah</span>
+            <span>(B) The Gospel (Injeel)</span>
+            <span>(C) The Psalms (Zabur)</span>
+            <span class="p-2 rounded font-bold" style="background-color: var(--accent-light); color: var(--accent);">✔ (D) The Holy Quran</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-lg border" style="background-color: var(--bg-card); border-color: var(--border);">
+          <p class="font-semibold mb-2">(iv) The book possessing a comprehensive narrative on beliefs, worship, social life, and ethics is:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs opacity-90">
+            <span class="p-2 rounded font-bold" style="background-color: var(--accent-light); color: var(--accent);">✔ (A) The Holy Quran</span>
+            <span>(B) The Torah</span>
+            <span>(C) The Gospel</span>
+            <span>(D) The Psalms</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-lg border" style="background-color: var(--bg-card); border-color: var(--border);">
+          <p class="font-semibold mb-2">(v) The Makki Surahs mainly articulate:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs opacity-90">
+            <span>(A) Civil and family laws</span>
+            <span>(B) Affairs of state governance</span>
+            <span>(C) Rules of Jihad and armed combat</span>
+            <span class="p-2 rounded font-bold" style="background-color: var(--accent-light); color: var(--accent);">✔ (D) Tawheed (Monotheism) and Risalat (Prophethood)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 2: Short Answers -->
+    <div class="mb-8">
+      <h4 class="font-bold text-base mb-4" style="color: var(--gold);">Q2: Short Answer Questions</h4>
+      
+      <div class="space-y-3 text-sm">
+        <details class="p-4 rounded-xl border group" style="background-color: var(--bg-card); border-color: var(--border);">
+          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
+            <span>(i) The Holy Quran is a universal book. Explain briefly.</span>
+            <span class="text-xs font-bold transition group-open:rotate-180" style="color: var(--accent);">▼</span>
+          </summary>
+          <p class="mt-3 text-xs leading-relaxed opacity-90 pt-2 border-t" style="border-color: var(--border);">
+            <strong>Answer:</strong> The Holy Quran is universal because its guidance is addressed to all mankind rather than a particular tribe, nation, or era. It uses the call <em>"O Mankind!"</em> and provides eternal principles that govern human life across all eras and geographical borders.
+          </p>
+        </details>
+
+        <details class="p-4 rounded-xl border group" style="background-color: var(--bg-card); border-color: var(--border);">
+          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
+            <span>(ii) Write a brief note on the Eternity (Abadiyyat) of the Holy Quran.</span>
+            <span class="text-xs font-bold transition group-open:rotate-180" style="color: var(--accent);">▼</span>
+          </summary>
+          <p class="mt-3 text-xs leading-relaxed opacity-90 pt-2 border-t" style="border-color: var(--border);">
+            <strong>Answer:</strong> The teachings of the Quran are preserved from alteration and remain fully applicable till the Day of Resurrection. Because its tenets reflect universal human nature, people of all times find relevant, practical guidance within its verses.
+          </p>
+        </details>
+
+        <details class="p-4 rounded-xl border group" style="background-color: var(--bg-card); border-color: var(--border);">
+          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
+            <span>(iii) Give the meanings of any four sacred names of the Holy Quran.</span>
+            <span class="text-xs font-bold transition group-open:rotate-180" style="color: var(--accent);">▼</span>
+          </summary>
+          <div class="mt-3 text-xs leading-relaxed opacity-90 pt-2 border-t space-y-1" style="border-color: var(--border);">
+            <p><strong>1. Al-Furqan:</strong> The Criterion that distinguishes truth from falsehood.</p>
+            <p><strong>2. Al-Noor:</strong> The Illuminating Light that clears doubts and darkness.</p>
+            <p><strong>3. Al-Shifa:</strong> The divine cure for spiritual, moral, and ideological ailments.</p>
+            <p><strong>4. Al-Dhikr:</strong> The sacred reminder and advice for humanity.</p>
+          </div>
+        </details>
+
+        <details class="p-4 rounded-xl border group" style="background-color: var(--bg-card); border-color: var(--border);">
+          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
+            <span>(iv) State any two differences between Makki and Madani Surahs.</span>
+            <span class="text-xs font-bold transition group-open:rotate-180" style="color: var(--accent);">▼</span>
+          </summary>
+          <div class="mt-3 text-xs leading-relaxed opacity-90 pt-2 border-t space-y-1.5" style="border-color: var(--border);">
+            <p><strong>1. Timeline:</strong> Makki Surahs were revealed before the Hijrah to Madinah, whereas Madani Surahs were revealed after the Hijrah.</p>
+            <p><strong>2. Content:</strong> Makki Surahs emphasize basic creed (Tawheed, Risalat, Akhirat) and concise eloquence, while Madani Surahs outline detailed state laws, social legislation, and community ethics.</p>
+          </div>
+        </details>
+
+        <details class="p-4 rounded-xl border group" style="background-color: var(--bg-card); border-color: var(--border);">
+          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
+            <span>(v) What is meant by Ayat al-Ahkam?</span>
+            <span class="text-xs font-bold transition group-open:rotate-180" style="color: var(--accent);">▼</span>
+          </summary>
+          <p class="mt-3 text-xs leading-relaxed opacity-90 pt-2 border-t" style="border-color: var(--border);">
+            <strong>Answer:</strong> <em>Ayat al-Ahkam</em> are the legal verses of the Holy Quran that specify Shariah laws pertaining to acts of worship, financial transactions, marital life, inheritance, and penal codes. Jurists use them as the primary foundation for Islamic Law (Fiqh).
+          </p>
+        </details>
+      </div>
+    </div>
+
+    <!-- Question 3: Long Question -->
+    <div>
+      <h4 class="font-bold text-base mb-3" style="color: var(--gold);">Q3: Long Answer Question</h4>
+      <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+        <p class="font-semibold text-sm mb-2">Write a detailed essay on the distinctive characteristics of the Holy Quran.</p>
+        <p class="text-xs opacity-80 leading-relaxed">
+          <em>Tip for Board Exams:</em> In your response, structure your answer under the four major pillars: <strong>(1) Universality (Alamgeeriyat)</strong> with Surah Ibrahim: 52, <strong>(2) Perfection (Kamiliyat)</strong> with Surah At-Takweer: 27, <strong>(3) Comprehensiveness (Jami'iyyat)</strong> with Surah An-Nahl: 89, and <strong>(4) Perpetuity & Inimitability (Abadiyyat)</strong>. Refer directly to the main body notes above.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </div>
 `,
       },
+
+      // ----------------- SECTION B -----------------
       {
         slug: "uloom-ul-hadith",
-        titleEn: "Sciences of Hadith (Uloom ul Hadith)",
-        titleUr: "علوم الحديث",
+        titleEn: "Sciences of Hadith (Uloom-ul-Hadith)",
+        titleUr: "Sciences of Hadith",
         page: 5,
-        content: `<div class="p-6 text-center"><p class="text-4xl mb-3">🕐</p><p class="font-bold mb-1">Content Coming Soon</p><p class="text-sm" style="color: var(--fg-secondary);">Waiting for scraped text from Page 5 onwards.</p></div>`,
+        content: `
+<div class="space-y-8 text-left">
+
+  <!-- SLOs -->
+  <div class="p-5 rounded-xl border" style="background-color: var(--accent-light); border-color: var(--accent);">
+    <h3 class="text-lg font-bold mb-3 flex items-center gap-2" style="color: var(--accent);">
+      🎯 Student Learning Outcomes (SLOs)
+    </h3>
+    <p class="text-sm mb-2 font-medium">After studying this lesson, students will be able to:</p>
+    <ul class="text-sm space-y-1.5 list-disc list-inside opacity-90">
+      <li>Understand the absolute authority (<em>Hujjiyyah</em>) and preservation of Hadith in Islamic law.</li>
+      <li>Examine the collection and systematic compilation of Hadith across the First, Second, and Third Eras.</li>
+      <li>Identify the canonical books of Hadith (<em>Sihah al-Sittah</em> and <em>Usul al-Arba'ah</em>) and Hadith terminologies.</li>
+      <li>Analyze the prescribed Hadiths and comprehend their practical application in daily living.</li>
+      <li>Refute the misconceptions and skepticism fabricated by Hadith rejectors (<em>Munkireen-e-Hadith</em>) and Orientalists (<em>Mustashriqeen</em>).</li>
+    </ul>
+  </div>
+
+  <!-- Definition & Authority of Hadith -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">1. Definition & Status of Hadith</h3>
+    <p class="text-sm leading-relaxed mb-3">
+      The Holy Quran is the supreme foundation of Islamic faith and law. Allah Almighty revealed it to His Final Messenger, Hazrat Muhammad ﷺ, and entrusted him with the vital responsibility of interpreting, demonstrating, and expounding its verses.
+    </p>
+
+    <!-- Technical Definition -->
+    <div class="p-4 rounded-xl border mb-4" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">Definition of Hadith in Shariah:</h4>
+      <p class="text-sm leading-relaxed mb-3">
+        In Islamic terminology, <strong>Hadith</strong> refers to any <strong>saying (<em>Qawl</em>)</strong>, <strong>action (<em>Fi'l</em>)</strong>, <strong>tacit approval (<em>Taqreer</em>)</strong>, or <strong>physical/moral attribute (<em>Sifah / Shama'il</em>)</strong> of the Prophet Muhammad ﷺ.
+      </p>
+      <ul class="text-xs space-y-1.5 list-disc list-inside opacity-90">
+        <li><strong>Tacit Approval (Taqreer):</strong> Any statement or action performed by a Companion in the presence of the Prophet ﷺ which he witnessed and did not forbid or object to.</li>
+        <li><strong>Attributes (Sifah / Shama'il):</strong> Descriptions of the Prophet's physical appearance (e.g., complexion, hair) and his sublime moral virtues.</li>
+      </ul>
+    </div>
+
+    <p class="text-sm leading-relaxed mb-3">
+      Just as believing in the Holy Quran is mandatory upon every Muslim, obeying and implementing the Hadith of the Prophet ﷺ is a fundamental requirement of faith. The entire Muslim Ummah is in complete consensus (<em>Ijma</em>) that the Quran cannot be properly understood or implemented without the Prophetic Sunnah.
+    </p>
+
+    <blockquote class="p-4 rounded-lg border-l-4 text-sm italic" style="background-color: var(--accent-light); border-color: var(--accent);">
+      <p class="font-bold mb-1 text-base text-right font-serif">وَمَاۤ اٰتٰىكُمُ الرَّسُوْلُ فَخُذُوْهُ ۪ وَمَا نَهٰىكُمْ عَنْهُ فَانْتَهُوْا ۚ</p>
+      <p>"And whatever the Messenger gives you, take it; and what he forbids you, abstain from it." <em>(Surah Al-Hashr, 59:7)</em></p>
+    </blockquote>
+  </section>
+
+  <!-- Three Eras of Compilation -->
+  <section>
+    <h3 class="text-xl font-bold mb-4" style="color: var(--accent);">2. The Three Eras of Hadith Compilation</h3>
+
+    <!-- 1st Era -->
+    <div class="mb-5 p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">
+        📜 First Era: The Prophetic Era & Companions (Ehd-e-Sahabah)
+      </h4>
+      <p class="text-sm leading-relaxed mb-2">
+        During the lifetime of the Prophet ﷺ and the era of the Sahabah (RA), the preservation of Hadith was conducted with extraordinary vigilance through memorization, practical modeling, and written manuscripts.
+      </p>
+      <ul class="text-xs space-y-1 list-disc list-inside opacity-90">
+        <li>Written collections existed in the possession of prominent Sahabah such as <strong>Hazrat Ali (RA)</strong>, <strong>Hazrat Abu Hurairah (RA)</strong>, <strong>Hazrat Jabir ibn Abdullah (RA)</strong>, and <strong>Hazrat Abdullah ibn Amr ibn al-Aas (RA)</strong> (his famous manuscript: <em>Al-Sahifah al-Sadiqah</em>).</li>
+        <li>In the subsequent generation of Successors (<em>Tabi'un</em>), Hadith preservation grew into an organized movement led by scholars like <strong>Saeed ibn al-Musayyib</strong>, <strong>Hasan al-Basri</strong>, and <strong>Muhammad ibn Sirin (RA)</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- 2nd Era -->
+    <div class="mb-5 p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">
+        🏛️ Second Era: Systematic State Compilation (99 AH onwards)
+      </h4>
+      <p class="text-sm leading-relaxed mb-2">
+        Official, state-backed compilation of Hadith began under the righteous Umayyad Caliph <strong>Hazrat Umar ibn Abdul Aziz (RA)</strong> around 99 AH.
+      </p>
+      <ul class="text-xs space-y-1.5 list-disc list-inside opacity-90">
+        <li>Key scholars: <strong>Imam Ibn Shihab al-Zuhri</strong>, <strong>Imam Sha'bi</strong>, <strong>Imam Ja'far al-Sadiq</strong>, <strong>Imam Abu Hanifa</strong>, <strong>Imam Malik</strong>, <strong>Imam Sufyan al-Thawri</strong>, and <strong>Imam al-Shafi'i (RA)</strong>.</li>
+        <li>Hadiths were categorized by subject matter into dedicated formats such as <em>Muwatta</em>, <em>Musnad</em>, <em>Sunan</em>, and <em>Musannaf</em>.</li>
+        <li>Famous works of this era: <em>Muwatta Imam Malik</em>, <em>Musnad Ahmad ibn Hanbal</em>, <em>Musannaf Abd al-Razzaq</em>, and <em>Musannaf Ibn Abi Shaybah</em>.</li>
+      </ul>
+    </div>
+
+    <!-- 3rd Era -->
+    <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">
+        ⭐ Third Era: Golden Age of Scrutiny & Canonical Books (3rd Century AH)
+      </h4>
+      <p class="text-sm leading-relaxed mb-2">
+        The 3rd Century Hijri marks the zenith of Hadith scholarship. In this era, rigorous scientific verification methods were developed to scrutinize the text (<em>Matn</em>) and the chain of narrators (<em>Isnad</em>).
+      </p>
+      <ul class="text-xs space-y-1.5 list-disc list-inside opacity-90">
+        <li><strong>Ilm Asma' al-Rijal & Jarh wa Ta'deel:</strong> Critical biographical evaluation of narrators was established to test the honesty, memory, and accuracy of every narrator.</li>
+        <li>Rigid separation of authentic narrations (<em>Sahih</em>) from weak (<em>Da'if</em>) or fabricated narrations.</li>
+        <li>Compilation of the master canonical collections: <strong>Sihah al-Sittah</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Canonical Books Tables -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">3. Canonical Books of Hadith</h3>
+
+    <!-- Sihah Sittah -->
+    <div class="mb-6">
+      <h4 class="text-sm font-bold mb-2" style="color: var(--gold);">
+        📚 Al-Sihah al-Sittah (The Six Authentic Books of Hadith - Sunni Tradition)
+      </h4>
+      <div class="overflow-x-auto rounded-xl border" style="border-color: var(--border);">
+        <table class="w-full text-xs sm:text-sm text-left border-collapse">
+          <thead>
+            <tr style="background-color: var(--accent); color: white;">
+              <th class="p-2.5 border-b font-bold">#</th>
+              <th class="p-2.5 border-b font-bold">Book Title</th>
+              <th class="p-2.5 border-b font-bold">Author / Compiler</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y" style="divide-color: var(--border);">
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(i)</td><td class="p-2.5 font-semibold">Sahih al-Bukhari</td><td class="p-2.5">Muhammad ibn Isma'il al-Bukhari (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(ii)</td><td class="p-2.5 font-semibold">Sahih Muslim</td><td class="p-2.5">Muslim ibn al-Hajjaj al-Qushayri (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(iii)</td><td class="p-2.5 font-semibold">Sunan Abi Dawood</td><td class="p-2.5">Sulayman ibn al-Ash'ath al-Sijistani (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(iv)</td><td class="p-2.5 font-semibold">Jami' al-Tirmidhi</td><td class="p-2.5">Muhammad ibn 'Isa al-Tirmidhi (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(v)</td><td class="p-2.5 font-semibold">Sunan al-Nasa'i</td><td class="p-2.5">Ahmad ibn Shu'ayb al-Nasa'i (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">(vi)</td><td class="p-2.5 font-semibold">Sunan Ibn Majah</td><td class="p-2.5">Muhammad ibn Yazid Ibn Majah (RA)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Usul al-Arba'ah -->
+    <div>
+      <h4 class="text-sm font-bold mb-2" style="color: var(--gold);">
+        📖 Al-Usul al-Arba'ah (The Four Fundamental Books - Shia Tradition)
+      </h4>
+      <div class="overflow-x-auto rounded-xl border" style="border-color: var(--border);">
+        <table class="w-full text-xs sm:text-sm text-left border-collapse">
+          <thead>
+            <tr style="background-color: var(--accent); color: white;">
+              <th class="p-2.5 border-b font-bold">#</th>
+              <th class="p-2.5 border-b font-bold">Book Title</th>
+              <th class="p-2.5 border-b font-bold">Author / Compiler</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y" style="divide-color: var(--border);">
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">1</td><td class="p-2.5 font-semibold">Al-Kafi</td><td class="p-2.5">Abu Ja'far Muhammad ibn Ya'qub al-Kulayni (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">2</td><td class="p-2.5 font-semibold">Man La Yahduruhu al-Faqih</td><td class="p-2.5">Abu Ja'far Muhammad ibn Ali ibn Babawayh al-Qummi (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">3</td><td class="p-2.5 font-semibold">Al-Istibsar</td><td class="p-2.5">Abu Ja'far Muhammad ibn al-Hasan al-Tusi (RA)</td></tr>
+            <tr><td class="p-2.5 font-bold" style="color: var(--accent);">4</td><td class="p-2.5 font-semibold">Tahdhib al-Ahkam</td><td class="p-2.5">Abu Ja'far Muhammad ibn al-Hasan al-Tusi (RA)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminology & Orientalists -->
+  <section class="grid md:grid-cols-2 gap-4">
+    <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">⚖️ Key Hadith Classifications</h4>
+      <ul class="text-xs space-y-1.5 opacity-90 leading-relaxed">
+        <li><strong>Marfu' (مرفوع):</strong> A narration directly attributed to the Prophet Muhammad ﷺ.</li>
+        <li><strong>Mawquf (موقوف):</strong> A narration attributed to a Sahabi (Companion).</li>
+        <li><strong>Sahih (صحیح):</strong> An authentic Hadith with an unbroken chain of upright, reliable narrators.</li>
+        <li><strong>Da'if (ضعیف):</strong> A weak Hadith that lacks one or more conditions of authenticity.</li>
+      </ul>
+    </div>
+
+    <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+      <h4 class="font-bold text-sm mb-2" style="color: var(--gold);">🛡️ Refuting the Orientalists (Mustashriqeen)</h4>
+      <p class="text-xs leading-relaxed opacity-90">
+        <strong>Orientalists</strong> are Western non-Muslim writers who studied Islamic sciences with the underlying motive of stirring doubts regarding Islamic heritage.
+      </p>
+      <p class="text-xs leading-relaxed opacity-90 mt-2">
+        Their assertion that Hadiths were not recorded until the 3rd century AH is historically fraudulent. The 3rd century was not the beginning of compilation, but the peak era of verification, categorization, and encyclopedia-level indexing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Selected Prescribed Hadiths -->
+  <section>
+    <h3 class="text-xl font-bold mb-3" style="color: var(--accent);">4. Selected Hadiths in Syllabus</h3>
+
+    <div class="space-y-4">
+      <!-- Hadith 1 -->
+      <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+        <p class="font-bold text-xs mb-2" style="color: var(--accent);">HADITH #1: Value of Religious Understanding</p>
+        <blockquote class="text-base font-serif text-right mb-2 p-2 rounded" style="background-color: var(--accent-light);">
+          مَنْ يُّرِدِ اللّٰهُ بِهٖ خَيْرًا يَّفَقِّهْهُ فِي الدِّيْنِ
+        </blockquote>
+        <p class="text-xs font-semibold mb-1">
+          "Whomever Allah intends good for, He grants him deep comprehension (Fiqh) of the religion."
+        </p>
+        <p class="text-[10px] opacity-70">Sources: Sahih al-Bukhari (71), Al-Kafi (Vol. 1, p. 33)</p>
+      </div>
+
+      <!-- Hadith 2 -->
+      <div class="p-4 rounded-xl border" style="background-color: var(--bg-card); border-color: var(--border);">
+        <p class="font-bold text-xs mb-2" style="color: var(--accent);">HADITH #2: Importance of Noble Character</p>
+        <blockquote class="text-base font-serif text-right mb-2 p-2 rounded" style="background-color: var(--accent-light);">
+          فَمَا شَيْءٌ اَثْقَلُ فِيْ مِيْزَانِ الْمُؤْمِنِ يَوْمَ الْقِيٰمَةِ مِنْ خُلُقٍ حَسَنٍ وَاِنَّ اللّٰهَ لَيُبْغِضُ الْفَاحِشَ الْبَذِيْءَ
+        </blockquote>
+        <p class="text-xs font-semibold mb-1">
+          "There is nothing heavier on the scale of a believer on the Day of Resurrection than good character, and indeed Allah detests the shameless, foul-mouthed person."
+        </p>
+        <p class="text-[10px] opacity-70">Sources: Jami' al-Tirmidhi (2002), Mustadrak al-Wasa'il (Vol. 8, p. 443)</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+`,
       },
     ],
   },
