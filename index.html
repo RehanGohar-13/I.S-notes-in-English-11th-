@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islamiat 11th — Study Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const currentPage = "home";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Dashboard</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Islamiat — Class 11 Study Hub</h1>
+      <p class="page-subtitle">
+        Punjab Curriculum 2023 (Revised) · PECTAA Textbook · English Translation
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <div class="grid-3">
+        <div class="stat-card">
+          <div class="num">7</div>
+          <div class="label">Chapters</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">27</div>
+          <div class="label">Topics</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">137</div>
+          <div class="label">Pages</div>
+        </div>
+      </div>
+
+      <h2>📋 Full Table of Contents</h2>
+      <div class="card" style="padding: 8px 12px">
+        <ul class="toc-list">
+          <li>
+            <a href="ch1a.html"
+              ><span>Ch 1(A): Sciences of the Quran</span
+              ><span class="ch-page">p. 1</span></a
+            >
+          </li>
+          <li>
+            <a href="ch1b.html"
+              ><span>Ch 1(B): Sciences of Hadith</span
+              ><span class="ch-page">p. 5</span></a
+            >
+          </li>
+          <li>
+            <a href="ch1-exercises.html"
+              ><span>📝 Ch 1: Exercises (MCQs, Short & Long Qs)</span
+              ><span class="ch-page">pp. 4, 11</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-tawheed.html"
+              ><span>Ch 2: Tawheed (Oneness of Allah)</span
+              ><span class="ch-page">p. 13</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-risalat.html"
+              ><span>Ch 2: Risalat (Prophethood)</span
+              ><span class="ch-page">p. 20</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-malaika.html"
+              ><span>Ch 2: Malaika (Angels)</span
+              ><span class="ch-page">p. 26</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-kutub.html"
+              ><span>Ch 2: Heavenly Books</span
+              ><span class="ch-page">p. 29</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-akhirat.html"
+              ><span>Ch 2: Akhirat (Hereafter)</span
+              ><span class="ch-page">p. 33</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-namaz.html"
+              ><span>Ch 2: Philosophy of Salah</span
+              ><span class="ch-page">p. 38</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-zakat.html"
+              ><span>Ch 2: Zakat</span><span class="ch-page">p. 43</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-roza.html"
+              ><span>Ch 2: Fasting (Sawm)</span
+              ><span class="ch-page">p. 47</span></a
+            >
+          </li>
+          <li>
+            <a href="ch2-hajj.html"
+              ><span>Ch 2: Hajj & Sacrifice</span
+              ><span class="ch-page">p. 51</span></a
+            >
+          </li>
+          <li>
+            <a href="ch3a.html"
+              ><span>Ch 3(A): Prophet ﷺ — Ideal Family Head</span
+              ><span class="ch-page">p. 55</span></a
+            >
+          </li>
+          <li>
+            <a href="ch3b.html"
+              ><span>Ch 3(B): Prophet ﷺ — Ideal Head of State</span
+              ><span class="ch-page">p. 59</span></a
+            >
+          </li>
+          <li>
+            <a href="ch3c.html"
+              ><span>Ch 3(C): Prophet ﷺ — Ideal Commander</span
+              ><span class="ch-page">p. 63</span></a
+            >
+          </li>
+          <li>
+            <a href="ch3d.html"
+              ><span>Ch 3(D): Economic Teachings</span
+              ><span class="ch-page">p. 67</span></a
+            >
+          </li>
+          <li>
+            <a href="ch4a.html"
+              ><span>Ch 4(A): Social Welfare & Respect</span
+              ><span class="ch-page">p. 71</span></a
+            >
+          </li>
+          <li>
+            <a href="ch4b.html"
+              ><span>Ch 4(B): Avoidance of Moral Vices</span
+              ><span class="ch-page">p. 76</span></a
+            >
+          </li>
+          <li>
+            <a href="ch4c.html"
+              ><span>Ch 4(C): Ethics of Social Relations</span
+              ><span class="ch-page">p. 81</span></a
+            >
+          </li>
+          <li>
+            <a href="ch5a.html"
+              ><span>Ch 5(A): Rights of People</span
+              ><span class="ch-page">p. 85</span></a
+            >
+          </li>
+          <li>
+            <a href="ch5b.html"
+              ><span>Ch 5(B): Inheritance</span
+              ><span class="ch-page">p. 91</span></a
+            >
+          </li>
+          <li>
+            <a href="ch5c.html"
+              ><span>Ch 5(C): Marriage & Divorce</span
+              ><span class="ch-page">p. 95</span></a
+            >
+          </li>
+          <li>
+            <a href="ch6a.html"
+              ><span>Ch 6(A): Khilafat-e-Rashida</span
+              ><span class="ch-page">p. 101</span></a
+            >
+          </li>
+          <li>
+            <a href="ch6b.html"
+              ><span>Ch 6(B): Imams of Ahl-e-Bait</span
+              ><span class="ch-page">p. 107</span></a
+            >
+          </li>
+          <li>
+            <a href="ch6c.html"
+              ><span>Ch 6(C): Sufi Saints</span
+              ><span class="ch-page">p. 115</span></a
+            >
+          </li>
+          <li>
+            <a href="ch7a.html"
+              ><span>Ch 7(A): Obedience to Law</span
+              ><span class="ch-page">p. 119</span></a
+            >
+          </li>
+          <li>
+            <a href="ch7b.html"
+              ><span>Ch 7(B): Revival of Islam</span
+              ><span class="ch-page">p. 123</span></a
+            >
+          </li>
+          <li>
+            <a href="ch7c.html"
+              ><span>Ch 7(C): Islamophobia</span
+              ><span class="ch-page">p. 127</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <h2>📚 Book Information</h2>
+      <div class="card card-accent">
+        <table>
+          <tr>
+            <th>Field</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Subject</td>
+            <td>Islamiat (Compulsory)</td>
+          </tr>
+          <tr>
+            <td>Class</td>
+            <td>11th (HSSC-I)</td>
+          </tr>
+          <tr>
+            <td>Curriculum</td>
+            <td>National Curriculum 2023 (Revised)</td>
+          </tr>
+          <tr>
+            <td>Publisher</td>
+            <td>PECTAA</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <script>
+      setBreadcrumb("Dashboard");
+    </script>
+  </body>
+</html>
