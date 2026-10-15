@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heavenly Books — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const currentPage = "ch2-kutub";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Heavenly Books</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Heavenly Books — Kutub-e-Samawiyah</h1>
+      <p class="page-subtitle">
+        Chapter 2(D) — Faith (Imaniyat) · Belief in the Heavenly Books ·
+        Textbook pp. 29–32
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <!-- ==================== LEARNING OUTCOMES ==================== -->
+      <div class="lo-box">
+        <h3>🎯 Learning Outcomes</h3>
+        <p style="margin-bottom: 10px">
+          <em>After studying this lesson, students will be able to:</em>
+        </p>
+        <ol>
+          <li>
+            Gain a <strong>comprehensive introduction</strong> to the heavenly
+            books and scriptures and the
+            <strong>purpose of their revelation</strong>.
+          </li>
+          <li>
+            Understand
+            <strong
+              >Wahi as an authoritative and definitive source of
+              knowledge</strong
+            >.
+          </li>
+          <li>
+            Understand the <strong>textual and rational proofs</strong> for
+            belief in the heavenly books.
+          </li>
+          <li>
+            Extract the <strong>common teachings</strong> of all heavenly books.
+          </li>
+          <li>
+            Recognize the
+            <strong>importance of the Quran's teachings</strong> and act upon
+            them.
+          </li>
+          <li>
+            Believe firmly that the Shariahs of all previous books have been
+            <strong>abrogated</strong>, and the Quran is the
+            <strong>sole final heavenly book</strong>, completely protected from
+            all forms of corruption.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ==================== DEFINITION ==================== -->
+      <h2>📖 What are the Heavenly Books (Kutub-e-Samawiyah)?</h2>
+
+      <div class="card card-accent">
+        <p>
+          <span class="def">Kutub-e-Samawiyah</span> literally means
+          <strong>"Heavenly Books"</strong> — the divine scriptures revealed by
+          Allah to His Prophets (AS) for the guidance of humanity.
+        </p>
+        <p>
+          Allah revealed these books and scriptures so that the Prophets could:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>Make people <strong>aware of Allah's commands</strong></li>
+          <li><strong>Warn</strong> them of His punishment</li>
+          <li>Give them <strong>glad tidings</strong> of His rewards</li>
+        </ul>
+      </div>
+
+      <p>Allah commands the believers:</p>
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        يَا أَيُّهَا الَّذِينَ آمَنُوا آمِنُوا بِاللّٰهِ وَرَسُولِهِ
+        وَالْكِتَابِ الَّذِي نَزَّلَ عَلَىٰ رَسُولِهِ وَالْكِتَابِ الَّذِي
+        أَنزَلَ مِن قَبْلُ
+        <span class="translation"
+          >"O you who believe! Believe in Allah, His Messenger ﷺ, the Book He
+          revealed to His Messenger, and the Books He revealed before."
+          <span class="verse-ref">Surah An-Nisa 4:136</span></span
+        >
+      </div>
+
+      <p>The Prophet ﷺ defined Iman as:</p>
+      <div class="card card-gold" style="margin: 12px 0">
+        <p style="text-align: center; font-style: italic; margin: 0">
+          "Iman is that you believe in Allah, His angels,
+          <strong>His books</strong>, the meeting with Him (on the Day of
+          Judgment), His Messengers, and the resurrection after death."
+          <span class="verse-ref">Sahih Muslim: 9</span>
+        </p>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== FOUR MAJOR BOOKS ==================== -->
+      <h2>📚 The Four Major Heavenly Books</h2>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Book</th>
+              <th>Revealed to</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Torah (تورات)</strong></td>
+              <td>Hazrat Musa (AS)</td>
+              <td>Original lost/altered</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Zaboor (زبور)</strong></td>
+              <td>Hazrat Dawud (AS)</td>
+              <td>Original lost/altered</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Injeel (انجیل)</strong></td>
+              <td>Hazrat Isa (AS)</td>
+              <td>Original lost/altered</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Quran (قرآن مجید)</strong></td>
+              <td>Hazrat Muhammad ﷺ</td>
+              <td>✅ Fully preserved</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-box">
+        The Quran is the <strong>final heavenly book</strong>. It confirms the
+        truth of all previous books and contains guidance for all of humanity
+        until the Day of Judgment.
+      </div>
+
+      <!-- ==================== SUHUF ==================== -->
+      <h2>📜 The Scriptures (Suhuf)</h2>
+
+      <div class="card card-accent">
+        <p>
+          In addition to the major books,
+          <strong>shorter scriptures (Suhuf)</strong> containing a few
+          commandments were also revealed to some Prophets. The Quran
+          specifically mentions the
+          <strong>Scriptures of Ibrahim (AS) and Musa (AS)</strong>:
+        </p>
+        <div class="arabic-quote" style="margin: 12px 0">
+          إِنَّ هٰذَا لَفِي الصُّحُفِ الْأُولَىٰ ۙ صُحُفِ إِبْرَاهِيمَ وَمُوسَىٰ
+          <span class="translation"
+            >"Indeed, this (teaching) is in the former scriptures — the
+            scriptures of Ibrahim and Musa."
+            <span class="verse-ref">Surah Al-A'la 87:18-19</span></span
+          >
+        </div>
+      </div>
+
+      <div class="key-box">
+        <strong>Books vs. Scriptures:</strong> Heavenly
+        <strong>Books (Kutub)</strong> contain detailed, comprehensive divine
+        laws. <strong>Scriptures (Suhuf)</strong> are shorter revelations
+        containing brief commandments.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== PURPOSE & WAHI ==================== -->
+      <h2>🎯 Purpose of the Heavenly Books</h2>
+
+      <div class="card card-gold">
+        <p>
+          Humanity needed a <strong>divine guidebook</strong> to make life
+          decisions correctly. Allah sent the heavenly books alongside the
+          Prophets so they could serve as
+          <strong>practical role models</strong> for implementing divine
+          teachings.
+        </p>
+
+        <p>
+          All these books were revealed through
+          <strong>Wahi (Revelation)</strong>. Knowledge obtained through Wahi
+          is:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            ✅ <strong>Definitive and certain (Qat'i)</strong> — there is
+            absolutely no doubt in it.
+          </li>
+          <li>
+            ✅ <strong>Beyond human intellect</strong> — matters that the human
+            mind could not grasp or might err in understanding were clarified by
+            Allah through Wahi, which is a
+            <strong>tremendous favor</strong> upon humanity.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== COMMON TEACHINGS ==================== -->
+      <h2>🤝 Common Teachings of All Heavenly Books</h2>
+
+      <div class="card card-accent">
+        <p>
+          All heavenly books shared common themes in
+          <strong>faith, worship, and morality</strong>. Three fundamental
+          beliefs were present in <strong>every single book</strong> Allah
+          revealed:
+        </p>
+
+        <div class="grid-3" style="margin: 16px 0">
+          <div class="card card-gold" style="margin: 0; text-align: center">
+            <span style="font-size: 2rem">☪️</span>
+            <h3 style="margin-top: 6px; color: var(--gold)">1. Tawheed</h3>
+            <p style="font-size: 0.85rem; margin: 4px 0 0">Oneness of Allah</p>
+          </div>
+          <div class="card card-gold" style="margin: 0; text-align: center">
+            <span style="font-size: 2rem">🕌</span>
+            <h3 style="margin-top: 6px; color: var(--gold)">2. Risalat</h3>
+            <p style="font-size: 0.85rem; margin: 4px 0 0">Prophethood</p>
+          </div>
+          <div class="card card-gold" style="margin: 0; text-align: center">
+            <span style="font-size: 2rem">⚖️</span>
+            <h3 style="margin-top: 6px; color: var(--gold)">3. Akhirat</h3>
+            <p style="font-size: 0.85rem; margin: 4px 0 0">The Hereafter</p>
+          </div>
+        </div>
+
+        <div class="key-box" style="margin-top: 14px">
+          <strong>Important Principle:</strong> If any religion's teachings
+          contradict these three fundamental beliefs, it means those teachings
+          were <strong>not from Allah</strong> but were
+          <strong>added by people</strong> according to their own desires.
+        </div>
+      </div>
+
+      <h3>Other Shared Teachings</h3>
+      <div class="card card-accent">
+        <p>
+          Beyond the three core beliefs, all heavenly books also shared these
+          teachings:
+        </p>
+
+        <div class="grid-2" style="margin: 12px 0">
+          <div>
+            <h3 style="margin-top: 0; color: var(--accent)">Acts of Worship</h3>
+            <ul style="padding-left: 18px; line-height: 2">
+              <li>🤲 Supplication (Du'a) to Allah</li>
+              <li>🙇 Prayer (Salah) with humility (Khushu & Khudu)</li>
+              <li>💰 Spending in the way of Allah</li>
+              <li>🌙 Fasting (prescribed for previous nations too)</li>
+              <li>
+                🐑 Sacrifice (Qurbani) — e.g., Habil and Qabil (sons of Adam AS)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin-top: 0; color: var(--accent)">Moral Teachings</h3>
+            <ul style="padding-left: 18px; line-height: 2">
+              <li>💬 Truthfulness in speech</li>
+              <li>⚖️ Giving others their rights</li>
+              <li>🙏 Living with humility</li>
+              <li>🍽️ Consuming only Halal</li>
+              <li>🧼 Cleanliness and purity</li>
+              <li>😳 Modesty and shame (Haya)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3>The Universal Invitation to Ahl-e-Kitab</h3>
+      <div class="card card-gold">
+        <p>
+          The Quran invites the People of the Book (Jews and Christians) to
+          common ground:
+        </p>
+        <div class="arabic-quote" style="margin: 12px 0; font-size: 1.05rem">
+          قُلْ يَا أَهْلَ الْكِتَابِ تَعَالَوْا إِلَىٰ كَلِمَةٍ سَوَاءٍ
+          بَيْنَنَا وَبَيْنَكُمْ أَلَّا نَعْبُدَ إِلَّا اللّٰهَ وَلَا نُشْرِكَ
+          بِهِ شَيْئًا وَلَا يَتَّخِذَ بَعْضُنَا بَعْضًا أَرْبَابًا مِّن دُونِ
+          اللّٰهِ فَإِن تَوَلَّوْا فَقُولُوا اشْهَدُوا بِأَنَّا مُسْلِمُونَ
+          <span class="translation"
+            >"Say: O People of the Book! Come to a word that is common between
+            us and you — that we worship none but Allah, associate nothing with
+            Him, and none of us takes others as lords besides Allah. But if they
+            turn away, then say: Bear witness that we are Muslims (those who
+            submit to Allah)."
+            <span class="verse-ref">Surah Aal-e-Imran 3:64</span></span
+          >
+        </div>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== DISTINCTION OF QURAN ==================== -->
+      <h2>👑 The Distinction of the Holy Quran (قرآن مجید کا امتیاز)</h2>
+
+      <div class="card" style="border-left: 4px solid var(--gold)">
+        <p>
+          According to Islamic belief, the Quran is the
+          <strong>final book of Allah</strong>. After its revelation,
+          <strong>all previous heavenly books were abrogated</strong>. Yet it
+          remains the source of guidance for all humanity until the Day of
+          Judgment.
+        </p>
+
+        <h3 style="margin-top: 16px; color: var(--gold)">Key Distinctions:</h3>
+
+        <ul style="padding-left: 20px; line-height: 2.4">
+          <li>
+            🔒 <strong>Perfect Preservation:</strong> The Quran exists today in
+            the <strong>exact same form</strong> as it was revealed to the
+            Prophet ﷺ. Not a single letter has changed, nor will it change until
+            the Day of Judgment.
+          </li>
+          <li>
+            🛡️ <strong>Divine Protection:</strong> Allah Himself has taken the
+            responsibility of protecting the Quran — preserving it in the
+            <strong>hearts of millions</strong> (Huffaz) and through other
+            means.
+          </li>
+          <li>
+            🏆 <strong>Proof of Finality:</strong> The Quran's miraculous
+            preservation is itself a
+            <strong>proof that it is the final book</strong> — previous books
+            were not protected because they were temporary.
+          </li>
+          <li>
+            ✨ <strong>Greatest Miracle:</strong> The Quran is the Prophet's ﷺ
+            <strong>greatest miracle</strong>. Every letter, word, verse, and
+            teaching is miraculous.
+          </li>
+          <li>
+            🔬 <strong>Scientific Accuracy:</strong> The facts about the
+            universe stated in the Quran are being
+            <strong>confirmed by modern science</strong> in this advanced era.
+          </li>
+          <li>
+            🌍 <strong>Universal Acknowledgment:</strong> The Quran is the
+            <strong>only book in the world</strong> whose greatness has been
+            openly acknowledged by experts in both religious and scientific
+            fields across every era.
+          </li>
+        </ul>
+      </div>
+
+      <div class="key-box">
+        <strong>Summary:</strong> The Quran is the final, preserved, miraculous,
+        and universal book of Allah. It abrogates all previous scriptures,
+        contains the summary of all divine teachings, and will remain the sole
+        source of guidance until the Day of Judgment.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== EXERCISES ==================== -->
+      <h2>📝 Exercises (مشق)</h2>
+
+      <div class="key-box">
+        <strong>Study Tip:</strong> Try answering each question yourself before
+        revealing the answer!
+      </div>
+
+      <h3>Q1. Multiple Choice Questions</h3>
+
+      <div class="card">
+        <p>
+          <strong
+            >(i) The purpose of the revelation of heavenly books is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Awareness of Allah's commands</li>
+          <li style="padding: 4px 0">(b) Describing miracles</li>
+          <li style="padding: 4px 0">(c) Increasing information</li>
+          <li style="padding: 4px 0">(d) Narrating historical stories</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (a) Awareness of Allah's commands</strong></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p><strong>(ii) Knowledge obtained through Wahi is:</strong></p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Scientific</li>
+          <li style="padding: 4px 0">(b) Definitive (Qat'i)</li>
+          <li style="padding: 4px 0">(c) Speculative (Zanni)</li>
+          <li style="padding: 4px 0">(d) Acquired (Kasbi)</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (b) Definitive (Qat'i)</strong> — Wahi provides certain,
+            doubt-free knowledge directly from Allah.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong>(iii) The belief common to all heavenly books is:</strong>
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Belief in Tawheed</li>
+          <li style="padding: 4px 0">(b) Belief in Khatm-e-Nabuwwat</li>
+          <li style="padding: 4px 0">(c) Belief in Prophetic Hadith</li>
+          <li style="padding: 4px 0">(d) Belief in the Quran</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Belief in Tawheed</strong> — Tawheed, Risalat, and
+            Akhirat are the three beliefs common to ALL heavenly books.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(iv) The major reason for the Quran being preserved until the Day
+            of Judgment is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) It being the last book</li>
+          <li style="padding: 4px 0">(b) Being under Divine protection</li>
+          <li style="padding: 4px 0">(c) Being preserved in people's hearts</li>
+          <li style="padding: 4px 0">(d) It being a universal book</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (b) Being under Divine protection</strong> — Allah
+            Himself has taken the responsibility of guarding the Quran (15:9).
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(v) The summary of all heavenly books and scriptures is found
+            in:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) The Holy Quran</li>
+          <li style="padding: 4px 0">(b) The Zaboor</li>
+          <li style="padding: 4px 0">(c) The Injeel</li>
+          <li style="padding: 4px 0">(d) The Torah</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (a) The Holy Quran</strong></p>
+        </div>
+      </div>
+
+      <h3>Q2. Short Questions</h3>
+
+      <div class="collapsible-header">
+        (i) What is meant by belief in the heavenly books?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Belief in the heavenly books (Kutub-e-Samawiyah) means to firmly
+          believe that Allah revealed divine scriptures to His Prophets (AS) for
+          the guidance of humanity. This includes belief in the Torah, Zaboor,
+          Injeel, and the Quran, as well as the shorter scriptures (Suhuf).
+          Allah commands:
+          <em
+            >"Believe in the Book He revealed to His Messenger and the Books He
+            revealed before"</em
+          >
+          (4:136).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (ii) Give a brief introduction to the heavenly books.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Allah revealed four major books: <strong>Torah</strong> to Musa (AS),
+          <strong>Zaboor</strong> to Dawud (AS), <strong>Injeel</strong> to Isa
+          (AS), and the <strong>Quran</strong> to Muhammad ﷺ. Additionally,
+          shorter scriptures (Suhuf) were revealed to Prophets like Ibrahim (AS)
+          and Musa (AS). The Quran is the final book that confirms and abrogates
+          all previous ones.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iii) Write two common teachings of the heavenly books.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>1. Tawheed:</strong> All heavenly books taught the Oneness of
+          Allah and worshipping Him alone.
+        </p>
+        <p>
+          <strong>2. Good Morals:</strong> Truthfulness, giving others their
+          rights, humility, consuming halal, and living with modesty were taught
+          in all divine scriptures.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iv) Describe the importance of Wahi. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Wahi is the
+          <strong>definitive and certain (Qat'i) source of knowledge</strong>
+          from Allah. Human intellect is limited and prone to error. Through
+          Wahi, Allah clarified matters that the human mind could not grasp on
+          its own. All heavenly books were revealed through Wahi, making their
+          teachings absolutely reliable and doubt-free.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (v) Review the distinguishing characteristics of the Holy Quran.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          The Quran's key distinctions: <strong>(1)</strong> It is the final
+          book — all previous books are abrogated. <strong>(2)</strong> It is
+          perfectly preserved — not a single letter has changed.
+          <strong>(3)</strong> Allah Himself guarantees its protection.
+          <strong>(4)</strong> It is the Prophet's ﷺ greatest miracle.
+          <strong>(5)</strong> Its scientific facts are confirmed by modern
+          science. <strong>(6)</strong> It is universally acknowledged by
+          scholars of every era.
+        </p>
+      </div>
+
+      <h3>Q3. Detailed Question</h3>
+      <div class="collapsible-header">
+        Write a comprehensive essay on the topic of belief in the heavenly
+        books. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Introduction:</strong> Belief in the heavenly books
+          (Kutub-e-Samawiyah) is a fundamental pillar of Iman. Allah revealed
+          divine scriptures to His Prophets for the guidance of humanity
+          (4:136).
+        </p>
+
+        <p>
+          <strong>The Four Books:</strong> Torah (Musa AS), Zaboor (Dawud AS),
+          Injeel (Isa AS), and Quran (Muhammad ﷺ). Shorter scriptures (Suhuf)
+          were also revealed to Prophets like Ibrahim and Musa (87:18-19).
+        </p>
+
+        <p>
+          <strong>Purpose:</strong> These books were sent as divine guidebooks
+          through Wahi — a definitive, doubt-free source of knowledge — so
+          humanity could live according to Allah's commands.
+        </p>
+
+        <p>
+          <strong>Common Teachings:</strong> All books shared three core
+          beliefs: Tawheed, Risalat, and Akhirat. They also shared teachings on
+          prayer, fasting, sacrifice, truthfulness, humility, and moral conduct.
+        </p>
+
+        <p>
+          <strong>Distinction of the Quran:</strong> The Quran is the final,
+          perfectly preserved book. Not a single letter has changed. Allah
+          Himself protects it. It is the greatest miracle of the Prophet ﷺ,
+          confirmed by modern science, and acknowledged by scholars of every
+          era. All previous Shariahs have been abrogated by it.
+        </p>
+
+        <div class="key-box" style="margin-top: 12px">
+          A Muslim must believe in all heavenly books in their original form,
+          while recognizing that the Quran is the sole surviving, uncorrupted,
+          and final divine scripture.
+        </div>
+      </div>
+
+      <div class="card card-gold" style="margin-top: 20px">
+        <h3 style="margin-top: 0; color: var(--gold)">🎓 Activities</h3>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            Research additional information about belief in the heavenly books
+            beyond the textbook and present it in class.
+          </li>
+          <li>
+            Compare the characteristics of the Quran with those of other
+            heavenly books.
+          </li>
+          <li>
+            Find Quranic references (Surah names) for the following topics:
+            <ul style="margin-top: 8px; line-height: 2">
+              <li>🌌 Creation of the Universe</li>
+              <li>🐾 Animals</li>
+              <li>⭐ Astronomy</li>
+              <li>🌿 Plants</li>
+              <li>👻 Jinn</li>
+              <li>🪽 Angels</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="ch2-malaika.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Previous: Malaika</a
+        >
+        <a
+          href="ch2-akhirat.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Next: Akhirat →</a
+        >
+      </div>
+    </main>
+
+    <script>
+      setBreadcrumb("Ch 2(D) — Heavenly Books");
+    </script>
+  </body>
+</html>

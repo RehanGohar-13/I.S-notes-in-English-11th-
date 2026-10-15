@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malaika — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const currentPage = "ch2-malaika";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Malaika</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Malaika — Belief in Angels</h1>
+      <p class="page-subtitle">
+        Chapter 2(C) — Faith (Imaniyat) · Belief in Angels · Textbook pp. 26–28
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <!-- ==================== LEARNING OUTCOMES ==================== -->
+      <div class="lo-box">
+        <h3>🎯 Learning Outcomes</h3>
+        <p style="margin-bottom: 10px">
+          <em>After studying this lesson, students will be able to:</em>
+        </p>
+        <ol>
+          <li>
+            Understand the <strong>textual and rational proofs</strong> for
+            belief in angels.
+          </li>
+          <li>
+            Be aware of the
+            <strong
+              >attributes, rank, and worldly/otherworldly
+              responsibilities</strong
+            >
+            of angels.
+          </li>
+          <li>Become <strong>firm believers</strong> in the angels.</li>
+          <li>
+            Become those who <strong>revere and respect</strong> the angels.
+          </li>
+          <li>
+            Analyze the <strong>effects of firm belief in angels</strong> on
+            one's life.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ==================== DEFINITION ==================== -->
+      <h2>📖 What is Belief in Angels (Iman bil-Malaika)?</h2>
+
+      <div class="card card-accent">
+        <p>
+          <span class="def">Iman bil-Malaika</span> (Belief in Angels) means to
+          firmly believe that
+          <strong>angels are a creation of Allah made from light (Noor)</strong
+          >, and that they
+          <strong>carry out every command of Allah</strong> without fail.
+        </p>
+        <p>
+          Belief in angels is <strong>essential for being a Muslim</strong>.
+          Without it, the requirements of faith are incomplete.
+        </p>
+      </div>
+
+      <p>Allah says:</p>
+      <div class="arabic-quote" style="margin: 12px 0">
+        وَلٰكِنَّ الْبِرَّ مَنْ آمَنَ بِاللّٰهِ وَالْيَوْمِ الْآخِرِ
+        وَالْمَلَائِكَةِ وَالْكِتَابِ وَالنَّبِيِّينَ
+        <span class="translation"
+          >"But righteousness is [in] one who believes in Allah, the Last Day,
+          the Angels, the Books, and the Prophets."
+          <span class="verse-ref">Surah Al-Baqarah 2:177</span></span
+        >
+      </div>
+
+      <!-- ==================== NATURE ==================== -->
+      <h2>🌟 Nature and Attributes of Angels</h2>
+
+      <div class="card card-gold">
+        <h3 style="margin-top: 0">Key Attributes:</h3>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            ✨ <strong>Created from Light (Noor):</strong> Unlike humans (clay)
+            and Jinn (fire), angels are made of pure light.
+          </li>
+          <li>
+            🚫 <strong>Sinless and Infallible:</strong> They are completely free
+            from errors and sins.
+          </li>
+          <li>
+            🙇 <strong>Perpetually Obedient:</strong> They are always engaged in
+            the obedience and worship of Allah.
+          </li>
+          <li>
+            🍽️ <strong>No Physical Needs:</strong> They do not eat, drink, or
+            sleep.
+          </li>
+        </ul>
+      </div>
+
+      <p>Allah describes their absolute obedience:</p>
+      <div class="arabic-quote" style="margin: 12px 0">
+        لَا يَعْصُونَ اللّٰهَ مَا أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ
+        <span class="translation"
+          >"They do not disobey Allah in what He commands them, but do precisely
+          what they are commanded."
+          <span class="verse-ref">Surah At-Tahrim 66:6</span></span
+        >
+      </div>
+
+      <p>The Prophet ﷺ said:</p>
+      <div class="card card-accent" style="margin: 12px 0">
+        <p style="text-align: center; font-style: italic; margin: 0">
+          "The angels were created from <strong>light (Noor)</strong>, the Jinn
+          from a <strong>flame of fire</strong>, and Adam (AS) from
+          <strong>clay (soil)</strong>."
+          <span class="verse-ref">Sahih Muslim: 2996</span>
+        </p>
+      </div>
+
+      <div class="key-box">
+        <strong>Creation Comparison:</strong>
+        <ul style="padding-left: 20px; line-height: 2; margin-top: 6px">
+          <li>👤 <strong>Humans (Adam AS)</strong> → Created from clay/soil</li>
+          <li>🔥 <strong>Jinn</strong> → Created from smokeless fire</li>
+          <li>✨ <strong>Angels</strong> → Created from light (Noor)</li>
+        </ul>
+      </div>
+
+      <!-- ==================== CONNECTION TO WAHI ==================== -->
+      <h2>🔗 Connection Between Angels, Wahi, and Risalat</h2>
+      <div class="card card-accent">
+        <p>
+          Allah chose the Prophets (AS) to deliver His commands to humanity. To
+          deliver His guidance to the Prophets, Allah appointed His angels —
+          especially the <strong>archangel Hazrat Jibra'eel (AS)</strong>.
+        </p>
+        <p>
+          Because of this deep connection between
+          <strong>Wahi (revelation) and the angels</strong>, believing in the
+          angels is just as essential as believing in the Prophets and the
+          Books. You cannot believe in the Quran without believing in the angel
+          who brought it.
+        </p>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== DUTIES ==================== -->
+      <h2>📋 Responsibilities and Duties of Angels</h2>
+
+      <div class="card card-accent">
+        <p>
+          Angels perform numerous duties in this world by Allah's command,
+          including
+          <strong
+            >protecting righteous servants, punishing the wicked, and recording
+            deeds</strong
+          >. Their number is vast — only Allah knows the exact count.
+        </p>
+      </div>
+
+      <div class="key-box">
+        <strong>Staggering Numbers:</strong> During the Mi'raj, the Prophet ﷺ
+        saw <strong>Bait-ul-Ma'moor</strong> (the Heavenly House) where
+        <strong>70,000 angels pray every single day</strong> — and once an angel
+        enters and prays there, <strong>it never gets another turn</strong>.
+        This tells us the number of angels is beyond human comprehension.
+        <span class="verse-ref">Sahih Bukhari: 3207</span>
+      </div>
+
+      <h3>The Four Archangels</h3>
+      <div class="grid-2" style="margin: 12px 0">
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 1.8rem">🪽</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">1. Jibra'eel (AS)</h3>
+          <p style="font-size: 0.85rem; margin: 4px 0 0">
+            The <strong>Chief Angel of Revelation</strong>. Delivers Allah's
+            messages to the Prophets.
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 1.8rem">🌧️</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">2. Mika'eel (AS)</h3>
+          <p style="font-size: 0.85rem; margin: 4px 0 0">
+            Responsible for
+            <strong>rain, sustenance, and natural provisions</strong>.
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 1.8rem">📯</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">3. Israfeel (AS)</h3>
+          <p style="font-size: 0.85rem; margin: 4px 0 0">
+            Will <strong>blow the Trumpet (Soor)</strong> on the Day of
+            Judgment.
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 1.8rem">⚰️</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">4. Izra'eel (AS)</h3>
+          <p style="font-size: 0.85rem; margin: 4px 0 0">
+            The <strong>Angel of Death</strong> — extracts the souls of the
+            dying.
+          </p>
+        </div>
+      </div>
+
+      <h3>Other Angelic Groups and Their Duties</h3>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Angel Group</th>
+              <th>Arabic Name</th>
+              <th>Duty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Recording Angels</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                کراماً کاتبین
+              </td>
+              <td>Record every good and bad deed of each human being.</td>
+            </tr>
+            <tr>
+              <td><strong>Grave Questioners</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                منکر نکیر
+              </td>
+              <td>
+                Question the deceased in the grave about their faith (Munkar &
+                Nakeer).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Guardian of Paradise</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                رضوان
+              </td>
+              <td>The chief gatekeeper and guardian of Jannah (Rizwan).</td>
+            </tr>
+            <tr>
+              <td><strong>Guardian of Hell</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                مالک
+              </td>
+              <td>The chief guardian and warden of Jahannam (Malik).</td>
+            </tr>
+            <tr>
+              <td><strong>Bearers of the Throne</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                حاملینِ عرش
+              </td>
+              <td>Carry and support the Throne (Arsh) of Allah.</td>
+            </tr>
+            <tr>
+              <td><strong>Angels of Punishment</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                زبانیة
+              </td>
+              <td>Appointed to administer punishment in Hell (Zabaniyah).</td>
+            </tr>
+            <tr>
+              <td><strong>Guardian Angels</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                حافظین
+              </td>
+              <td>Protect humans from harm and dangerous things (Hafizeen).</td>
+            </tr>
+            <tr>
+              <td><strong>Wandering Angels</strong></td>
+              <td style="font-family: var(--font-arabic); direction: rtl">
+                سیاحین
+              </td>
+              <td>
+                Roam the earth seeking gatherings of righteous people and
+                joining them (Sayyaheen).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Durood Deliverers</strong></td>
+              <td>—</td>
+              <td>
+                Carry the Durood (blessings) of the Ummah to the Prophet ﷺ.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Jumu'ah Recorders</strong></td>
+              <td>—</td>
+              <td>Record the names of those who attend Friday prayers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ==================== PHYSICAL APPEARANCE ==================== -->
+      <h2>👤 Physical Appearances of Angels</h2>
+      <div class="card card-accent">
+        <p>
+          Sometimes, by Allah's command, angels appear in
+          <strong>human form</strong>:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            When Hazrat Jibra'eel (AS) was sent to
+            <strong>Hazrat Maryam (AS)</strong>, he appeared as an
+            <strong>ordinary human man</strong>.
+          </li>
+          <li>
+            Hazrat Jibra'eel (AS) frequently appeared before the Prophet ﷺ in
+            the form of the Companion <strong>Hazrat Dihya Kalbi (RA)</strong>,
+            who was known for his handsome appearance.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== CONCLUSION ==================== -->
+      <h2>💡 Why Belief in Angels Matters</h2>
+      <div class="card card-gold">
+        <p>
+          Allah does not <em>need</em> angels to carry out His commands — He can
+          execute His will with a single word. He created angels out of His
+          <strong>infinite wisdom</strong> and assigned them various duties.
+        </p>
+        <p>Belief in angels produces two powerful effects:</p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            🏔️ <strong>Awe of Allah's Greatness:</strong> If the Creator made
+            such powerful and magnificent beings, imagine how infinitely greater
+            the Creator Himself must be!
+          </li>
+          <li>
+            🤲 <strong>Gratitude to Allah:</strong> Allah has appointed angels
+            for our <strong>benefit, protection, and service</strong> —
+            recording our deeds, guarding us from harm, and delivering our
+            prayers to the Prophet ﷺ. A believer is deeply grateful for this
+            divine arrangement.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== EXERCISES ==================== -->
+      <h2>📝 Exercises (مشق)</h2>
+
+      <div class="key-box">
+        <strong>Study Tip:</strong> Try answering each question yourself before
+        revealing the answer!
+      </div>
+
+      <h3>Q1. Multiple Choice Questions</h3>
+
+      <div class="card">
+        <p><strong>(i) Allah created the angels from:</strong></p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Clay</li>
+          <li style="padding: 4px 0">(b) Fire</li>
+          <li style="padding: 4px 0">(c) Water</li>
+          <li style="padding: 4px 0">(d) Light (Noor)</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (d) Light (Noor)</strong></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(ii) The number of angels who pray daily at Bait-ul-Ma'moor
+            is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) 50,000</li>
+          <li style="padding: 4px 0">(b) 60,000</li>
+          <li style="padding: 4px 0">(c) 70,000</li>
+          <li style="padding: 4px 0">(d) 80,000</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (c) 70,000</strong> — And each one only gets a single
+            turn, never to return. (Bukhari: 3207)
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(iii) The angels appointed to protect humans are called:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Sayyaheen</li>
+          <li style="padding: 4px 0">(b) Hamilin-e-Arsh</li>
+          <li style="padding: 4px 0">(c) Kiraman Katibeen</li>
+          <li style="padding: 4px 0">(d) Hafizeen</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (d) Hafizeen</strong></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p><strong>(iv) The angels who record human deeds are:</strong></p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Kiraman Katibeen</li>
+          <li style="padding: 4px 0">(b) Munkar Nakeer</li>
+          <li style="padding: 4px 0">(c) Sayyaheen</li>
+          <li style="padding: 4px 0">(d) Hafizeen</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (a) Kiraman Katibeen</strong></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(v) Hazrat Jibra'eel (AS) appeared before the Prophet ﷺ in the form
+            of which Companion?</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Hazrat Dihya Kalbi (RA)</li>
+          <li style="padding: 4px 0">(b) Hazrat Abu Ayyub Ansari (RA)</li>
+          <li style="padding: 4px 0">(c) Hazrat Abu Sa'eed Khudri (RA)</li>
+          <li style="padding: 4px 0">(d) Hazrat Suhaib Rumi (RA)</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p><strong>✅ (a) Hazrat Dihya Kalbi (RA)</strong></p>
+        </div>
+      </div>
+
+      <h3>Q2. Short Questions</h3>
+
+      <div class="collapsible-header">
+        (i) What is meant by belief in angels? <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Belief in angels (Iman bil-Malaika) means to firmly believe that
+          angels are a
+          <strong>creation of Allah made from light (Noor)</strong>, that they
+          are sinless, perpetually obedient, and carry out every command of
+          Allah without fail. This belief is an essential pillar of Iman —
+          without it, faith is incomplete (2:177).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (ii) Write any two attributes of angels. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>1.</strong> Angels are created from
+          <strong>light (Noor)</strong> and have no physical needs like eating,
+          drinking, or sleeping.
+        </p>
+        <p>
+          <strong>2.</strong> Angels are
+          <strong>completely sinless and infallible</strong>. They never disobey
+          Allah and are always engaged in His worship and obedience (66:6).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iii) Write any two responsibilities of angels.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>1. Kiraman Katibeen:</strong> Recording every good and bad
+          deed of each human being.
+        </p>
+        <p>
+          <strong>2. Hafizeen:</strong> Protecting humans from harm and
+          dangerous things by Allah's command.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iv) Write the translation of Quranic verses related to belief in
+        angels. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Surah Al-Baqarah 2:177:</strong>
+          <em
+            >"But righteousness is [in] one who believes in Allah, the Last Day,
+            the Angels, the Books, and the Prophets."</em
+          >
+        </p>
+        <p>
+          <strong>Surah At-Tahrim 66:6:</strong>
+          <em
+            >"They do not disobey Allah in what He commands them, but do
+            precisely what they are commanded."</em
+          >
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (v) What effects does belief in angels have on human life?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Belief in angels produces two major effects: <strong>(1)</strong> It
+          creates a deep sense of
+          <strong>awe and awareness of Allah's greatness</strong> — if the
+          Creator made such powerful beings, how infinitely greater must He be!
+          <strong>(2)</strong> It generates
+          <strong>gratitude to Allah</strong> — knowing that He has appointed
+          angels for our protection, record-keeping, and service makes a
+          believer deeply thankful.
+        </p>
+      </div>
+
+      <h3>Q3. Detailed Question</h3>
+      <div class="collapsible-header">
+        Write a detailed note on belief in angels and their responsibilities.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Definition:</strong> Iman bil-Malaika means believing that
+          angels are Allah's creation made from light (Noor), sinless, and
+          perpetually obedient. This belief is a fundamental pillar of Iman
+          (2:177).
+        </p>
+
+        <p>
+          <strong>Nature:</strong> Angels do not eat, drink, or sleep. They
+          never disobey Allah (66:6). The Prophet ﷺ confirmed their creation
+          from light (Muslim: 2996).
+        </p>
+
+        <p>
+          <strong>Numbers:</strong> Their number is vast beyond comprehension.
+          At Bait-ul-Ma'moor, 70,000 angels pray daily, each only once (Bukhari:
+          3207).
+        </p>
+
+        <p>
+          <strong>Four Archangels:</strong> Jibra'eel (revelation), Mika'eel
+          (sustenance/rain), Israfeel (trumpet), Izra'eel (death).
+        </p>
+
+        <p><strong>Key Angelic Groups:</strong></p>
+        <ul style="padding-left: 20px; line-height: 2">
+          <li><strong>Kiraman Katibeen</strong> — Record human deeds</li>
+          <li>
+            <strong>Munkar & Nakeer</strong> — Question the dead in the grave
+          </li>
+          <li><strong>Rizwan</strong> — Guardian of Paradise</li>
+          <li><strong>Malik</strong> — Guardian of Hell</li>
+          <li><strong>Hamilin-e-Arsh</strong> — Bearers of Allah's Throne</li>
+          <li><strong>Zabaniyah</strong> — Angels of punishment</li>
+          <li><strong>Hafizeen</strong> — Guardian angels protecting humans</li>
+          <li>
+            <strong>Sayyaheen</strong> — Wandering angels seeking righteous
+            gatherings
+          </li>
+        </ul>
+
+        <p>
+          <strong>Impact:</strong> Belief in angels instills awe of Allah's
+          greatness and deep gratitude for His divine arrangement of protection
+          and service.
+        </p>
+      </div>
+
+      <div class="card card-gold" style="margin-top: 20px">
+        <h3 style="margin-top: 0; color: var(--gold)">🎓 Activities</h3>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>Study authentic books about angels and expand your knowledge.</li>
+          <li>
+            In groups, research the roles of angels related to the
+            <strong
+              >world, protection, death, the grave, and the Hereafter</strong
+            >. Present your findings in class.
+          </li>
+          <li>Write the attributes of angels in your notebook.</li>
+        </ul>
+      </div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="ch2-risalat.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Previous: Risalat</a
+        >
+        <a
+          href="ch2-kutub.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Next: Heavenly Books →</a
+        >
+      </div>
+    </main>
+
+    <script>
+      setBreadcrumb("Ch 2(C) — Malaika");
+    </script>
+  </body>
+</html>
