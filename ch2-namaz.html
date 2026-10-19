@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salah (Namaz) — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const currentPage = "ch2-namaz";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Salah (Namaz)</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Salah — The Philosophy of Prayer</h1>
+      <p class="page-subtitle">
+        Chapter 2(A) — Ibadaat (Acts of Worship) · Philosophy of Namaz ·
+        Textbook pp. 38–42
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <!-- ==================== LEARNING OUTCOMES ==================== -->
+      <div class="lo-box">
+        <h3>🎯 Learning Outcomes</h3>
+        <p style="margin-bottom: 10px">
+          <em>After studying this lesson, students will be able to:</em>
+        </p>
+        <ol>
+          <li>
+            Understand the
+            <strong>importance, philosophy, and rulings</strong> of Salah.
+          </li>
+          <li>
+            Evaluate the
+            <strong>spiritual, physical, and social effects</strong> of Salah.
+          </li>
+          <li>
+            Achieve
+            <strong>purification of the self (tazkiyah-e-nafs)</strong> through
+            khushu, khuzu, and ikhlas.
+          </li>
+          <li>
+            Recognize the importance of
+            <strong>khushu, khuzu, and ikhlas</strong> in prayer.
+          </li>
+          <li>
+            Observe
+            <strong>congregational prayer (Namaz-e-Ba-Jama'ah)</strong>
+            regularly in practical life.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ==================== IMPORTANCE ==================== -->
+      <h2>⭐ The Importance of Salah</h2>
+
+      <div class="card card-accent">
+        <p>
+          Salah is
+          <strong>the most important pillar of Islam after the Shahadah</strong>
+          of Tawheed and Risalat. It holds a unique place among the commandments
+          of Islam, and the Quran repeatedly commands its establishment:
+        </p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        وَ اَقِیْمُوا الصَّلٰوةَ وَ لَا تَكُوْنُوْا مِنَ الْمُشْرِكِیْنَ
+        <span class="translation"
+          >"And establish prayer and do not be among the polytheists."
+          <span class="verse-ref">Surah Ar-Rum 30:31</span></span
+        >
+      </div>
+
+      <p>The Prophet ﷺ said about the foundational pillars of Islam:</p>
+      <div class="arabic-quote" style="margin: 12px 0">
+        بُنِیَ الْاِسْلَامُ عَلٰى خَمْسٍ
+        <span class="translation"
+          >"Islam is built upon five: the testimony that there is no god but
+          Allah and that Muhammad ﷺ is the Messenger of Allah; establishing
+          Salah; giving Zakat; performing Hajj; and fasting Ramadan."
+          <span class="verse-ref">Sahih Bukhari: 8</span></span
+        >
+      </div>
+
+      <p>
+        The Prophet ﷺ also declared Salah as the pillar of the entire religion:
+      </p>
+      <div class="card card-gold" style="margin: 12px 0">
+        <p style="text-align: center; font-style: italic; margin: 0">
+          "The head of the matter is Islam, and its
+          <strong>pillar (Amood)</strong> is Salah."
+          <span class="verse-ref">Jami' Tirmidhi: 2616</span>
+        </p>
+      </div>
+
+      <div class="key-box">
+        <strong>Universal Obligation:</strong> Salah was obligatory on all
+        previous nations as well. Every Prophet (AS) emphasized Salah to his
+        people. The Prophet Muhammad ﷺ also stressed Salah upon his Ummah,
+        saying that
+        <strong
+          >the first question on the Day of Qiyamah will be about Salah</strong
+        >. <span class="verse-ref">(Sunan Ibn Majah: 1425)</span>
+      </div>
+
+      <div class="card card-accent">
+        <p>
+          The obligation (fardhiyyah) of Salah is proven by both the Quran and
+          Sunnah. Whoever <strong>denies, doubts, or mocks</strong> the
+          obligation of Salah leaves the fold of Islam.
+        </p>
+        <p>
+          The Prophet ﷺ gave a beautiful analogy to encourage the Companions:
+        </p>
+      </div>
+
+      <div class="card card-gold" style="margin: 12px 0">
+        <p style="margin: 0">
+          <em
+            >"What do you think if there is a river in front of your house in
+            which you bathe five times every day — would any dirt remain on his
+            body?"</em
+          >
+          The Companions replied: "No dirt would remain." He ﷺ said:
+          <strong
+            >"This is the example of the five prayers — Allah wipes away sins
+            through them."</strong
+          >
+          <span class="verse-ref">Sahih Muslim: 667</span>
+        </p>
+      </div>
+
+      <div class="key-box">
+        The Prophet ﷺ also instructed: <em>"Pray as you have seen me pray."</em>
+        <span class="verse-ref">(Sahih Bukhari: 6008)</span>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== PHILOSOPHY ==================== -->
+      <h2>🕌 The Philosophy of Salah (فلسفۂ نماز)</h2>
+
+      <div class="card card-accent">
+        <p>
+          The fundamental purpose of Salah is to establish a
+          <strong>strong spiritual connection</strong> between Allah ﷻ and His
+          servant. Salah is
+          <strong
+            >the most effective means of attaining closeness (qurb) to
+            Allah</strong
+          >. The Prophet ﷺ said:
+        </p>
+        <div class="arabic-quote" style="margin: 12px 0">
+          <span class="translation"
+            >"When one of you is in prayer, he is in
+            <strong>private conversation (whispering)</strong> with his Lord."
+            <span class="verse-ref">Sahih Bukhari: 417</span></span
+          >
+        </div>
+      </div>
+
+      <h3>What Praying Five Times a Day Produces</h3>
+      <div class="card card-gold">
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            💗 A deep spiritual bond with Allah ﷻ — producing
+            <strong>love, fear (khawf), and awe (khashyat)</strong> in the
+            heart.
+          </li>
+          <li>
+            🙇 An opportunity to <strong>bow before Allah</strong>, express
+            humility, and acknowledge His greatness.
+          </li>
+          <li>
+            🤲 A constant reminder that
+            <strong>man is in need of Allah</strong>, and his entire life
+            depends on His grace.
+          </li>
+          <li>
+            🕋 Sajdah — a key part of prayer — develops
+            <strong>humility and submission</strong>, and protects one from the
+            arrogance and pride of the self (nafs).
+          </li>
+          <li>
+            🛡️ Salah shields the believer from <strong>sins and evils</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        اِنَّ الصَّلٰوةَ تَنْهٰى عَنِ الْفَحْشَآءِ وَالْمُنْكَرِ
+        <span class="translation"
+          >"Indeed, prayer prevents indecency and evil."
+          <span class="verse-ref">Surah Al-Ankabut 29:45</span></span
+        >
+      </div>
+
+      <div class="key-box">
+        Salah <strong>cleanses the heart</strong>, purifies thoughts and deeds,
+        and inspires a righteous life. By praying five times a day, one is never
+        heedless of Allah's remembrance. Repeatedly standing before Allah with
+        wudu, bowing, and prostrating guarantees obedience, submission, and love
+        — <strong>saving a person from heedlessness (ghaflah) and sin</strong>.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== RULINGS ==================== -->
+      <h2>📋 Rulings of Salah (نماز کے احکامات)</h2>
+
+      <div class="card card-accent">
+        <p>
+          Salah is <strong>obligatory in every condition</strong> — travel,
+          residence, war, peace, prosperity, grief, health, and sickness. It is
+          <strong>never excused</strong>. However, for the convenience of the
+          Ummah, the Prophet ﷺ granted the following concessions:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>Shortening (qasr) in certain unavoidable situations</li>
+          <li>Praying sitting, lying down, or by gestures when ill</li>
+          <li>Tayammum when water is unavailable or in severe sickness</li>
+        </ul>
+      </div>
+
+      <h3>The Five Daily Prayers</h3>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Prayer</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Fajr</strong></td>
+              <td>Pre-dawn</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Zuhr</strong></td>
+              <td>After midday</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Asr</strong></td>
+              <td>Late afternoon</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Maghrib</strong></td>
+              <td>After sunset</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><strong>Isha</strong></td>
+              <td>Night</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Conditions (Shara'it) of Salah</h3>
+      <div class="card card-gold">
+        <p>
+          Wudu is a <strong>prerequisite</strong> — no prayer is valid without
+          it. Other conditions include:
+        </p>
+        <div class="grid-2" style="margin: 12px 0">
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>Purity of the place of prayer</li>
+            <li>Purity of body and clothes</li>
+            <li>
+              Covering of the <span class="def">satr</span> (private parts)
+            </li>
+          </ul>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>Prayer time having entered</li>
+            <li>Facing the <strong>Qibla</strong></li>
+            <li>Making the <strong>niyyah (intention)</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Disliked Acts During Prayer</h3>
+      <div class="card card-accent">
+        <p>
+          The following acts <strong>damage the khushu & khuzu</strong> of
+          prayer and should be avoided:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>❌ Moving the eyes around / looking up at the sky</li>
+          <li>❌ Continuously adjusting clothes</li>
+          <li>❌ Cracking fingers</li>
+          <li>❌ Clearing the throat unnecessarily</li>
+          <li>❌ Fidgeting / excessive movement</li>
+        </ul>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== KHUSHU & KHUZU ==================== -->
+      <h2>💗 Khushu, Khuzu & Ikhlas — The Soul of Prayer</h2>
+
+      <div class="card card-gold">
+        <div class="grid-2" style="margin: 12px 0">
+          <div>
+            <h3 style="margin-top: 0; color: var(--gold)">Khushu (خشوع)</h3>
+            <p>
+              The <strong>outer limbs</strong> bowing before Allah ﷻ with
+              humility and submission.
+            </p>
+          </div>
+          <div>
+            <h3 style="margin-top: 0; color: var(--gold)">Khuzu (خضوع)</h3>
+            <p>
+              The <strong>heart and thoughts</strong> turning fully towards
+              Allah ﷻ.
+            </p>
+          </div>
+        </div>
+        <div class="key-box">
+          <strong>Khushu & Khuzu together are called the SOUL of Salah.</strong>
+        </div>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        قَدْ اَفْلَحَ الْمُؤْمِنُوْنَ ۝ الَّذِیْنَ هُمْ فِیْ صَلَاتِهِمْ
+        خٰشِعُوْنَ
+        <span class="translation"
+          >"Certainly, the believers have succeeded — those who are humble
+          (khashi'un) in their prayers."
+          <span class="verse-ref">Surah Al-Mu'minoon 23:1-2</span></span
+        >
+      </div>
+
+      <p>The Prophet's ﷺ own khushu is described in Hadith:</p>
+      <div class="card card-accent" style="margin: 12px 0">
+        <p style="margin: 0">
+          <em
+            >A sound used to come from the Prophet's ﷺ chest due to weeping,
+            like the sound of a grinding stone.</em
+          >
+          <span class="verse-ref">Sunan Abi Dawood: 904</span>
+        </p>
+      </div>
+
+      <p>Hazrat Uthman Ghani (RA) narrated:</p>
+      <div class="card card-gold" style="margin: 12px 0">
+        <p style="margin: 0">
+          I heard the Messenger of Allah ﷺ say:
+          <em
+            >"Any Muslim who, when the time of a fardh prayer comes, performs
+            wudu well and prays with khushu and khuzu — that prayer becomes an
+            <strong>atonement (kaffarah) for all his previous sins</strong
+            >."</em
+          >
+          <span class="verse-ref">Sahih Muslim: 228</span>
+        </p>
+      </div>
+
+      <h3>Ikhlas — Sincerity in Prayer</h3>
+      <div class="card card-accent">
+        <p>
+          Alongside khushu & khuzu, <strong>ikhlas (sincerity)</strong> is
+          emphasized, and showing off (<em>riya</em>) is strictly forbidden.
+        </p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0">
+        فَاعْبُدِ اللهَ مُخْلِصًا لَّهُ الدِّیْنَ
+        <span class="translation"
+          >"So worship Allah, making the religion sincerely for Him."
+          <span class="verse-ref">Surah Az-Zumar 39:2</span></span
+        >
+      </div>
+
+      <div class="key-box">
+        The Prophet ﷺ warned:
+        <em
+          >"Whoever prays to show off has committed <strong>shirk</strong>."</em
+        >
+        <span class="verse-ref">(Musnad Ahmad: 17140)</span>
+      </div>
+
+      <div class="card card-gold">
+        <p style="margin: 0">
+          <strong>The philosophy of establishing Salah</strong> is precisely
+          this: that prayer be offered with khushu, khuzu, and ikhlas —
+          observing all conditions and etiquette, and avoiding anything that
+          destroys its reward.
+        </p>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== JAMA'AH ==================== -->
+      <h2>👥 Namaz-e-Ba-Jama'ah (Congregational Prayer)</h2>
+
+      <div class="card card-accent">
+        <p>
+          Along with establishing Salah, both the Quran and Hadith emphasize
+          praying <strong>in congregation</strong>:
+        </p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        وَ اَقِیْمُوا الصَّلٰوةَ وَ اٰتُوا الزَّكٰوةَ وَ ارْكَعُوْا مَعَ
+        الرّٰكِعِیْنَ
+        <span class="translation"
+          >"And establish prayer, give Zakat, and
+          <strong>bow with those who bow</strong>."
+          <span class="verse-ref">Surah Al-Baqarah 2:43</span></span
+        >
+      </div>
+
+      <h3>Rewards of Congregational Prayer</h3>
+      <div class="grid-2" style="margin: 16px 0">
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 2.2rem">🌟</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">25×</h3>
+          <p style="margin: 4px 0 0">
+            Reward equal to <strong>25 individual prayers</strong> <br /><span
+              class="verse-ref"
+              >Sahih Muslim: 649</span
+            >
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 2.2rem">🌟</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">27×</h3>
+          <p style="margin: 4px 0 0">
+            Reward equal to <strong>27 individual prayers</strong> <br /><span
+              class="verse-ref"
+              >Sahih Bukhari: 645</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="key-box">
+        <strong>Why Five Daily Adhans?</strong> The call to prayer five times a
+        day draws attention to the fact that Salah should be offered in
+        congregation. Praying in jama'ah establishes an
+        <strong
+          >atmosphere of discipline, trains people in obedience to laws</strong
+        >, announces the revival of Islam's social system, and brings to life
+        the concept of <strong>Islamic civilizational beauty</strong>.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== BENEFITS ==================== -->
+      <h2>🌸 Benefits of Salah</h2>
+
+      <p>
+        Offering Salah with full etiquette brings countless
+        <strong>spiritual, physical, and social</strong> benefits:
+      </p>
+
+      <div class="grid-2" style="margin: 16px 0">
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            🕊️ Spiritual Benefits
+          </h3>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>Obedience to Allah's command</li>
+            <li>Permanent connection with Allah ﷻ</li>
+            <li>Peace & tranquility through <em>dhikr</em></li>
+            <li>Preservation of the sense of servitude (<em>bandagi</em>)</li>
+            <li>Allah's pleasure and immense reward</li>
+            <li>Forgiveness of sins</li>
+            <li>Protection from evils</li>
+          </ul>
+        </div>
+
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            💪 Physical Benefits
+          </h3>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>
+              Washing hands, face, and feet five times a day in wudu keeps the
+              body <strong>clean, pure, and fresh</strong>
+            </li>
+            <li>Positive effects on overall health</li>
+            <li>
+              <strong>Ruku and Sujud</strong> have numerous medical benefits
+            </li>
+            <li>
+              In sujud, blood flows easily and abundantly to the vessels of the
+              head → <strong>the brain is refreshed</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Social Benefits of Praying in Jama'ah</h3>
+      <div class="card card-accent">
+        <p>
+          The strong encouragement to pray in congregation is specifically so
+          that these <strong>social and collective benefits</strong> are
+          achieved:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>👑 Spirit of <strong>obedience to the Ameer (leader)</strong></li>
+          <li>❤️ Mutual sympathy, love, and unity (<em>yagangi</em>)</li>
+          <li>
+            🤝 Awareness of other Muslim brothers' circumstances → nurturing
+            sentiments of compassion (<em>gham-gusari</em>)
+          </li>
+          <li>⚖️ Discouragement of social disparity</li>
+          <li>
+            🧎 Standing in <strong>one row</strong> teaches the lesson of
+            <strong>equality (musawat)</strong> and brotherhood
+          </li>
+        </ul>
+      </div>
+
+      <div class="key-box">
+        <strong>Conclusion:</strong> We should establish Salah with khushu &
+        khuzu in the light of Quran and Sunnah, so that we may please Allah ﷻ
+        and His Messenger ﷺ, and succeed in both this world and the Hereafter.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== EXERCISES ==================== -->
+      <h2>📝 Exercises (مشق)</h2>
+
+      <div class="key-box">
+        <strong>Study Tip:</strong> Try answering each question yourself before
+        revealing the answer!
+      </div>
+
+      <h3>Q1. Multiple Choice Questions</h3>
+
+      <div class="card">
+        <p>
+          <strong
+            >(i) After the testimony of Tawheed and Risalat, the most important
+            pillar of Islam is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Salah</li>
+          <li style="padding: 4px 0">(b) Fasting</li>
+          <li style="padding: 4px 0">(c) Hajj</li>
+          <li style="padding: 4px 0">(d) Zakat</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Salah</strong> — the second pillar of Islam after the
+            Shahadah.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(ii) According to the Quran, the act that prevents indecency and
+            evil is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Fasting</li>
+          <li style="padding: 4px 0">(b) Hajj</li>
+          <li style="padding: 4px 0">(c) Umrah</li>
+          <li style="padding: 4px 0">(d) Salah</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (d) Salah</strong> — as stated in Surah Al-Ankabut 29:45.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p><strong>(iii) The pillar (Amood) of the Deen is:</strong></p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Salah</li>
+          <li style="padding: 4px 0">(b) Charity (Sadaqah & Khairaat)</li>
+          <li style="padding: 4px 0">(c) Helping the weak</li>
+          <li style="padding: 4px 0">(d) Respecting elders</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Salah</strong> — as the Prophet ﷺ said: "The pillar
+            of Islam is Salah." (Tirmidhi 2616)
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(iv) In the river-bathing analogy, the Prophet ﷺ
+            encouraged:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) The five daily prayers</li>
+          <li style="padding: 4px 0">(b) Tahajjud prayer</li>
+          <li style="padding: 4px 0">(c) Taraweeh prayer</li>
+          <li style="padding: 4px 0">(d) Funeral prayer</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) The five daily prayers</strong> — just as river water
+            washes dirt, five prayers wash sins. (Muslim 667)
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(v) The spirit of obedience to the Ameer (leader) is produced
+            by:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Offering prayer in congregation</li>
+          <li style="padding: 4px 0">(b) Offering the five daily prayers</li>
+          <li style="padding: 4px 0">(c) Offering prayer on time</li>
+          <li style="padding: 4px 0">(d) Offering nafl prayers</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Offering prayer in congregation</strong> — jama'ah
+            trains the heart in obedience to the Imam/Ameer.
+          </p>
+        </div>
+      </div>
+
+      <h3>Q2. Short Questions</h3>
+
+      <div class="collapsible-header">
+        (i) Briefly describe the importance of Salah.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Salah is the
+          <strong>most important pillar of Islam after the Shahadah</strong>.
+          The Quran repeatedly commands its establishment (Surah Ar-Rum 30:31).
+          The Prophet ﷺ called it the
+          <strong>pillar (Amood) of the Deen</strong> (Tirmidhi 2616), and it is
+          the
+          <strong
+            >first thing a person will be questioned about on the Day of
+            Qiyamah</strong
+          >
+          (Ibn Majah 1425). It was obligatory on every previous nation. Denying,
+          doubting, or mocking Salah takes one out of Islam. The five daily
+          prayers wash away sins just as bathing in a river five times washes
+          away dirt (Muslim 667).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (ii) What effects does congregational prayer have on practical life?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Praying in jama'ah has powerful social effects: it builds the
+          <strong>spirit of obedience to the Ameer</strong>, cultivates
+          <strong>mutual love, sympathy, and unity</strong>, creates awareness
+          of fellow Muslims' circumstances (fostering compassion), discourages
+          social disparity, and — by standing shoulder to shoulder in one row —
+          teaches the lesson of <strong>equality and brotherhood</strong>. It
+          establishes an atmosphere of discipline and trains people in obedience
+          to law. Its reward is <strong>27 times</strong> that of individual
+          prayer (Bukhari 645).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iii) What is meant by Khushu and Khuzu in Salah?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Khushu</strong> means the bowing of the
+          <em>outer limbs</em> before Allah ﷻ with humility and submission.
+          <strong>Khuzu</strong> means the <em>heart and thoughts</em> turning
+          fully towards Allah ﷻ. Together, khushu and khuzu are called the
+          <strong>soul of Salah</strong>. Allah ﷻ praises such believers:
+          <em
+            >"Certainly, the believers have succeeded — those who are humble in
+            their prayers"</em
+          >
+          (Surah Al-Mu'minoon 23:1-2). A prayer offered with khushu and khuzu
+          becomes an atonement for all previous sins (Muslim 228).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iv) Write any two conditions of Salah. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>1. Wudu (ablution):</strong> No prayer is valid without wudu.
+          In severe illness or absence of water, <em>tayammum</em> is permitted.
+        </p>
+        <p>
+          <strong>2. Facing the Qibla:</strong> One must face the Ka'bah while
+          praying. Other conditions include purity of place, body, and clothes;
+          covering the satr; the prayer time having entered; and making the
+          niyyah (intention).
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (v) Write any two benefits of Salah. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>1. Spiritual Benefit:</strong> Salah establishes a strong,
+          permanent connection with Allah ﷻ, grants peace of heart through
+          <em>dhikr</em>, forgives sins, and protects a person from evils (Surah
+          Al-Ankabut 29:45).
+        </p>
+        <p>
+          <strong>2. Physical Benefit:</strong> Performing wudu five times a day
+          keeps the body clean and fresh. The postures of ruku and sujud have
+          medical benefits — in sujud, blood flows easily to the brain,
+          refreshing it.
+        </p>
+      </div>
+
+      <h3>Q3. Detailed Question</h3>
+      <div class="collapsible-header">
+        Write a comprehensive note on the importance of Salah and its benefits &
+        effects.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Introduction:</strong> Salah is the
+          <strong>second pillar of Islam</strong>, holding a unique place among
+          the commands of Allah ﷻ. It was obligatory on every previous nation
+          and is repeatedly commanded in the Quran (Surah Ar-Rum 30:31).
+        </p>
+
+        <p>
+          <strong>Status in Islam:</strong> The Prophet ﷺ called Salah the
+          <strong>pillar (Amood) of the Deen</strong> (Tirmidhi 2616). The first
+          question on the Day of Qiyamah will be about Salah (Ibn Majah 1425).
+          Denying, doubting, or mocking it takes one out of Islam.
+        </p>
+
+        <p>
+          <strong>Philosophy:</strong> The fundamental purpose of Salah is to
+          establish a <strong>strong spiritual connection with Allah ﷻ</strong>.
+          In Salah, the servant is in private whisper with his Lord (Bukhari
+          417). It develops love, fear, and awe of Allah, humility through
+          sujud, and the realization that man depends entirely on Allah's grace.
+        </p>
+
+        <p>
+          <strong>Khushu, Khuzu & Ikhlas:</strong> The soul of Salah is
+          <em>khushu</em> (outer humility), <em>khuzu</em> (inner focus), and
+          <em>ikhlas</em> (sincerity). Praying to show off is
+          <strong>shirk</strong> (Musnad Ahmad 17140).
+        </p>
+
+        <p>
+          <strong>Jama'ah:</strong> The Quran commands "bow with those who bow"
+          (2:43). Jama'ah prayer carries 27 times the reward of individual
+          prayer (Bukhari 645). It builds discipline, obedience, brotherhood,
+          and equality.
+        </p>
+
+        <p>
+          <strong>Benefits:</strong>
+        </p>
+        <ul style="padding-left: 20px; line-height: 2">
+          <li>
+            <strong>Spiritual:</strong> connection with Allah, peace through
+            dhikr, forgiveness of sins, protection from evil (Surah Al-Ankabut
+            29:45).
+          </li>
+          <li>
+            <strong>Physical:</strong> cleanliness through wudu, health benefits
+            of ruku and sujud (blood flow to the brain).
+          </li>
+          <li>
+            <strong>Social:</strong> obedience to the Ameer, love and sympathy
+            among Muslims, equality in rows, revival of Islamic society.
+          </li>
+        </ul>
+
+        <div class="key-box" style="margin-top: 12px">
+          A Muslim must establish Salah with khushu, khuzu, and ikhlas — in
+          congregation whenever possible — to please Allah ﷻ and His Messenger
+          ﷺ, and succeed in this world and the Hereafter.
+        </div>
+      </div>
+
+      <div class="card card-gold" style="margin-top: 20px">
+        <h3 style="margin-top: 0; color: var(--gold)">🎓 Activities</h3>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            Students should learn the rulings and issues of Salah through
+            authentic books and from their elders.
+          </li>
+          <li>
+            Research ways to develop khushu & khuzu in Salah and write them in
+            your notebook.
+          </li>
+          <li>
+            Find additional wisdoms and virtues of Salah beyond those mentioned
+            in the lesson.
+          </li>
+          <li>
+            Arrange a speech on the topic:
+            <em>"How does Salah help in preventing indecency and evil?"</em>
+          </li>
+          <li>
+            Through praying in jama'ah, which of the following qualities and
+            effects have you felt? Mark them in the table:
+            <div class="card" style="margin-top: 10px; padding: 0">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Punctuality</th>
+                    <th>Discipline</th>
+                    <th>Khushu & Khuzu</th>
+                    <th>Humility</th>
+                    <th>Fear of Allah ﷻ</th>
+                    <th>Equality</th>
+                    <th>Physical Agility</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>☐</td>
+                    <td>☐</td>
+                    <td>☐</td>
+                    <td>☐</td>
+                    <td>☐</td>
+                    <td>☐</td>
+                    <td>☐</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="ch2-akhirat.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Previous: Akhirat</a
+        >
+        <a
+          href="ch2-zakat.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Next: Zakat →</a
+        >
+      </div>
+    </main>
+
+    <script>
+      setBreadcrumb("Ch 2(A) — Salah (Namaz)");
+    </script>
+  </body>
+</html>

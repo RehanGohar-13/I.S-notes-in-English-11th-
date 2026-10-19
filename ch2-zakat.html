@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakat & Sadaqat — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const currentPage = "ch2-zakat";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Zakat & Sadaqat</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Zakat & Sadaqat — The Philosophy of Charity</h1>
+      <p class="page-subtitle">
+        Chapter 2(B) — Ibadaat (Acts of Worship) · Philosophy of Zakat &
+        Charitable Giving · Textbook pp. 43–46
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <!-- ==================== LEARNING OUTCOMES ==================== -->
+      <div class="lo-box">
+        <h3>🎯 Learning Outcomes</h3>
+        <p style="margin-bottom: 10px">
+          <em>After studying this lesson, students will be able to:</em>
+        </p>
+        <ol>
+          <li>Learn the <strong>obligation and wisdoms</strong> of Zakat.</li>
+          <li>Understand <strong>Ushr and Khums</strong>.</li>
+          <li>
+            Comprehend the <strong>rulings, issues, etiquettes</strong> of Zakat
+            and the responsibilities of <strong>Aamileen-e-Zakat</strong>.
+          </li>
+          <li>
+            Become aware of the <strong>wisdoms and virtues</strong> of Zakat,
+            Ushr, and Khums.
+          </li>
+          <li>
+            Evaluate the <strong>effects of Zakat and charity</strong> on the
+            Islamic economic system.
+          </li>
+          <li>
+            If one becomes <strong>Sahib-e-Nisab</strong>, calculate Zakat with
+            the help of family, elders, or scholars.
+          </li>
+          <li>
+            Become a means of
+            <strong>delivering Zakat and charity to the deserving</strong>.
+          </li>
+          <li>
+            Enthusiastically participate in
+            <strong>charitable and public-welfare works</strong>.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ==================== MEANING ==================== -->
+      <h2>📖 The Meaning of Zakat</h2>
+
+      <div class="card card-accent">
+        <p>
+          The literal meaning of <span class="def">Zakat</span> is
+          <strong>"to be pure, to grow, and to increase."</strong>
+        </p>
+        <p>
+          In Islamic terminology, Zakat is a
+          <strong>financial act of worship</strong> that is obligatory once a
+          year, at the rate of <strong>2.5%</strong>, on every sane, mature,
+          free Muslim who is <span class="def">Sahib-e-Nisab</span>.
+        </p>
+        <p>
+          A Muslim who pays Zakat <strong>purifies his wealth</strong> according
+          to Allah's command, and his
+          <strong>heart is purified from the greed of wealth</strong>.
+        </p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        خُذْ مِنْ اَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِمْ
+        <span class="translation"
+          >"Take from their wealth a charity by which you purify them and cause
+          them to increase (in righteousness)."
+          <span class="verse-ref">Surah At-Tawbah 9:103</span></span
+        >
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== OBLIGATION ==================== -->
+      <h2>⚖️ The Obligation of Zakat</h2>
+
+      <div class="card card-gold">
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            Zakat became obligatory on <strong>1st Ramadan, 2 AH</strong>.
+          </li>
+          <li>
+            The complete Zakat system was implemented in <strong>9 AH</strong>,
+            after the Conquest of Makkah.
+          </li>
+          <li>
+            Zakat is a <strong>fardh (obligatory) command</strong> — its denier
+            leaves the fold of Islam.
+          </li>
+          <li>
+            After the demise of the Prophet ﷺ, some Arab tribes refused to pay
+            Zakat to the Muslim government. The
+            <strong>Companions (RA) waged Jihad</strong> against them and
+            enforced this Islamic command.
+          </li>
+        </ul>
+      </div>
+
+      <h3>Conditions for Zakat Being Obligatory</h3>
+      <div class="card card-accent">
+        <p>
+          For Zakat to be binding on a person, these conditions must all be met:
+        </p>
+        <div class="grid-2" style="margin: 12px 0">
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>Being <strong>sane (Aaqil)</strong></li>
+            <li>Being <strong>mature (Baligh)</strong></li>
+            <li>Being a <strong>free Muslim</strong></li>
+          </ul>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>Being <strong>Sahib-e-Nisab</strong></li>
+            <li>
+              A full <strong>lunar year (Qamari saal)</strong> having passed
+            </li>
+            <li>
+              Wealth being <strong>surplus</strong> to debts and basic
+              necessities (household items, food, drink, clothing)
+            </li>
+          </ul>
+        </div>
+        <div class="key-box">
+          <strong>Important Rule:</strong> If the Nisab is complete at the
+          <strong>start and end</strong> of the year, Zakat is obligatory. A dip
+          in wealth <em>during</em> the year makes no difference. Zakat will be
+          due on <strong>all wealth present at year-end</strong>.
+        </div>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== NISAB ==================== -->
+      <h2>💰 Nisab of Zakat (The Threshold)</h2>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Type of Wealth</th>
+              <th>Nisab</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Silver</strong></td>
+              <td>52.5 tola</td>
+              <td>2.5% (1/40)</td>
+            </tr>
+            <tr>
+              <td><strong>Gold</strong></td>
+              <td>7.5 tola</td>
+              <td>2.5% (1/40)</td>
+            </tr>
+            <tr>
+              <td><strong>Cash, trade goods, surplus items</strong></td>
+              <td>Value of either silver or gold nisab</td>
+              <td>2.5%</td>
+            </tr>
+            <tr>
+              <td><strong>Camels</strong></td>
+              <td>5 camels</td>
+              <td>Prescribed rate</td>
+            </tr>
+            <tr>
+              <td><strong>Cows & Buffaloes</strong></td>
+              <td>30</td>
+              <td>Prescribed rate</td>
+            </tr>
+            <tr>
+              <td><strong>Goats</strong></td>
+              <td>40</td>
+              <td>Prescribed rate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-box">
+        <strong>Animal Zakat:</strong> This applies to animals
+        <strong>kept for breeding</strong> and that
+        <strong>graze in open pastures for most of the year</strong>. Animals
+        bought for sale are counted as <em>trade goods (mal-e-tijarah)</em> and
+        follow trade-goods rulings.
+      </div>
+
+      <div class="card card-gold">
+        <p>
+          <strong>Mal-e-Tijarah (trade goods):</strong> Any merchandise
+          purchased with the intention of resale carries Zakat.
+        </p>
+        <p>
+          A Sahib-e-Nisab Muslim should
+          <strong>calculate all assets</strong> annually and pay Zakat with full
+          responsibility.
+        </p>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== MASARIF ==================== -->
+      <h2>🎯 Masarif-e-Zakat (Where Zakat is Spent)</h2>
+
+      <div class="card card-accent">
+        <p>
+          Along with commanding Zakat, Islam has also guided us to the
+          <strong>eight categories</strong> on whom Zakat may be spent:
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin: 16px 0">
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            1️⃣ Fuqara (The Poor)
+          </h3>
+          <p>Those with very little wealth, below Nisab.</p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            2️⃣ Masakeen (The Needy)
+          </h3>
+          <p>Those with nothing at all, in extreme need.</p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">3️⃣ Aamileen</h3>
+          <p>
+            Those employed to <strong>collect and distribute</strong> Zakat.
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">4️⃣ Taleef-e-Qulub</h3>
+          <p>Winning hearts towards Islam.</p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">5️⃣ Freeing Slaves</h3>
+          <p>Freeing those in bondage.</p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            6️⃣ Debtors (Gharimeen)
+          </h3>
+          <p>Paying off the debts of those unable to repay.</p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">7️⃣ Fi Sabilillah</h3>
+          <p>
+            In the path of Allah — matters that
+            <strong>promote the Deen</strong>.
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">
+            8️⃣ Musafir (Traveller)
+          </h3>
+          <p>A traveller stranded without means, even if wealthy at home.</p>
+        </div>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== USHR ==================== -->
+      <h2>🌾 Ushr (The Tenth)</h2>
+
+      <div class="card card-accent">
+        <p>
+          The literal meaning of <span class="def">Ushr</span> is
+          <strong>"one-tenth" (10%)</strong>. In Islamic terminology, it is the
+          <strong>Zakat of agricultural produce</strong>.
+        </p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0; font-size: 1.15rem">
+        وَاٰتُوْا حَقَّهٗ يَوْمَ حَصَادِهٖ
+        <span class="translation"
+          >"And give its due (right) on the day of its harvest."
+          <span class="verse-ref">Surah Al-An'am 6:141</span></span
+        >
+      </div>
+
+      <h3>Rates of Ushr</h3>
+      <div class="grid-2" style="margin: 16px 0">
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 2rem">🌧️</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">10% — Full Ushr</h3>
+          <p style="margin: 4px 0 0">
+            Land irrigated by <strong>rain or natural springs</strong><br />
+            <em>(One-tenth of produce)</em>
+          </p>
+        </div>
+        <div class="card card-gold" style="margin: 0; text-align: center">
+          <span style="font-size: 2rem">🚰</span>
+          <h3 style="margin-top: 6px; color: var(--gold)">5% — Half Ushr</h3>
+          <p style="margin: 4px 0 0">
+            Land irrigated by <strong>well water or artificial means</strong
+            ><br />
+            <em>(One-twentieth of produce)</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="key-box">
+        <strong>Important Distinctions:</strong>
+        <ul style="padding-left: 20px; line-height: 2; margin-top: 6px">
+          <li>Paying <strong>government tax does NOT fulfill Ushr</strong>.</li>
+          <li>
+            Zakat is on <strong>wealth</strong>; Ushr is on
+            <strong>land produce</strong>.
+          </li>
+          <li>
+            Zakat requires a <strong>lunar year</strong> to pass; Ushr does
+            <strong>not</strong>.
+          </li>
+          <li>
+            If a field produces <strong>two or more harvests in a year</strong>,
+            Ushr is due on <strong>every harvest</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== KHUMS ==================== -->
+      <h2>⚔️ Khums (The Fifth)</h2>
+
+      <div class="card card-accent">
+        <p>
+          <span class="def">Khums</span> means
+          <strong>one-fifth (1/5) of wealth</strong>. Specifically, it refers to
+          one-fifth of <span class="def">Mal-e-Ghanimah</span> — wealth acquired
+          from the enemies of Islam during battle.
+        </p>
+        <p>This one-fifth share is designated for:</p>
+      </div>
+
+      <div class="arabic-quote" style="margin: 12px 0">
+        <span class="translation"
+          >"And know that whatever you obtain as spoils of war — indeed,
+          <strong
+            >one-fifth of it is for Allah, for the Messenger ﷺ, for his close
+            relatives, and for the orphans, the needy, and the traveller</strong
+          >." <span class="verse-ref">Surah Al-Anfal 8:41</span></span
+        >
+      </div>
+
+      <div class="card card-gold">
+        <h3 style="margin-top: 0; color: var(--gold)">The 6 Shares of Khums</h3>
+        <ol style="padding-left: 20px; line-height: 2">
+          <li>Allah ﷻ</li>
+          <li>Rasul ﷺ</li>
+          <li>Relatives of the Rasul ﷺ</li>
+          <li>Orphans (Yatama)</li>
+          <li>The Needy (Masakeen)</li>
+          <li>Travellers (Ibn-us-Sabeel)</li>
+        </ol>
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== AAMILEEN ==================== -->
+      <h2>🤝 Responsibility of Aamileen-e-Zakat</h2>
+
+      <div class="card card-accent">
+        <p>
+          Those who undertake the task of
+          <strong>collecting Zakat and distributing it to the deserving</strong>
+          must perform this duty with the
+          <strong>utmost honesty (diyanat-dari)</strong>.
+        </p>
+        <p>
+          <strong
+            >Betrayal in collective wealth is an extremely grave crime.</strong
+          >
+        </p>
+      </div>
+
+      <div class="card card-gold" style="margin: 12px 0">
+        <p style="margin: 0; font-style: italic">
+          The Messenger of Allah ﷺ said:
+          <em
+            >"Any person whom Allah has given responsibility over Muslims, and
+            who dies while being <strong>treacherous and deceitful</strong> in
+            that responsibility — Allah will
+            <strong>forbid Jannah upon him</strong>."</em
+          >
+          <span class="verse-ref">Sahih Bukhari: 7151</span>
+        </p>
+      </div>
+
+      <div class="key-box">
+        <strong>Recommendation:</strong> Rather than distributing Zakat
+        individually, Muslims of means should arrange to
+        <strong
+          >collect Zakat at the community (muhalla) and government level</strong
+        >
+        and then distribute it among the proper categories of recipients.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== ECONOMIC IMPORTANCE ==================== -->
+      <h2>📊 Importance of Zakat in Islam's Economic System</h2>
+
+      <div class="card card-accent">
+        <p>
+          Zakat holds
+          <strong
+            >the same status in the Islamic economic system as the soul holds in
+            the human body</strong
+          >. Its effects transform both individuals and society:
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin: 16px 0">
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">🌍 Societal Effects</h3>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>End of <strong>poverty & unemployment</strong></li>
+            <li>
+              Formation of a <strong>welfare society (falahi mu'ashra)</strong>
+            </li>
+            <li>
+              <strong>Circulation of wealth</strong> — not confined to a few
+              hands
+            </li>
+            <li>Basic needs of all are met</li>
+            <li>Reduction in <strong>crime and oppression</strong></li>
+            <li>End of <strong>begging (gada-gari)</strong></li>
+            <li>Elimination of the <strong>class division</strong></li>
+          </ul>
+        </div>
+
+        <div class="card card-gold" style="margin: 0">
+          <h3 style="margin-top: 0; color: var(--gold)">💗 Personal Effects</h3>
+          <ul style="padding-left: 18px; line-height: 2">
+            <li>The remaining wealth becomes <strong>purified</strong></li>
+            <li>
+              Freedom from inner diseases like
+              <strong>miserliness (bukhl)</strong>
+            </li>
+            <li><strong>Barakah</strong> in the wealth of the rich</li>
+            <li>Removal of <strong>sicknesses and calamities</strong></li>
+            <li>Welfare of the poor and provision of life's essentials</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="key-box">
+        <strong>Conclusion:</strong> If the system of
+        <strong>Zakat, Sadaqat, Ushr, and Khums</strong> were properly
+        implemented, <strong>poverty could be completely eradicated</strong>.
+        Spending in Allah's path brings barakah to the wealth of the rich,
+        removes diseases and calamities, and secures the welfare of the poor.
+      </div>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- ==================== EXERCISES ==================== -->
+      <h2>📝 Exercises (مشق)</h2>
+
+      <div class="key-box">
+        <strong>Study Tip:</strong> Try answering each question yourself before
+        revealing the answer!
+      </div>
+
+      <h3>Q1. Multiple Choice Questions</h3>
+
+      <div class="card">
+        <p>
+          <strong
+            >(i) According to the Quran, the purpose of the obligation of Zakat
+            is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Purification</li>
+          <li style="padding: 4px 0">(b) Circulation of wealth</li>
+          <li style="padding: 4px 0">(c) Ending poverty</li>
+          <li style="padding: 4px 0">(d) Ending hatreds</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Purification</strong> — as stated in Surah At-Tawbah
+            9:103:
+            <em
+              >"Take from their wealth a charity by which you purify them…"</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(ii) Regarding the deniers of Zakat, the Companions (RA) took the
+            action of:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Jihad</li>
+          <li style="padding: 4px 0">(b) Exile</li>
+          <li style="padding: 4px 0">(c) Imprisonment</li>
+          <li style="padding: 4px 0">(d) Boycott</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Jihad</strong> — after the Prophet's ﷺ demise,
+            Sayyiduna Abu Bakr (RA) and the Companions waged Jihad against the
+            tribes who refused to pay Zakat.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(iii) The rate of Ushr on land irrigated by artificial means
+            is:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) 2.5%</li>
+          <li style="padding: 4px 0">(b) 5%</li>
+          <li style="padding: 4px 0">(c) 7%</li>
+          <li style="padding: 4px 0">(d) 10%</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (b) 5%</strong> — half Ushr (one-twentieth of produce) is
+            due on land watered by wells or artificial irrigation.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong
+            >(iv) The share of Allah ﷻ, His Messenger ﷺ, and Ahl-e-Bait (RA) in
+            Mal-e-Ghanimah is called:</strong
+          >
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Ushr</li>
+          <li style="padding: 4px 0">(b) Khums</li>
+          <li style="padding: 4px 0">(c) Sadaqah-e-Fitr</li>
+          <li style="padding: 4px 0">(d) Jizya</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (b) Khums</strong> — the one-fifth of spoils of war as
+            described in Surah Al-Anfal 8:41.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          <strong>(v) By paying Zakat, what is eliminated from society:</strong>
+        </p>
+        <ul style="list-style: none; padding-left: 0">
+          <li style="padding: 4px 0">(a) Poverty</li>
+          <li style="padding: 4px 0">(b) Mistreatment</li>
+          <li style="padding: 4px 0">(c) Mismanagement</li>
+          <li style="padding: 4px 0">(d) Extravagance</li>
+        </ul>
+        <div class="collapsible-header" style="margin-top: 10px">
+          Show Answer <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <p>
+            <strong>✅ (a) Poverty</strong> — if the Zakat system is properly
+            implemented, poverty can be completely eradicated.
+          </p>
+        </div>
+      </div>
+
+      <h3>Q2. Short Questions</h3>
+
+      <div class="collapsible-header">
+        (i) Write any four Masarif-e-Zakat. <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>Any four of the eight categories where Zakat may be spent:</p>
+        <ol style="padding-left: 20px; line-height: 2">
+          <li><strong>Fuqara</strong> — the poor</li>
+          <li><strong>Masakeen</strong> — the needy</li>
+          <li>
+            <strong>Aamileen</strong> — those employed to collect & distribute
+            Zakat
+          </li>
+          <li>
+            <strong>Taleef-e-Qulub</strong> — winning hearts towards Islam
+          </li>
+          <li>
+            <strong>Fi Sabilillah</strong> — in the path of Allah (promoting the
+            Deen)
+          </li>
+          <li><strong>Musafir</strong> — stranded travellers</li>
+        </ol>
+      </div>
+
+      <div class="collapsible-header">
+        (ii) Write the Nisab of Zakat on gold and silver.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p><strong>Gold:</strong> 7.5 tola (approximately 87.48 grams).</p>
+        <p><strong>Silver:</strong> 52.5 tola (approximately 612.36 grams).</p>
+        <p>
+          On both, the rate of Zakat is <strong>2.5%</strong> (one-fortieth)
+          once the wealth has been held for a complete lunar year.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iii) Describe the responsibilities of the Aamileen-e-Zakat.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Aamileen-e-Zakat are those who undertake the duty of
+          <strong>collecting Zakat and distributing it to the deserving</strong
+          >. They must perform this duty with the
+          <strong>utmost honesty (diyanat-dari)</strong>, because betrayal in
+          collective wealth is an extremely grave crime.
+        </p>
+        <p>
+          The Prophet ﷺ warned:
+          <em
+            >"Any person whom Allah has given responsibility over Muslims, and
+            who dies while being treacherous in that responsibility — Allah will
+            forbid Jannah upon him."</em
+          >
+          <span class="verse-ref">(Sahih Bukhari: 7151)</span>
+        </p>
+        <p>
+          Hence Zakat should be collected and distributed with full
+          transparency, preferably at the
+          <strong>community or government level</strong>.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iv) How is Islam's system of Zakat a guarantor of ending the class
+        system?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          The Zakat system ensures the <strong>circulation of wealth</strong> so
+          that it does not stay confined to the hands of a few. By annually
+          transferring 2.5% of surplus wealth from the rich to the eight
+          categories of recipients — particularly the poor and the needy — the
+          <strong>gap between classes narrows significantly</strong>.
+        </p>
+        <p>
+          Basic needs of the deprived are fulfilled, poverty and unemployment
+          decrease, begging ends, and a
+          <strong>welfare society (falahi mu'ashra)</strong> is formed. This
+          eliminates the social and economic distinction between the elite and
+          the masses, establishing the Islamic principle of brotherhood and
+          equality.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (v) If the price of 10 tola of gold is 30 lakh, how much Zakat will be
+        due on it?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Calculation:</strong>
+        </p>
+        <ul style="padding-left: 20px; line-height: 2">
+          <li>Total value = Rs. 30,00,000 (30 lakh)</li>
+          <li>Zakat rate = 2.5% (1/40)</li>
+          <li>
+            Zakat due = 30,00,000 × 2.5 ÷ 100 = <strong>Rs. 75,000</strong>
+          </li>
+        </ul>
+        <p>
+          ✅ <strong>Zakat payable = Rs. 75,000</strong> (seventy-five thousand
+          rupees).
+        </p>
+        <p>
+          <em>Note:</em> Since 10 tola of gold is well above the 7.5 tola Nisab,
+          Zakat is fully due.
+        </p>
+      </div>
+
+      <h3>Q3. Detailed Question</h3>
+      <div class="collapsible-header">
+        Write a comprehensive note on the rulings, issues, and social effects of
+        Zakat.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Introduction:</strong> Zakat literally means
+          <em>"purity, growth, and increase."</em> Islamically, it is a
+          <strong>financial act of worship</strong> obligatory at the rate of
+          2.5% per year on every sane, mature, free Muslim who is Sahib-e-Nisab.
+          Allah ﷻ commands:
+          <em>"Take from their wealth a charity by which you purify them…"</em>
+          (Surah At-Tawbah 9:103).
+        </p>
+
+        <p>
+          <strong>Obligation:</strong> Zakat became obligatory on
+          <strong>1st Ramadan 2 AH</strong> and the complete system was
+          implemented in 9 AH. It is a fardh command; its denier leaves the fold
+          of Islam. The Companions (RA) waged Jihad against the tribes who
+          refused it after the Prophet's ﷺ demise.
+        </p>
+
+        <p>
+          <strong>Nisab:</strong> 7.5 tola of gold, 52.5 tola of silver, or
+          their cash equivalent — along with trade goods and surplus items — all
+          at the rate of <strong>2.5%</strong>. Animal nisab is 5 camels, 30
+          cows/buffaloes, 40 goats (grazing & breeding). The nisab must be
+          present at the <strong>beginning and end of the lunar year</strong>.
+        </p>
+
+        <p>
+          <strong>8 Masarif:</strong> Fuqara, Masakeen, Aamileen,
+          Taleef-e-Qulub, freeing slaves, debtors, Fi Sabilillah, and
+          travellers.
+        </p>
+
+        <p>
+          <strong>Related Obligations:</strong>
+        </p>
+        <ul style="padding-left: 20px; line-height: 2">
+          <li>
+            <strong>Ushr</strong> — 10% on naturally-irrigated land, 5% on
+            artificially-irrigated land (Surah Al-An'am 6:141). Payable on every
+            harvest.
+          </li>
+          <li>
+            <strong>Khums</strong> — 1/5 of Mal-e-Ghanimah divided among 6
+            categories (Surah Al-Anfal 8:41).
+          </li>
+        </ul>
+
+        <p>
+          <strong>Aamileen Responsibility:</strong> Collection and distribution
+          must be done with utter honesty. Betrayal is punished with denial of
+          Jannah (Sahih Bukhari 7151).
+        </p>
+
+        <p>
+          <strong>Social & Economic Effects:</strong> Zakat is to Islam's
+          economy what the soul is to the body. It:
+        </p>
+        <ul style="padding-left: 20px; line-height: 2">
+          <li>Ends poverty and unemployment</li>
+          <li>Forms a welfare society</li>
+          <li>Keeps wealth in circulation</li>
+          <li>Reduces crime and oppression</li>
+          <li>Stops begging and class divisions</li>
+          <li>
+            Purifies the wealth of the rich and their hearts from miserliness
+          </li>
+          <li>
+            Brings barakah, removes calamities, and secures the welfare of the
+            poor
+          </li>
+        </ul>
+
+        <div class="key-box" style="margin-top: 12px">
+          If the full system of Zakat, Sadaqat, Ushr, and Khums is properly
+          implemented, poverty can be <strong>completely eradicated</strong> and
+          a just, balanced economic society can be established — exactly as
+          Islam envisions.
+        </div>
+      </div>
+
+      <div class="card card-gold" style="margin-top: 20px">
+        <h3 style="margin-top: 0; color: var(--gold)">🎓 Activities</h3>
+        <ul style="padding-left: 20px; line-height: 2.2">
+          <li>
+            Students should calculate Zakat with the help of their family,
+            elders, or scholars.
+          </li>
+          <li>
+            Write in your notebook additional methods — beyond Zakat — of
+            helping the poor and needy.
+          </li>
+          <li>
+            Research the wisdoms of Zakat and Ushr and share them with your
+            classmates.
+          </li>
+          <li>
+            Research the topic:
+            <em
+              >"How do Zakat and charity help in ending poverty and establishing
+              economic balance?"</em
+            >
+            and arrange a classroom debate on it.
+          </li>
+        </ul>
+      </div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="ch2-namaz.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Previous: Salah (Namaz)</a
+        >
+        <a
+          href="ch2-roza.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Next: Fasting (Roza) →</a
+        >
+      </div>
+    </main>
+
+    <script>
+      setBreadcrumb("Ch 2(B) — Zakat & Sadaqat");
+    </script>
+  </body>
+</html>
