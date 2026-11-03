@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textbook Reader — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .reader-container {
+        background: var(--card-bg);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: var(--shadow);
+      }
+      .reader-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        background: rgba(0, 0, 0, 0.03);
+        padding: 12px 18px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        margin-bottom: 20px;
+      }
+      body.dark-theme .reader-toolbar {
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .reader-btn-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .reader-btn {
+        background: var(--accent);
+        color: #ffffff;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.88rem;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .reader-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+      .reader-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .reader-btn-outline {
+        background: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--border);
+      }
+      .reader-btn-outline:hover {
+        background: var(--border);
+        color: var(--text-color);
+      }
+      .reader-page-indicator {
+        font-size: 0.92rem;
+        color: var(--text-color);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .reader-input {
+        width: 60px;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        color: var(--text-color);
+        padding: 5px 8px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.95rem;
+      }
+      .reader-viewport {
+        position: relative;
+        min-height: 450px;
+        max-height: 880px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        overflow: hidden;
+        padding: 15px;
+      }
+      body.dark-theme .reader-viewport {
+        background: rgba(0, 0, 0, 0.25);
+      }
+      .reader-img {
+        max-width: 100%;
+        max-height: 820px;
+        object-fit: contain;
+        border-radius: 4px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        transition: opacity 0.2s ease-in-out;
+      }
+      .reader-hint {
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-top: 15px;
+      }
+      .reader-hint kbd {
+        background: var(--border);
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.8rem;
+      }
+      .meta-badge-row {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .meta-badge {
+        background: var(--accent);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const currentPage = "reader";
+    </script>
+    <script src="app.js"></script>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumb" id="breadcrumb">
+          Home / <span>Textbook Reader</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>📖 Official Textbook Scan Reader</h1>
+      <p class="page-subtitle">
+        Browse the complete PECTAA Islamiat (Compulsory) Class 11 Textbook (2023
+        Edition) page-by-page
+      </p>
+
+      <div class="arabic-quote">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <span class="translation"
+          >"In the name of Allah, the Most Gracious, the Most Merciful."</span
+        >
+      </div>
+
+      <div class="meta-badge-row">
+        <span class="meta-badge">PECTAA 2023 Curriculum</span>
+        <span class="meta-badge">140 Total Pages</span>
+        <span class="meta-badge">Keyboard Shortcuts Enabled</span>
+      </div>
+
+      <!-- Reader Container -->
+      <div class="reader-container">
+        <div class="reader-toolbar">
+          <div class="reader-btn-group">
+            <button class="reader-btn" id="prevBtn" onclick="changePage(-1)">
+              ◀ Previous
+            </button>
+            <button class="reader-btn" id="nextBtn" onclick="changePage(1)">
+              Next ▶
+            </button>
+          </div>
+
+          <div class="reader-page-indicator">
+            <span>Page</span>
+            <input
+              type="number"
+              id="pageInput"
+              class="reader-input"
+              value="1"
+              min="1"
+              max="140"
+              onchange="jumpToPage(this.value)"
+            />
+            <span>/ <strong id="totalPagesText">140</strong></span>
+          </div>
+
+          <div class="reader-btn-group">
+            <button
+              class="reader-btn reader-btn-outline"
+              onclick="jumpToPage(1)"
+            >
+              ⏮ First
+            </button>
+            <button
+              class="reader-btn reader-btn-outline"
+              onclick="jumpToPage(totalPages)"
+            >
+              Last ⏭
+            </button>
+            <button
+              class="reader-btn reader-btn-outline"
+              onclick="toggleFullscreen()"
+            >
+              ⛶ Fullscreen
+            </button>
+          </div>
+        </div>
+
+        <div class="reader-viewport" id="viewport">
+          <img
+            id="bookScanImg"
+            class="reader-img"
+            src="scans/page-001.png"
+            alt="Textbook Page Scan"
+            onerror="handleImageError(this)"
+          />
+        </div>
+
+        <p class="reader-hint">
+          💡 Use <kbd>◀</kbd> and <kbd>▶</kbd> arrow keys on your keyboard to
+          turn pages. Click <strong>⛶ Fullscreen</strong> for immersive reading.
+        </p>
+      </div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="index.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Return to Dashboard</a
+        >
+        <a
+          href="ch1a.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Start Chapter 1 →</a
+        >
+      </div>
+    </main>
+
+    <!-- Page Specific Script -->
+    <script>
+      const totalPages = 140;
+      const scanFolder = "scans";
+      const scanPrefix = "page-";
+      const scanExtension = "png";
+      const padLength = 3;
+
+      let readerPage = 1;
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const pageParam = parseInt(urlParams.get("page"));
+      if (!isNaN(pageParam) && pageParam >= 1 && pageParam <= totalPages) {
+        readerPage = pageParam;
+      }
+
+      document.getElementById("totalPagesText").innerText = totalPages;
+      document.getElementById("pageInput").max = totalPages;
+
+      function updateViewer() {
+        const img = document.getElementById("bookScanImg");
+        const pageInput = document.getElementById("pageInput");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        const pageFormatted = String(readerPage).padStart(padLength, "0");
+        img.style.opacity = "0.3";
+
+        setTimeout(() => {
+          img.src = `${scanFolder}/${scanPrefix}${pageFormatted}.${scanExtension}`;
+          img.style.opacity = "1";
+        }, 120);
+
+        pageInput.value = readerPage;
+        prevBtn.disabled = readerPage === 1;
+        nextBtn.disabled = readerPage === totalPages;
+
+        const newUrl =
+          window.location.protocol +
+          "//" +
+          window.location.host +
+          window.location.pathname +
+          "?page=" +
+          readerPage;
+        window.history.replaceState({ path: newUrl }, "", newUrl);
+      }
+
+      function changePage(delta) {
+        if (readerPage + delta >= 1 && readerPage + delta <= totalPages) {
+          readerPage += delta;
+          updateViewer();
+        }
+      }
+
+      function jumpToPage(val) {
+        let p = parseInt(val);
+        if (isNaN(p)) return;
+        if (p < 1) p = 1;
+        if (p > totalPages) p = totalPages;
+        readerPage = p;
+        updateViewer();
+      }
+
+      function handleImageError(imgElem) {
+        imgElem.onerror = null;
+        imgElem.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="700" height="950" viewBox="0 0 700 950"><rect width="100%" height="100%" fill="%232e7d3215"/><rect x="20" y="20" width="660" height="910" fill="none" stroke="%232e7d32" stroke-width="2" stroke-dasharray="6,6"/><text x="50%" y="45%" font-family="sans-serif" font-size="28" font-weight="bold" fill="%232e7d32" text-anchor="middle">PECTAA Islamiat 11th</text><text x="50%" y="52%" font-family="sans-serif" font-size="22" fill="%23555555" text-anchor="middle">Page ${readerPage} Scan</text><text x="50%" y="58%" font-family="sans-serif" font-size="14" fill="%23888888" text-anchor="middle">Upload scans/page-${String(readerPage).padStart(3, "0")}.png</text></svg>`;
+      }
+
+      function toggleFullscreen() {
+        const vp = document.getElementById("viewport");
+        if (!document.fullscreenElement) {
+          vp.requestFullscreen().catch((err) =>
+            alert("Fullscreen error: " + err.message),
+          );
+        } else {
+          document.exitFullscreen();
+        }
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.target.tagName === "INPUT") return;
+        if (e.key === "ArrowLeft") changePage(-1);
+        if (e.key === "ArrowRight") changePage(1);
+      });
+
+      updateViewer();
+      setBreadcrumb("Textbook Reader");
+    </script>
+  </body>
+</html>

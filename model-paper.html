@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Paper — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Exact theme-aware styling for Model Paper components */
+      .exam-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px dashed var(--border);
+      }
+      .meta-item {
+        background: var(--accent-light);
+        padding: 10px 14px;
+        border-radius: var(--radius);
+        font-size: 0.88rem;
+      }
+      .meta-item strong {
+        color: var(--accent);
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 2px;
+      }
+      .part-badge {
+        display: inline-block;
+        background: var(--accent-light);
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+      }
+      .mcq-options-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 12px 0;
+      }
+      .option-btn {
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        font-family: var(--font-main);
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        width: 100%;
+      }
+      .option-btn:hover {
+        border-color: var(--accent);
+        background: var(--accent-light);
+      }
+      .option-btn:disabled {
+        cursor: default;
+      }
+      .option-btn.selected.correct {
+        background: #d4edda;
+        color: #155724;
+        border-color: #c3e6cb;
+        font-weight: 600;
+      }
+      .option-btn.selected.wrong {
+        background: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+      }
+      [data-theme="dark"] .option-btn.selected.correct,
+      body.dark-theme .option-btn.selected.correct {
+        background: #1e4620;
+        color: #a3e6a7;
+        border-color: #2e7d32;
+      }
+      [data-theme="dark"] .option-btn.selected.wrong,
+      body.dark-theme .option-btn.selected.wrong {
+        background: #4a151b;
+        color: #f88f99;
+        border-color: #b71c1c;
+      }
+      .mcq-feedback-text {
+        margin-top: 8px;
+        font-size: 0.88rem;
+        min-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Topbar Navigation -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle Sidebar"
+        >
+          <span class="arrow-icon">◀</span>
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()" title="Open Menu">
+          ☰
+        </button>
+        <div class="breadcrumb" id="breadcrumb"></div>
+      </div>
+      <div class="topbar-right">
+        <button
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          title="Toggle Dark/Light Mode"
+        >
+          <span id="themeIcon">🌙</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar"></div>
+
+    <!-- Main Content Container -->
+    <div class="main">
+      <!-- Bismillah Header -->
+      <div class="arabic-quote">
+        <div class="arabic">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+        <div class="translation">
+          In the name of Allah, the Most Gracious, the Most Merciful
+        </div>
+      </div>
+
+      <!-- Exam Header Card -->
+      <div class="card card-accent">
+        <span class="part-badge">Annual Practice Examination</span>
+        <h1>Islamiat Compulsory (Class 11)</h1>
+        <p class="page-subtitle" style="margin-bottom: 0">
+          Based on National Curriculum 2023 (PECTAA Textbook Pages 133–135).
+          Test your knowledge under real exam conditions.
+        </p>
+        <div class="exam-meta-grid">
+          <div class="meta-item">
+            <strong>Total Time</strong>
+            2 Hours 00 Mins
+          </div>
+          <div class="meta-item">
+            <strong>Total Marks</strong>
+            50 Marks
+          </div>
+          <div class="meta-item">
+            <strong>Structure</strong>
+            3 Parts (Objective + Short + Long)
+          </div>
+          <div class="meta-item">
+            <strong>Target Score</strong>
+            45+ / 50 Marks
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 1: OBJECTIVE TYPE -->
+      <section id="part1">
+        <div class="part-badge">Part I — Objective Type (10 Marks)</div>
+        <h2>Q1: Multiple Choice Questions (10 × 1 = 10 Marks)</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px">
+          Select the correct option for each question to test your knowledge
+          with instant feedback.
+        </p>
+
+        <!-- MCQ 1 -->
+        <div class="card" id="mp-mcq-1">
+          <p>
+            <strong
+              >1. According to Surah Al-Baqarah, who are those who ask for
+              goodness in both this world and the Hereafter?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-1', 0, false)">
+              A) Those who believe in the Unseen
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-1', 1, false)">
+              B) Those who establish Prayer
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-1', 2, true)">
+              C) Those who pray: "Our Lord, give us good in this world and good
+              in the Hereafter"
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-1', 3, false)">
+              D) Those who pay Zakat
+            </button>
+          </div>
+          <div id="mp-mcq-1-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="card" id="mp-mcq-2">
+          <p>
+            <strong
+              >2. In which Hijri year did the Treaty of Hudaibiyah take
+              place?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-2', 0, false)">
+              A) 5th AH
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-2', 1, true)">
+              B) 6th AH
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-2', 2, false)">
+              C) 7th AH
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-2', 3, false)">
+              D) 8th AH
+            </button>
+          </div>
+          <div id="mp-mcq-2-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="card" id="mp-mcq-3">
+          <p>
+            <strong
+              >3. Which Sahabi is known by the title "Trader of Jannah"
+              (Tajir-e-Jannah)?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-3', 0, false)">
+              A) Hazrat Abu Bakr Siddique (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-3', 1, false)">
+              B) Hazrat Umar Farooq (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-3', 2, false)">
+              C) Hazrat Uthman Ghani (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-3', 3, true)">
+              D) Hazrat Abdur Rahman bin Auf (RA)
+            </button>
+          </div>
+          <div id="mp-mcq-3-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="card" id="mp-mcq-4">
+          <p>
+            <strong
+              >4. According to Hadith, what act is described as the key to
+              Paradise (Miftah-ul-Jannah)?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-4', 0, false)">
+              A) Jihad
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-4', 1, true)">
+              B) Salah (Prayer)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-4', 2, false)">
+              C) Fasting
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-4', 3, false)">
+              D) Good Character
+            </button>
+          </div>
+          <div id="mp-mcq-4-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="card" id="mp-mcq-5">
+          <p>
+            <strong
+              >5. Hazrat Khwaja Moinuddin Chishti (RA) arrived in India during
+              the era of which ruler?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-5', 0, false)">
+              A) Mahmud Ghaznavi
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-5', 1, true)">
+              B) Shihab-ud-Din Muhammad Ghori
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-5', 2, false)">
+              C) Qutb-ud-din Aibak
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-5', 3, false)">
+              D) Akbar
+            </button>
+          </div>
+          <div id="mp-mcq-5-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 6 -->
+        <div class="card" id="mp-mcq-6">
+          <p>
+            <strong
+              >6. On which date did the UN General Assembly adopt the resolution
+              establishing the International Day to Combat Islamophobia?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-6', 0, false)">
+              A) March 15, 2020
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-6', 1, false)">
+              B) March 15, 2021
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-6', 2, true)">
+              C) March 15, 2022
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-6', 3, false)">
+              D) March 15, 2023
+            </button>
+          </div>
+          <div id="mp-mcq-6-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 7 -->
+        <div class="card" id="mp-mcq-7">
+          <p>
+            <strong
+              >7. The term "Sufi" is derived from which Arabic word meaning
+              coarse wool?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-7', 0, false)">
+              A) Safa
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-7', 1, true)">
+              B) Suf
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-7', 2, false)">
+              C) Saff
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-7', 3, false)">
+              D) Siffat
+            </button>
+          </div>
+          <div id="mp-mcq-7-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 8 -->
+        <div class="card" id="mp-mcq-8">
+          <p>
+            <strong
+              >8. Who was appointed as the Chief Judge (Qadi) of Kufa during the
+              Caliphate of Hazrat Umar (RA)?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-8', 0, true)">
+              A) Hazrat Shuraih Al-Kindi (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-8', 1, false)">
+              B) Hazrat Abu Musa Al-Ash'ari (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-8', 2, false)">
+              C) Hazrat Abdullah bin Mas'ud (RA)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-8', 3, false)">
+              D) Hazrat Mu'adh bin Jabal (RA)
+            </button>
+          </div>
+          <div id="mp-mcq-8-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 9 -->
+        <div class="card" id="mp-mcq-9">
+          <p>
+            <strong
+              >9. What is the title of the medical encyclopedia written by Ibn
+              Sina (Avicenna)?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-9', 0, true)">
+              A) Al-Qanun fi al-Tibb (The Canon of Medicine)
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-9', 1, false)">
+              B) Kitab al-Shifa
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-9', 2, false)">
+              C) Al-Hawi
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-9', 3, false)">
+              D) Kitab al-Manazir
+            </button>
+          </div>
+          <div id="mp-mcq-9-feedback" class="mcq-feedback-text"></div>
+        </div>
+
+        <!-- MCQ 10 -->
+        <div class="card" id="mp-mcq-10">
+          <p>
+            <strong
+              >10. The landmark decree "Paigham-e-Pakistan" (2018) was signed by
+              how many Pakistani scholars?</strong
+            >
+          </p>
+          <div class="mcq-options-grid">
+            <button
+              class="option-btn"
+              onclick="checkMCQ('mp-mcq-10', 0, false)"
+            >
+              A) More than 1,000
+            </button>
+            <button
+              class="option-btn"
+              onclick="checkMCQ('mp-mcq-10', 1, false)"
+            >
+              B) More than 1,500
+            </button>
+            <button class="option-btn" onclick="checkMCQ('mp-mcq-10', 2, true)">
+              C) More than 1,800
+            </button>
+            <button
+              class="option-btn"
+              onclick="checkMCQ('mp-mcq-10', 3, false)"
+            >
+              D) More than 2,000
+            </button>
+          </div>
+          <div id="mp-mcq-10-feedback" class="mcq-feedback-text"></div>
+        </div>
+      </section>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- PART 2: SHORT ANSWER QUESTIONS -->
+      <section id="part2">
+        <div class="part-badge">
+          Part II — Short Answer Questions (20 Marks)
+        </div>
+
+        <!-- Question 2 -->
+        <h2 style="margin-top: 0">
+          Q2: Attempt any FIVE (5) short questions (5 × 2 = 10 Marks)
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px">
+          Write your answers in your test notebook first, then click any
+          question header to verify key points.
+        </p>
+
+        <div class="collapsible-header">
+          <span
+            >1. Write two rights of parents mentioned in the Holy Quran or
+            Hadith.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Show kindness, obedience, and utmost respect without saying
+                "Uff" or showing annoyance (Surah Al-Isra 17:23).
+              </li>
+              <li>
+                Pray continuously for Allah's forgiveness and mercy upon them.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >2. Define Tauheed and state its fundamental significance in
+            Islam.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                <strong>Definition:</strong> Firm belief that Allah is One,
+                Unique, without any partner in His essence, attributes, or
+                rights of worship.
+              </li>
+              <li>
+                <strong>Significance:</strong> It is the foundational pillar of
+                Islam; all religious deeds and worship depend on it.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >3. State two key provisions of the Charter of Madinah
+            (Misaq-e-Madinah).</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Freedom of religion and equality before the law for all
+                communities (Muslims and Jews).
+              </li>
+              <li>
+                Collective responsibility to jointly defend Madinah against
+                outside invaders.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >4. Briefly explain the concept of "Observance of Law"
+            (Itteba-e-Qanoon) in Islam.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Submitting completely to Divine Shariah and obeying state laws
+                that maintain justice and order.
+              </li>
+              <li>
+                Ensuring that no individual, regardless of rank, is above the
+                law (Surah An-Nisa 4:59).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >5. What was the contribution of Hazrat Data Ganj Bakhsh Ali Hujwiri
+            (RA) to Islamic preaching?</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Authored <em>Kashf-ul-Mahjub</em>, the earliest authoritative
+                Persian book on Sufism and spiritual ethics.
+              </li>
+              <li>
+                Preached Islam in Lahore through moral purity and social
+                service, converting thousands.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >6. Mention two causes of the rise of Islamophobia in modern Western
+            society.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Sensationalist media bias and negative stereotyping of Islamic
+                teachings.
+              </li>
+              <li>
+                Ignorance of authentic Islamic principles and political
+                exploitation of anti-immigrant sentiment.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >7. What is meant by "Halal Earnings" (Kasb-e-Halal) in Islamic
+            teachings?</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Earning a living through honest, lawful work without interest
+                (Riba), fraud, or bribery.
+              </li>
+              <li>
+                Declared a mandatory obligation after primary acts of worship
+                (Kanz-ul-Ummal).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >8. Write two scientific achievements of Muhammad ibn Musa
+            al-Khwarizmi.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Founded Algebra as an independent mathematical discipline
+                (author of <em>Al-Jabr wal-Muqabala</em>).
+              </li>
+              <li>
+                Introduced Hindu-Arabic numerals and the positional decimal
+                system (including zero) to the West.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <h2 style="margin-top: 36px">
+          Q3: Attempt any FIVE (5) short questions (5 × 2 = 10 Marks)
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px">
+          Write your answers in your test notebook first, then click any
+          question header to verify key points.
+        </p>
+
+        <div class="collapsible-header">
+          <span>1. Mention two rights of neighbors in Islamic society.</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Protecting their privacy, dignity, and property from any harm or
+                disturbance.
+              </li>
+              <li>
+                Providing financial help, food, and emotional support during
+                hardship.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span>2. What is meant by "Akhlaq-e-Hasanah" (Good Morals)?</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Noble character traits such as truthfulness, patience, humility,
+                generosity, and forgiveness.
+              </li>
+              <li>
+                The Holy Prophet ﷺ stated that perfecting moral character was
+                the primary purpose of his mission.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >3. Briefly explain the role of Zakat in reducing economic
+            inequality.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Transfers surplus wealth from the wealthy to poor and needy
+                members of society.
+              </li>
+              <li>
+                Prevents wealth hoarding and provides institutional social
+                security.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >4. State two key teachings of Hazrat Mujaddid Alf Sani (RA).</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Reformed Sufi philosophy by subjecting spiritual experiences
+                strictly to Shariah (Wahdat-ush-Shuhud).
+              </li>
+              <li>
+                Strongly opposed court syncretism (Din-i-Ilahi) and preserved
+                pure Islamic creed in Mughal India.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >5. What is the role of Muslim youth in the Islamic
+            Renaissance?</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Acquiring advanced scientific knowledge and technological skills
+                while adhering to Islamic morals.
+              </li>
+              <li>
+                Leading social innovation, community service, and ethical civic
+                engagement.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span>6. Write two duties of a citizen in an Islamic State.</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Obeying state laws and constitution in matters that do not
+                violate Divine command.
+              </li>
+              <li>
+                Paying public taxes (Zakat/Ushr) and participating in defending
+                the homeland.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >7. Describe the role of Pir Syed Mehr Ali Shah (RA) against false
+            doctrines.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Authored <em>Saif-e-Chishtiyai</em> to defend the dogma of
+                Khatm-e-Nabuwwat (Finality of Prophethood).
+              </li>
+              <li>
+                Challenged Mirza Ghulam Ahmad Qadiyani to a public scholarly
+                debate in Lahore.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >8. What is the significance of March 15 in the context of
+            Islamophobia?</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <ul>
+              <li>
+                Commemorates the 51 Muslim martyrs of the 2019 Christchurch
+                mosque attacks in New Zealand.
+              </li>
+              <li>
+                Adopted by the UN General Assembly in 2022 as the International
+                Day to Combat Islamophobia.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- PART 3: DETAILED / ESSAY QUESTIONS -->
+      <section id="part3">
+        <div class="part-badge">Part III — Detailed Questions (20 Marks)</div>
+
+        <!-- Question 4 -->
+        <h2 style="margin-top: 0">
+          Q4: Translate and explain any TWO (2) Hadiths (2 × 2 = 4 Marks)
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px">
+          Provide English translation and brief commentary for your chosen
+          Hadiths.
+        </p>
+
+        <div class="collapsible-header">
+          <span
+            >Hadith 1: الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ
+            وَيَدِهِ</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="arabic-quote" style="margin: 10px 0">
+            <div class="arabic">
+              الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ
+            </div>
+            <div class="translation">
+              "A true Muslim is the one from whose tongue and hand other Muslims
+              are safe." (Sahih Bukhari)
+            </div>
+          </div>
+          <div class="key-box">
+            <p>
+              <strong>Explanation:</strong> Emphasizes peaceful social conduct.
+              True faith mandates refraining from backbiting, verbal abuse,
+              slander, and physical aggression against others.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span>Hadith 2: طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="arabic-quote" style="margin: 10px 0">
+            <div class="arabic">
+              طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ
+            </div>
+            <div class="translation">
+              "Seeking knowledge is a mandatory obligation upon every Muslim."
+              (Sunan Ibn Majah)
+            </div>
+          </div>
+          <div class="key-box">
+            <p>
+              <strong>Explanation:</strong> Obligates both religious
+              understanding and beneficial worldly knowledge for all Muslim men
+              and women without gender discrimination.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >Hadith 3: لاَ يَدْخُلُ الْجَنَّةَ مَنْ لاَ يَأْمَنُ جَارُهُ
+            بَوَائِقَهُ</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="arabic-quote" style="margin: 10px 0">
+            <div class="arabic">
+              لاَ يَدْخُلُ الْجَنَّةَ مَنْ لاَ يَأْمَنُ جَارُهُ بَوَائِقَهُ
+            </div>
+            <div class="translation">
+              "He will not enter Paradise whose neighbor is not safe from his
+              harm and trouble." (Sahih Muslim)
+            </div>
+          </div>
+          <div class="key-box">
+            <p>
+              <strong>Explanation:</strong> Establishes the sanctity of
+              neighbors' rights in Islam, making peaceful coexistence with
+              neighbors a prerequisite for sound faith.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >Hadith 4: الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="arabic-quote" style="margin: 10px 0">
+            <div class="arabic">
+              الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ
+            </div>
+            <div class="translation">
+              "The world is a prison for the believer and a paradise for the
+              disbeliever." (Sahih Muslim)
+            </div>
+          </div>
+          <div class="key-box">
+            <p>
+              <strong>Explanation:</strong> Believers restrain their worldly
+              desires within Divine boundaries in this temporary life to achieve
+              eternal bliss in the Hereafter.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <h2 style="margin-top: 36px">
+          Q5: Attempt any TWO (2) detailed essay questions (2 × 8 = 16 Marks)
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px">
+          Click any essay topic below to review recommended outlines and key
+          headings.
+        </p>
+
+        <div class="collapsible-header">
+          <span
+            >1. Discuss the Concept of Tauheed and its profound impact on human
+            life and society.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <p><strong>Recommended Essay Headings & Outline:</strong></p>
+            <ul>
+              <li>
+                <strong>Introduction:</strong> Definition of Tauheed
+                (Rububiyyah, Uluhiyyah, Asma-was-Sifat).
+              </li>
+              <li>
+                <strong>Quranic Evidences:</strong> Surah Al-Ikhlas (112:1-4) &
+                Ayatul Kursi (2:255).
+              </li>
+              <li>
+                <strong>Individual Impact:</strong> Self-respect, freedom from
+                fear/superstition, moral accountability, and humility.
+              </li>
+              <li>
+                <strong>Social Impact:</strong> Universal human equality,
+                brotherhood, justice, and eradication of tyranny.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >2. Write a comprehensive essay on the Rights of Non-Muslims in an
+            Islamic State with historical references.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <p><strong>Recommended Essay Headings & Outline:</strong></p>
+            <ul>
+              <li>
+                <strong>Core Principles:</strong> Freedom of belief (2:256) &
+                justice with non-belligerents (60:8).
+              </li>
+              <li>
+                <strong>Fundamental Rights:</strong> Protection of life,
+                property, honor, and places of worship.
+              </li>
+              <li>
+                <strong>Historical Precedents:</strong> Charter of Madinah,
+                Treaty of Najran, and Hazrat Umar's Jerusalem assurance.
+              </li>
+              <li>
+                <strong>Judicial Equality:</strong> Equal legal status in
+                Islamic courts regardless of religion.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >3. Explain Islamic Renaissance (Tajdeed-e-Ihya-e-Islam) and
+            highlight the contributions of Muslim scientists.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <p><strong>Recommended Essay Headings & Outline:</strong></p>
+            <ul>
+              <li>
+                <strong>Concept of Renaissance:</strong> Intellectual, moral,
+                and scientific revival of the Ummah.
+              </li>
+              <li>
+                <strong>Pioneering Figures & Contributions:</strong>
+                <ul>
+                  <li>Ibn Sina: Medicine (<em>Al-Qanun fi al-Tibb</em>).</li>
+                  <li>
+                    Al-Khwarizmi: Mathematics, Algebra, and positional decimal
+                    zero.
+                  </li>
+                  <li>Al-Zahrawi: Father of modern surgical instruments.</li>
+                  <li>Al-Biruni: Earth radius calculation and Indology.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Modern Revival:</strong> Integrating scientific research
+                with Islamic moral values.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-header">
+          <span
+            >4. Analyze Islamophobia: examine its causes, real-world
+            manifestations, and strategic steps to counter it.</span
+          >
+          <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-body">
+          <div class="key-box">
+            <p><strong>Recommended Essay Headings & Outline:</strong></p>
+            <ul>
+              <li>
+                <strong>Definition:</strong> Irrational fear, prejudice, or
+                hatred against Islam and Muslims.
+              </li>
+              <li>
+                <strong>Causes & Manifestations:</strong> Media bias, political
+                exploitation, hate crimes (Christchurch 2019).
+              </li>
+              <li>
+                <strong>Global Legal Steps:</strong> UN March 15 Resolution
+                (2022) & March 2024 measures against religious hatred.
+              </li>
+              <li>
+                <strong>Counter-Strategies:</strong> Demonstrating authentic
+                Islamic character (Akhlaq), Paigham-e-Pakistan consensus model,
+                active media engagement, and interfaith dialogue.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">· · ·</div>
+
+      <!-- EMBEDDED TEXTBOOK SCAN READER (Pages 133–135) -->
+      <div class="card" style="margin-top: 36px">
+        <h3 style="margin-top: 0; color: var(--accent)">
+          📖 Original Textbook Scan View (Pages 133–135)
+        </h3>
+        <p
+          style="
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+          "
+        >
+          Cross-check questions directly against the official PECTAA Class 11
+          textbook pages:
+        </p>
+
+        <div
+          style="
+            background: #1e1e1e;
+            border-radius: var(--radius);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              padding: 12px 20px;
+              background: rgba(0, 0, 0, 0.85);
+              color: #fff;
+            "
+          >
+            <button
+              class="theme-toggle"
+              id="prevScanBtn"
+              onclick="changeScan(-1)"
+              style="border-radius: var(--radius); padding: 6px 14px"
+            >
+              ◀ Prev Page
+            </button>
+            <span
+              id="scanPageIndicator"
+              style="font-weight: 700; font-size: 0.9rem"
+              >Page 133 of 135</span
+            >
+            <button
+              class="theme-toggle"
+              id="nextScanBtn"
+              onclick="changeScan(1)"
+              style="border-radius: var(--radius); padding: 6px 14px"
+            >
+              Next Page ▶
+            </button>
+          </div>
+          <img
+            id="scanImage"
+            src="scans/page-133.png"
+            alt="Textbook Model Paper Page"
+            style="max-width: 100%; height: auto; display: block"
+            onerror="handleScanError(this)"
+          />
+        </div>
+      </div>
+
+      <!-- Page Navigation Links -->
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+          padding-top: 20px;
+          border-top: 1px solid var(--border);
+        "
+      >
+        <a
+          href="ch7c.html"
+          style="color: var(--accent); font-weight: 600; text-decoration: none"
+          >← Previous: Prevention of Islamophobia</a
+        >
+        <a
+          href="index.html"
+          style="color: var(--accent); font-weight: 600; text-decoration: none"
+          >Return to Dashboard →</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Logic & Script Import -->
+    <script>
+      const currentPage = "model-paper";
+
+      // Interactive MCQ feedback (model-paper only)
+      function checkMCQ(id, index, isCorrect) {
+        const card = document.getElementById(id);
+        if (!card) return;
+        const buttons = card.querySelectorAll(".option-btn");
+        const feedback = document.getElementById(id + "-feedback");
+
+        buttons.forEach(function (btn, i) {
+          btn.disabled = true;
+          btn.classList.remove("selected", "correct", "wrong");
+          var onclickAttr = btn.getAttribute("onclick") || "";
+          // Always reveal the correct option
+          if (onclickAttr.indexOf(", true)") !== -1) {
+            btn.classList.add("selected", "correct");
+          }
+          // Mark the user's choice if wrong
+          if (i === index && !isCorrect) {
+            btn.classList.add("selected", "wrong");
+          }
+          if (i === index && isCorrect) {
+            btn.classList.add("selected", "correct");
+          }
+        });
+
+        if (feedback) {
+          if (isCorrect) {
+            feedback.textContent = "✓ Correct!";
+            feedback.style.color = "var(--accent)";
+          } else {
+            feedback.textContent =
+              "✗ Incorrect. The correct option is highlighted in green.";
+            feedback.style.color = "#c62828";
+          }
+        }
+      }
+
+      // Embedded Scan Reader Logic (Pages 133 to 135)
+      let currentScanPage = 133;
+      const minScanPage = 133;
+      const maxScanPage = 135;
+
+      function updateScanDisplay() {
+        const img = document.getElementById("scanImage");
+        const pageStr = String(currentScanPage).padStart(3, "0");
+        img.src = "scans/page-" + pageStr + ".png";
+        document.getElementById("scanPageIndicator").innerText =
+          "Page " + currentScanPage + " of 135";
+
+        document.getElementById("prevScanBtn").disabled =
+          currentScanPage <= minScanPage;
+        document.getElementById("nextScanBtn").disabled =
+          currentScanPage >= maxScanPage;
+        document.getElementById("prevScanBtn").style.opacity =
+          currentScanPage <= minScanPage ? "0.4" : "1";
+        document.getElementById("nextScanBtn").style.opacity =
+          currentScanPage >= maxScanPage ? "0.4" : "1";
+      }
+
+      function changeScan(delta) {
+        const newPage = currentScanPage + delta;
+        if (newPage >= minScanPage && newPage <= maxScanPage) {
+          currentScanPage = newPage;
+          updateScanDisplay();
+        }
+      }
+
+      function handleScanError(img) {
+        const pageNum = currentScanPage;
+        const svg =
+          '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">' +
+          '<rect width="100%" height="100%" fill="#1e1e1e"/>' +
+          '<text x="50%" y="45%" fill="#4caf50" font-size="26" font-family="sans-serif" font-weight="bold" text-anchor="middle">Textbook Scan Page ' +
+          pageNum +
+          "</text>" +
+          '<text x="50%" y="52%" fill="#aaaaaa" font-size="16" font-family="sans-serif" text-anchor="middle">(scans/page-' +
+          String(pageNum).padStart(3, "0") +
+          ".png)</text>" +
+          "</svg>";
+        img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setBreadcrumb("Model Paper");
+        updateScanDisplay();
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

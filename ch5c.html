@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriage & Family — Islamiat 11th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-left">
+        <button
+          class="sidebar-toggle-btn"
+          onclick="toggleSidebarCollapse()"
+          title="Toggle sidebar"
+        >
+          ◀
+        </button>
+        <button class="menu-btn" onclick="toggleSidebar()" title="Menu">
+          ☰
+        </button>
+        <div class="breadcrumb" id="breadcrumb">
+          Ch 5(C) — Marriage & Family
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          title="Toggle theme"
+        >
+          🌙
+        </button>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar"></div>
+
+    <main class="main">
+      <div class="arabic-quote">
+        بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <div class="translation">
+          In the name of Allah, the Most Gracious, the Most Merciful.
+        </div>
+      </div>
+
+      <h1>Chapter 5(C): Islamic Teachings of Marriage & Divorce</h1>
+      <p class="page-subtitle">
+        Nikah, prohibited relations, Mehr, Walima, Talaq, Khula, Iddah &
+        avoiding un-Islamic customs
+      </p>
+
+      <div class="lo-box">
+        <h3>🎯 Learning Outcomes</h3>
+        <p>After studying this lesson, students will be able to:</p>
+        <ul>
+          <li>
+            Understand Nikah and its rules and issues (proposal, proposal
+            criteria, Ijab-o-Qabool, Khutbah, witnesses, Haq Mehr, and Walima).
+          </li>
+          <li>
+            Understand the rulings and issues regarding Divorce (Talaq), Khula,
+            Judicial Dissolution (Tanseekh-e-Nikah), and Iddah.
+          </li>
+          <li>
+            Recognize non-Islamic customs, extravagances, and useless
+            expenditures in weddings in daily life.
+          </li>
+          <li>
+            Assess the practical benefits of Nikah and the individual and social
+            impacts of divorce.
+          </li>
+          <li>
+            Lead a successful family life by understanding Shariah rulings on
+            marriage and divorce.
+          </li>
+          <li>
+            Avoid un-Islamic wedding customs and understand the harms of
+            extravagant celebrations.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Meaning & Concept of Nikah</h2>
+
+      <div class="card card-accent">
+        <div class="def">
+          <strong>Nikah (Marriage):</strong> A solemn social contract (Umrani
+          Mu'ahada) between a man and a woman through which they begin their
+          marital and family life.
+        </div>
+        <p>
+          Nikah is essential for the preservation of the human race, the
+          continuation of humanity, and the stability of social life.
+        </p>
+      </div>
+
+      <div class="arabic-quote">
+        فَانْكِحُوْا مَا طَابَ لَكُمْ مِّنَ النِّسَآءِ
+        <div class="translation">"So marry women of your choice..."</div>
+        <div class="verse-ref">— Surah An-Nisa 4:3</div>
+      </div>
+
+      <div class="arabic-quote">
+        "اے نوجوانوں کی جماعت! تم میں جسے بھی نکاح کرنے کے لیے مالی طاقت (حق
+        مہر) ہو اسے نکاح کر لینا چاہیے کیوں کہ یہ نظر کو نیچی رکھنے والا اور
+        شرمگاہ کی حفاظت کرنے والا عمل ہے اور جو کوئی غربت کی وجہ سے نکاح کی طاقت
+        نہ رکھتا ہو، اسے چاہیے کہ روزے رکھے کیوں کہ روزہ اس کی خواہشاتِ نفسانی
+        کو توڑ دے گا۔"
+        <div class="translation">
+          "O young men! Whoever among you has the financial capacity (to pay
+          Mehr and support a wife), let him marry, for it lowers the gaze and
+          guards chastity. And whoever is unable, let him fast, for fasting acts
+          as a shield against carnal desires."
+        </div>
+        <div class="verse-ref">— Sahih Bukhari: 5066</div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Prohibited Relations in Marriage (Muharramat-e-Nikah)</h2>
+
+      <div class="card card-gold">
+        <p>
+          <strong>Muharramat:</strong> Women with whom marriage is strictly
+          forbidden in Shariah. Prohibitions fall into four distinct categories:
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card" style="border-left: 4px solid #c62828">
+          <h3>1. Hurmat-e-Nasab (Consanguinity)</h3>
+          <p>Prohibited by blood relations:</p>
+          <ul>
+            <li>Mother (and grandmothers)</li>
+            <li>Daughter (and granddaughters)</li>
+            <li>Sister (full, paternal, or maternal)</li>
+            <li>Paternal Aunt (Phuphi)</li>
+            <li>Maternal Aunt (Khala)</li>
+            <li>Niece — Brother's daughter (Bhatiji)</li>
+            <li>Niece — Sister's daughter (Bhanji)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #c62828">
+          <h3>2. Hurmat-e-Raza'at (Fosterage)</h3>
+          <p>Prohibited by foster suckling relations (breastfed in infancy):</p>
+          <ul>
+            <li>Foster Mother</li>
+            <li>Foster Daughter</li>
+            <li>Foster Sister</li>
+            <li>Foster Paternal Aunt</li>
+            <li>Foster Maternal Aunt</li>
+            <li>Foster Niece (Bhatiji / Bhanji)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #c62828">
+          <h3>3. Hurmat-e-Musaharat (Affinity / In-Laws)</h3>
+          <p>Prohibited through marital relationships:</p>
+          <ul>
+            <li>Wife's Mother (Mother-in-law / Saas)</li>
+            <li>
+              Wife's daughter from a previous husband (Stepdaughter / Rabiya)
+            </li>
+            <li>Son's Wife (Daughter-in-law / Bahu)</li>
+            <li>Father's Wife (Stepmother)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #c62828">
+          <h3>4. Jam' Bain al-Muharam (Uniting Prohibited Relations)</h3>
+          <p>Simultaneously combining two close relatives in marriage:</p>
+          <ul>
+            <li>Two sisters at the same time</li>
+            <li>A woman and her paternal aunt (Phuphi)</li>
+            <li>A woman and her maternal aunt (Khala)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Criteria for Selecting a Spouse</h2>
+
+      <div class="arabic-quote">
+        "عورت سے شادی چار چیزیں دیکھ کر کی جاتی ہے: اس کا مال دیکھ کر، اس کی
+        خاندانی وجاہت دیکھ کر، اس کی خوب صورتی دیکھ کر اور اس کا دین دیکھ کر، تو
+        تم دین دار عورت کو پانے کی کوشش کرو۔"
+        <div class="translation">
+          "A woman is married for four reasons: her wealth, her family status,
+          her beauty, and her religion. So choose the one who is religious, may
+          your hands be rubbed with dust!"
+        </div>
+        <div class="verse-ref">— Sunan Nasai: 3232</div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Engagement (Mangni / Khitbah)</h2>
+
+      <div class="card card-accent">
+        <div class="def">
+          <strong>Mangni (Khitbah):</strong> A formal proposal of marriage. The
+          Quran terms the marriage proposal as <em>"Khitbah"</em>.
+        </div>
+      </div>
+
+      <div class="arabic-quote">
+        وَلَا جُنَاحَ عَلَيْكُمْ فِيْمَا عَرَّضْتُمْ بِهٖ مِنْ خِطْبَةِ
+        النِّسَآءِ
+        <div class="translation">
+          "And there is no blame upon you if you hint a proposal of marriage to
+          women..."
+        </div>
+        <div class="verse-ref">— Surah Al-Baqarah 2:235</div>
+      </div>
+
+      <div class="arabic-quote">
+        "کوئی شخص اپنے بھائی کی منگنی پر منگنی کا پیغام نہ بھیجے اور نہ ہی کوئی
+        عورت اپنی بہن (سوتن) کو طلاق دینے کا مطالبہ کرے۔"
+        <div class="translation">
+          "No man should send a proposal over his brother's proposal, nor should
+          a woman demand the divorce of her sister (co-wife)."
+        </div>
+        <div class="verse-ref">— Sahih Muslim: 3442</div>
+      </div>
+
+      <div class="card card-gold">
+        <h3>⚠️ Avoiding Unnecessary Delays</h3>
+        <p>
+          Creating self-imposed, artificial standards for marriage delays unions
+          for young men and women. This leads to inferiority complexes,
+          emotional distress, and moral risks. Islam strongly discourages
+          delaying marriage once a suitable match is found.
+        </p>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Essentials of Nikah</h2>
+
+      <h3>1. Proposal & Acceptance (Ijab-o-Qabool)</h3>
+      <div class="card">
+        <p>
+          Offer and acceptance are <strong>Fard (obligatory)</strong> for a
+          valid Muslim marriage:
+        </p>
+        <ul>
+          <li>
+            <strong>Ijab (Offer):</strong> Offering the marriage proposal with
+            complete identification of the prospective spouse.
+          </li>
+          <li>
+            <strong>Qabool (Acceptance):</strong> Acceptance of the proposal by
+            the other party.
+          </li>
+          <li>
+            <strong>Witnesses:</strong> Must take place in the presence of
+            <strong>two sane, adult male witnesses</strong> (or one male and two
+            females).
+          </li>
+          <li>
+            <strong>Guardian (Wali):</strong> Consent of the legal guardian is
+            required according to Shariah rules.
+          </li>
+        </ul>
+      </div>
+
+      <h3>2. Sermon of Marriage (Khutbah Nikah)</h3>
+      <div class="card card-accent">
+        <p>
+          Reciting the Khutbah Nikah — praising Allah, sending blessings upon
+          Prophet Muhammad ﷺ, and reciting Quranic verses of Taqwa and counsel —
+          is a <strong>Sunnah</strong>.
+        </p>
+      </div>
+
+      <h3>3. Dower (Haq Mehr)</h3>
+      <div class="card card-gold">
+        <div class="def">
+          <strong>Haq Mehr:</strong> The mandatory financial right of the bride
+          given by the groom at the time of marriage. Payment is
+          <strong>Wajib (obligatory)</strong>.
+        </div>
+      </div>
+
+      <div class="arabic-quote">
+        وَ اٰتُوا النِّسَآءَ صَدُقٰتِهِنَّ نِحْلَةً
+        <div class="translation">
+          "And give the women their dower graciously as a free gift..."
+        </div>
+        <div class="verse-ref">— Surah An-Nisa 4:4</div>
+      </div>
+
+      <div class="key-box">
+        <h3>⚖️ Types of Haq Mehr</h3>
+        <ul>
+          <li>
+            <strong>Mehr-e-Mu'ajjal (Prompt Dower):</strong> Dower paid
+            immediately at the time of Nikah.
+          </li>
+          <li>
+            <strong>Mehr-e-Mu'ajjal (Deferred Dower):</strong> Dower whose
+            payment is delayed to an agreed future date or upon demand.
+          </li>
+        </ul>
+      </div>
+
+      <h3>4. Marriage Feast (Walima)</h3>
+      <div class="card">
+        <p>
+          Walima is a Sunnah feast hosted by the groom and his family to
+          celebrate the marriage. Accepting a Walima invitation is mandatory for
+          invited Muslims. However, a Walima feast where
+          <strong
+            >only the wealthy are invited and the poor are excluded is
+            condemned</strong
+          >
+          in Hadith as the worst feast.
+        </p>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Dissolution of Marriage: Talaq, Khula & Tanseekh</h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>📜 Talaq (Divorce)</h3>
+          <p>
+            The husband releasing his wife from the bond of Nikah using specific
+            terms.
+          </p>
+        </div>
+        <div class="card">
+          <h3>⚖️ Khula</h3>
+          <p>
+            Dissolution of marriage initiated by the wife by mutual consent,
+            usually in exchange for returning Mehr or financial compensation.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🏛️ Tanseekh-e-Nikah</h3>
+          <p>
+            Judicial dissolution of Nikah by a court when a husband refuses
+            Talaq or Khula and cruelty/abandonment is legally proven.
+          </p>
+        </div>
+      </div>
+
+      <div class="arabic-quote">
+        فَاِنْ خِفْتُمْ اَلَّا يُقِيْمَا حُدُوْدَ اللّٰهِ ۙ فَلَا جُنَاحَ
+        عَلَيْهِمَا فِيْمَا افْتَدَتْ بِهٖ
+        <div class="translation">
+          "And if you fear that they will not keep within the limits of Allah,
+          there is no blame upon either of them concerning that by which she
+          ransoms herself."
+        </div>
+        <div class="verse-ref">— Surah Al-Baqarah 2:229</div>
+      </div>
+
+      <div class="arabic-quote">
+        "اللہ تعالیٰ کے نزدیک حلال چیزوں میں سب سے زیادہ ناپسندیدہ چیز طلاق ہے۔"
+        <div class="translation">
+          "The most detestable of lawful things in the sight of Allah is
+          divorce."
+        </div>
+        <div class="verse-ref">— Sunan Abu Dawood: 2177</div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Types of Talaq</h2>
+
+      <div class="card">
+        <ul>
+          <li>
+            <strong>Talaq-e-Raj'i (Revocable Divorce):</strong> A single or
+            double divorce after which the husband can reconcile (Rajoo) with
+            his wife during the Iddah period without a new Nikah.
+          </li>
+          <li>
+            <strong>Talaq-e-Ba'in (Irrevocable Divorce):</strong> Immediately
+            dissolves the Nikah. Reconciliation during or after Iddah requires a
+            new Nikah (Tajdeed-e-Nikah) with a fresh dower. Khula and judicial
+            dissolution (Tanseekh) also result in Talaq-e-Ba'in.
+          </li>
+          <li>
+            <strong>Talaq-e-Mughallazah (Severe/Triple Divorce):</strong> The
+            most severe form. The marriage is completely dissolved, and direct
+            remarriage between the former spouses is not permissible unless
+            specific Shariah conditions (Halala) occur naturally.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Waiting Period (Iddah) & Its Rules</h2>
+
+      <div class="card card-accent">
+        <div class="def">
+          <strong>Iddah:</strong> The mandatory waiting period a woman must
+          observe following the death of her husband, divorce, Khula, or
+          judicial annulment before she can remarry.
+        </div>
+      </div>
+
+      <div class="key-box">
+        <h3>⏳ Duration of Iddah</h3>
+        <ul>
+          <li>
+            <strong>Death of Husband (Iddah-e-Wafat):</strong> 4 months and 10
+            days.
+          </li>
+          <li>
+            <strong>Divorced Woman (Iddah-e-Talaq):</strong> 3 menstrual cycles
+            (3 Haidh).
+          </li>
+          <li>
+            <strong>Pregnant Woman (Hamilah):</strong> Until delivery /
+            childbirth (Waza-e-Haml).
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Eliminating Un-Islamic Customs & Extravagance</h2>
+
+      <div class="card" style="border-left: 4px solid #c62828">
+        <p>
+          Islam made Nikah simple, but modern cultural practices have burdened
+          it with extravagant customs, making it a financial mountain for poor
+          and middle-class families.
+        </p>
+      </div>
+
+      <div class="arabic-quote">
+        "سب سے زیادہ برکت والا نکاح وہ ہے جس میں مشقت کم سے کم ہو۔"
+        <div class="translation">
+          "The most blessed marriage is the one with the least financial burden
+          and difficulty."
+        </div>
+        <div class="verse-ref">— Musnad Ahmad: 23388</div>
+      </div>
+
+      <div class="key-box">
+        <h3>🚫 Prohibited & Un-Islamic Practices</h3>
+        <ul>
+          <li>
+            🚫 Loud vulgar music, dancing, free mixing of men and women, and
+            unveiling.
+          </li>
+          <li>🚫 Un-Islamic rituals like extravagant Mehndi functions.</li>
+          <li>
+            🚫 Demanding dowry (Jahez) from the bride's family or lavish public
+            displays of dowry.
+          </li>
+          <li>
+            🚫 Taking heavy loans to host opulent Walima feasts. Extravagance
+            and ostentation (Riya) are strictly forbidden.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Benefits of Nikah & Social Harms of Divorce</h2>
+
+      <div class="grid-2">
+        <div class="card card-gold">
+          <h3>🌟 Benefits of Nikah</h3>
+          <ul>
+            <li>✅ Promotes Taqwa, chastity, and protection from sins.</li>
+            <li>✅ Brings blessings (Barakah) in sustenance (Rizq).</li>
+            <li>
+              ✅ Guarantees the continuation of humanity and builds strong
+              families.
+            </li>
+            <li>
+              ✅ Instills deep emotional peace, love, and mercy between spouses.
+            </li>
+          </ul>
+          <div class="verse-ref">— Surah Ar-Rum 30:21</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #c62828">
+          <h3>💔 Social Harms of Divorce</h3>
+          <ul>
+            <li>
+              ❌ Shatters the family unit and damages the entire social fabric.
+            </li>
+            <li>
+              ❌ Severely traumatizes children psychologically and emotionally.
+            </li>
+            <li>
+              ❌ Deprives children of the balanced care of both mother and
+              father.
+            </li>
+            <li>❌ Breeds long-term enmity and hatred between families.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h1>📝 Exercises</h1>
+
+      <h2>Question 1: Multiple Choice Questions</h2>
+
+      <div class="card mcq">
+        <p>
+          <strong
+            >(i) For the survival of the human race and stability of social
+            life, essential is:</strong
+          >
+        </p>
+        <p>(a) Nikah &nbsp; (b) Khula &nbsp; (c) Wasiyyat &nbsp; (d) Wirasat</p>
+        <div class="collapsible-header">Show Answer ▼</div>
+        <div class="collapsible-body"><strong>Answer: (a) Nikah</strong></div>
+      </div>
+
+      <div class="card mcq">
+        <p>
+          <strong
+            >(ii) Included among the Fard (obligations) of Nikah is:</strong
+          >
+        </p>
+        <p>
+          (a) Haq Mehr &nbsp; (b) Ijab-o-Qabool &nbsp; (c) Mangni &nbsp; (d)
+          Walima
+        </p>
+        <div class="collapsible-header">Show Answer ▼</div>
+        <div class="collapsible-body">
+          <strong>Answer: (b) Ijab-o-Qabool</strong>
+        </div>
+      </div>
+
+      <div class="card mcq">
+        <p>
+          <strong
+            >(iii) The dower paid immediately at the time of Nikah is
+            called:</strong
+          >
+        </p>
+        <p>
+          (a) Mehr-e-Mu'ajjal &nbsp; (b) Mehr-e-Mu'ajjal (deferred) &nbsp; (c)
+          Mehr-e-Mujam &nbsp; (d) Mehr-e-Mithl
+        </p>
+        <div class="collapsible-header">Show Answer ▼</div>
+        <div class="collapsible-body">
+          <strong>Answer: (a) Mehr-e-Mu'ajjal</strong>
+        </div>
+      </div>
+
+      <div class="card mcq">
+        <p>
+          <strong
+            >(iv) The type of divorce in which reconciliation is possible during
+            Iddah is:</strong
+          >
+        </p>
+        <p>
+          (a) Talaq-e-Mughallazah &nbsp; (b) Talaq-e-Ba'in &nbsp; (c)
+          Talaq-e-Raj'i &nbsp; (d) Talaq-e-Bid'at
+        </p>
+        <div class="collapsible-header">Show Answer ▼</div>
+        <div class="collapsible-body">
+          <strong>Answer: (c) Talaq-e-Raj'i</strong>
+        </div>
+      </div>
+
+      <div class="card mcq">
+        <p><strong>(v) Included among the benefits of Nikah is:</strong></p>
+        <p>
+          (a) Blessing in sustenance (Rizq) &nbsp; (b) Purification of wealth
+          &nbsp; (c) End of hatred &nbsp; (d) Promotion of moderation
+        </p>
+        <div class="collapsible-header">Show Answer ▼</div>
+        <div class="collapsible-body">
+          <strong>Answer: (a) Blessing in sustenance (Rizq)</strong>
+        </div>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Question 2: Short Answers</h2>
+
+      <div class="collapsible-header">
+        (i) Briefly state the importance of Nikah. ▼
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Nikah is a sacred social contract that forms the foundation of human
+          society. It safeguards chastity, protects from sins, brings blessing
+          in sustenance (Rizq), provides emotional peace and mutual love, and
+          ensures the continuation and preservation of the human race in a pure,
+          lawful manner.
+        </p>
+      </div>
+
+      <div class="collapsible-header">(ii) Explain the concept of Khula. ▼</div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Khula</strong> is the dissolution of marriage initiated by the
+          wife through mutual agreement with her husband, usually in exchange
+          for returning her dower (Mehr) or giving financial compensation. If
+          the husband refuses, she may seek judicial dissolution (Tanseekh)
+          through a Shariah court.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (iii) Write the types of Iddah (waiting period). ▼
+      </div>
+      <div class="collapsible-body">
+        <ol>
+          <li>
+            <strong>Iddah of Death:</strong> 4 months and 10 days for a widow.
+          </li>
+          <li>
+            <strong>Iddah of Divorce:</strong> 3 menstrual cycles (3 Haidh) for
+            a divorced woman.
+          </li>
+          <li>
+            <strong>Iddah of Pregnancy:</strong> Until childbirth for a pregnant
+            woman.
+          </li>
+        </ol>
+      </div>
+
+      <div class="collapsible-header">(iv) Define Talaq-e-Ba'in. ▼</div>
+      <div class="collapsible-body">
+        <p>
+          <strong>Talaq-e-Ba'in</strong> is an irrevocable divorce that
+          immediately dissolves the Nikah. The husband cannot reconcile during
+          or after Iddah without performing a new Nikah (Tajdeed-e-Nikah) with a
+          fresh dower. Khula and judicial annulment (Tanseekh) also result in
+          Talaq-e-Ba'in.
+        </p>
+      </div>
+
+      <div class="collapsible-header">
+        (v) How can non-Islamic customs in weddings be avoided? ▼
+      </div>
+      <div class="collapsible-body">
+        <p>
+          Non-Islamic customs can be eliminated by adhering strictly to the
+          Sunnah — simplifying wedding ceremonies, avoiding heavy dowry demands,
+          refraining from music, dancing, free mixing, and extravagant feasts,
+          and spreading public awareness regarding the Prophetic teaching that
+          the most blessed Nikah is the one with the least financial burden.
+        </p>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>Question 3: Detailed Answer</h2>
+
+      <div class="collapsible-header">
+        Write a detailed note on Nikah and its rulings in light of the Quran and
+        Sunnah. ▼
+      </div>
+      <div class="collapsible-body">
+        <h3>Introduction</h3>
+        <p>
+          Nikah is a sacred social contract in Islam that regulates human
+          relationships, preserves lineage, and builds a moral family structure.
+          The Prophet ﷺ declared Nikah to be his Sunnah and encouraged youth
+          with financial capability to marry.
+        </p>
+
+        <h3>1. Essentials of Nikah</h3>
+        <ul>
+          <li>
+            <strong>Ijab-o-Qabool:</strong> Proposal and acceptance in the
+            presence of two sane, adult Muslim witnesses.
+          </li>
+          <li>
+            <strong>Haq Mehr:</strong> An obligatory financial dower given to
+            the bride (Surah An-Nisa 4:4), either prompt (Mu'ajjal) or deferred
+            (Mu'ajjal).
+          </li>
+          <li>
+            <strong>Walima:</strong> A Sunnah wedding feast hosted by the groom,
+            emphasizing inclusion of the poor.
+          </li>
+        </ul>
+
+        <h3>2. Prohibited Marriages (Muharramat)</h3>
+        <p>
+          Islam strictly forbids marriage within specific categories:
+          consanguinity (blood relations like mothers, sisters, daughters),
+          fosterage (foster mothers/sisters), affinity (in-laws like
+          mothers-in-law), and combining two close relatives (like two sisters)
+          simultaneously.
+        </p>
+
+        <h3>3. Dissolution of Marriage (Talaq & Khula)</h3>
+        <p>
+          While Islam preserves marriage, it permits divorce when reconciliation
+          fails. Talaq is declared the most detested of permissible things to
+          Allah (Abu Dawood: 2177). It includes Talaq-e-Raj'i (revocable),
+          Talaq-e-Ba'in (irrevocable), and Talaq-e-Mughallazah. Women are
+          granted the right of Khula or judicial dissolution (Tanseekh).
+        </p>
+
+        <h3>4. Iddah (Waiting Period)</h3>
+        <p>
+          Iddah ensures lineage clarity and emotional closure: 4 months 10 days
+          for widows, 3 cycles for divorcees, and until delivery for pregnant
+          women.
+        </p>
+
+        <h3>5. Simplifying Weddings</h3>
+        <p>
+          The Prophet ﷺ taught that the most blessed Nikah is the one with the
+          least financial burden (Musnad Ahmad: 23388). Muslims must eradicate
+          extravagant rituals, dowry demands, and un-Islamic celebrations.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+          Adhering to Islamic guidelines in Nikah and family life guarantees
+          emotional tranquility, societal stability, and divine blessings.
+        </p>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <h2>🧩 Activities</h2>
+
+      <div class="card card-gold">
+        <h3>Activity 1 — Essay on Rising Divorce Rates</h3>
+        <p>
+          Write an essay analyzing the
+          <strong>reasons behind rising divorce/Khula rates</strong> in modern
+          times and proposing solutions in light of Islamic family values.
+        </p>
+      </div>
+
+      <div class="card card-accent">
+        <h3>Activity 2 — Panel Discussion on Wedding Customs</h3>
+        <p>
+          Organize a classroom discussion on
+          <strong>eradicating un-Islamic customs and financial waste</strong> in
+          wedding functions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Activity 3 — Discussion on Oppressive Social Customs</h3>
+        <p>
+          Host a conversation on measures to eliminate
+          <strong>oppressive cultural practices</strong> (such as forced
+          marriages or honor-related injustices) in society.
+        </p>
+      </div>
+
+      <div class="section-divider">• • •</div>
+
+      <!-- ==================== NAV ==================== -->
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 24px;
+          border-top: 2px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <a
+          href="ch5b.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >← Previous: Inheritance</a
+        >
+        <a
+          href="ch6a.html"
+          style="color: var(--accent); text-decoration: none; font-weight: 600"
+          >Next: Caliphate & Governance →</a
+        >
+      </div>
+
+      <script>
+        function setBreadcrumb(text) {
+          document.getElementById("breadcrumb").textContent = text;
+        }
+        setBreadcrumb("Ch 5(C) — Marriage & Family");
+      </script>
+    </main>
+
+    <script>
+      const currentPage = "ch5c";
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

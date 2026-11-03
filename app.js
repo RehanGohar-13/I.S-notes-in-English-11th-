@@ -1,9 +1,8 @@
 /* ============================================
-   ISLAMIAT STUDY HUB — Shared JavaScript
-   Your ticket to uni. We don't mess this up.
+   ISLAMIAT STUDY HUB — Universal Shared JavaScript
    ============================================ */
 
-// Master navigation — ONE place to manage all pages
+// Master Navigation Data
 const navData = [
   {
     type: "link",
@@ -11,6 +10,13 @@ const navData = [
     icon: "🏠",
     label: "Dashboard",
     href: "index.html",
+  },
+  {
+    type: "link",
+    id: "reader",
+    icon: "📖",
+    label: "Textbook Reader (140 Scans)",
+    href: "reader.html",
   },
 
   { type: "chapter", label: "Ch 1 — Quran & Hadith" },
@@ -38,63 +44,63 @@ const navData = [
 
   { type: "chapter", label: "Ch 2 — Faith & Worship" },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-tawheed",
     icon: "☪️",
     label: "Tawheed",
     href: "ch2-tawheed.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-risalat",
     icon: "🕌",
     label: "Risalat",
     href: "ch2-risalat.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-malaika",
-    icon: "🪽",
+    icon: "👼",
     label: "Malaika",
     href: "ch2-malaika.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-kutub",
     icon: "📜",
     label: "Heavenly Books",
     href: "ch2-kutub.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-akhirat",
     icon: "⚖️",
     label: "Akhirat",
     href: "ch2-akhirat.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-namaz",
     icon: "🤲",
     label: "Philosophy of Salah",
     href: "ch2-namaz.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-zakat",
     icon: "💰",
     label: "Zakat",
     href: "ch2-zakat.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-roza",
     icon: "🌙",
     label: "Fasting",
     href: "ch2-roza.html",
   },
   {
-    type: "sub",
+    type: "link",
     id: "ch2-hajj",
     icon: "🕋",
     label: "Hajj & Sacrifice",
@@ -222,9 +228,18 @@ const navData = [
     label: "Islamophobia",
     href: "ch7c.html",
   },
+
+  { type: "chapter", label: "Exam Practice" },
+  {
+    type: "link",
+    id: "model-paper",
+    icon: "📋",
+    label: "Model Paper",
+    href: "model-paper.html",
+  },
 ];
 
-/* ===== BUILD SIDEBAR ===== */
+/* ===== SIDEBAR BUILDER ===== */
 function buildSidebar() {
   const sidebar = document.getElementById("sidebar");
   if (!sidebar) return;
@@ -238,47 +253,44 @@ function buildSidebar() {
     <nav class="sidebar-nav">
   `;
 
-  let inSub = false;
+  // Universal current page check (supports "ch7c", "ch7c.html", "index.html", etc.)
+  let cur =
+    typeof currentPage !== "undefined" ? String(currentPage).trim() : "";
+  let curClean = cur.replace(/\.html$/i, "");
 
   navData.forEach((item) => {
     if (item.type === "chapter") {
-      if (inSub) {
-        html += "</div>";
-        inSub = false;
-      }
       html += `<div class="nav-chapter">${item.label}</div>`;
-    } else if (item.type === "sub") {
-      if (!inSub) {
-        html += '<div class="nav-sub">';
-        inSub = true;
-      }
-      const active =
-        typeof currentPage !== "undefined" && currentPage === item.id
-          ? " active"
-          : "";
-      html += `<a class="nav-item${active}" href="${item.href}"><span class="icon">${item.icon}</span> ${item.label}</a>`;
     } else {
-      if (inSub) {
-        html += "</div>";
-        inSub = false;
-      }
-      const active =
-        typeof currentPage !== "undefined" && currentPage === item.id
-          ? " active"
-          : "";
-      html += `<a class="nav-item${active}" href="${item.href}"><span class="icon">${item.icon}</span> ${item.label}</a>`;
+      let itemClean = item.id.replace(/\.html$/i, "");
+      let isActive =
+        cur === item.id || curClean === itemClean || cur === item.href;
+      let activeClass = isActive ? " active" : "";
+
+      html += `<a class="nav-item${activeClass}" href="${item.href}">
+        <span class="icon">${item.icon}</span> ${item.label}
+      </a>`;
     }
   });
 
-  if (inSub) html += "</div>";
   html += "</nav>";
   sidebar.innerHTML = html;
 }
 
-/* ===== SIDEBAR COLLAPSE (Desktop) ===== */
+/* ===== SIDEBAR CONTROLS (Desktop Collapse + Mobile Drawer) ===== */
+function toggleSidebar() {
+  if (window.innerWidth <= 860) {
+    const sb = document.getElementById("sidebar");
+    const ov = document.getElementById("overlay");
+    if (sb) sb.classList.toggle("open");
+    if (ov) ov.classList.toggle("show");
+  } else {
+    toggleSidebarCollapse();
+  }
+}
+
 function toggleSidebarCollapse() {
   document.body.classList.toggle("sidebar-collapsed");
-  // Save preference
   const collapsed = document.body.classList.contains("sidebar-collapsed");
   localStorage.setItem(
     "islamiat-sidebar",
@@ -293,18 +305,16 @@ function loadSidebarState() {
   }
 }
 
-/* ===== MOBILE SIDEBAR ===== */
-function toggleSidebar() {
-  document.getElementById("sidebar").classList.toggle("open");
-  document.getElementById("overlay").classList.toggle("show");
-}
-
-/* ===== THEME ===== */
+/* ===== THEME MANAGEMENT ===== */
 function toggleTheme() {
   const isDark = document.body.getAttribute("data-theme") === "dark";
   document.body.setAttribute("data-theme", isDark ? "light" : "dark");
-  document.getElementById("themeIcon").textContent = isDark ? "🌙" : "☀️";
-  document.getElementById("themeLabel").textContent = isDark ? "Dark" : "Light";
+
+  const icon = document.getElementById("themeIcon");
+  const label = document.getElementById("themeLabel");
+  if (icon) icon.textContent = isDark ? "🌙" : "☀️";
+  if (label) label.textContent = isDark ? "Dark" : "Light";
+
   localStorage.setItem("islamiat-theme", isDark ? "light" : "dark");
 }
 
@@ -319,31 +329,119 @@ function loadTheme() {
   }
 }
 
-/* ===== COLLAPSIBLES ===== */
+/* ===== UNIVERSAL COLLAPSIBLES (Handles both .collapsible-content & .collapsible-body) ===== */
+function toggleCollapsible(element) {
+  if (!element) return;
+
+  let header = element.classList.contains("collapsible-header")
+    ? element
+    : element.closest(".collapsible-header");
+  if (!header) return;
+
+  header.classList.toggle("open");
+  header.classList.toggle("active");
+
+  let content = header.nextElementSibling;
+  if (content) {
+    content.classList.toggle("open");
+    content.classList.toggle("active");
+
+    // Smooth inline maxHeight toggle for variable content pages
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 100 + "px";
+    }
+  }
+
+  // Toggle plus/minus or arrow icon text
+  const icon = header.querySelector(".toggle-icon, .arrow, .mcq-icon");
+  if (icon) {
+    let text = icon.textContent.trim();
+    if (text === "+") icon.textContent = "−";
+    else if (text === "−") icon.textContent = "+";
+    else if (text === "▼") icon.textContent = "▲";
+    else if (text === "▲") icon.textContent = "▼";
+  }
+}
+
 function initCollapsibles() {
   document.addEventListener("click", function (e) {
-    const h = e.target.closest(".collapsible-header");
-    if (!h) return;
-    h.classList.toggle("open");
-    const b = h.nextElementSibling;
-    if (b) b.classList.toggle("open");
+    const header = e.target.closest(".collapsible-header");
+    if (!header) return;
+
+    // Only fire if the HTML element does not already have an inline onclick attribute
+    if (!header.hasAttribute("onclick")) {
+      toggleCollapsible(header);
+    }
   });
 }
 
-/* ===== BREADCRUMB ===== */
-function setBreadcrumb(name) {
-  const bc = document.getElementById("breadcrumb");
-  if (bc)
-    bc.innerHTML =
-      '<a href="index.html" style="color:var(--text-muted);text-decoration:none">Home</a> / <span>' +
-      name +
-      "</span>";
+/* ===== UNIVERSAL MCQ HANDLER (Handles .mcq-card, .card, .option-btn, and .mcq-option) ===== */
+function toggleMCQ(cardId) {
+  const card = document.getElementById(cardId);
+  if (!card) return;
+  card.classList.toggle("open");
+  card.classList.toggle("active");
+
+  const body = card.querySelector(
+    ".mcq-body, .collapsible-body, .collapsible-content",
+  );
+  if (body) {
+    body.classList.toggle("open");
+    body.classList.toggle("active");
+  }
 }
 
-/* ===== INIT ===== */
+function checkMCQ(cardId, optionIndex, isCorrect) {
+  const card = document.getElementById(cardId);
+  if (!card) return;
+
+  // Find feedback box (by ID or class search)
+  let feedback =
+    document.getElementById(`${cardId}-feedback`) ||
+    card.querySelector(".mcq-feedback") ||
+    card.querySelector(".feedback");
+
+  // Find options (by button class or fallback to all buttons inside card)
+  let options = card.querySelectorAll(".option-btn, .mcq-option, button");
+
+  options.forEach((btn) =>
+    btn.classList.remove("selected", "correct", "wrong"),
+  );
+
+  if (options[optionIndex]) {
+    options[optionIndex].classList.add("selected");
+    if (isCorrect) {
+      options[optionIndex].classList.add("correct");
+      if (feedback) {
+        feedback.innerHTML = `<span style="color: var(--accent, #2e7d32); font-weight: bold;">✓ Correct Answer!</span>`;
+      }
+    } else {
+      options[optionIndex].classList.add("wrong");
+      if (feedback) {
+        feedback.innerHTML = `<span style="color: #d32f2f; font-weight: bold;">✗ Incorrect. Try again!</span>`;
+      }
+    }
+  }
+}
+
+/* ===== BREADCRUMB BUILDER ===== */
+function setBreadcrumb(name) {
+  const bc = document.getElementById("breadcrumb");
+  if (bc) {
+    bc.innerHTML = `<a href="index.html" style="color:var(--text-muted);text-decoration:none">Home</a> / <span>${name}</span>`;
+  }
+}
+
+/* ===== SYSTEM INITIALIZATION ===== */
 document.addEventListener("DOMContentLoaded", function () {
-  loadSidebarState();
-  buildSidebar();
-  loadTheme();
-  initCollapsibles();
+  try {
+    loadSidebarState();
+    buildSidebar();
+    loadTheme();
+    initCollapsibles();
+  } catch (err) {
+    console.error("Islamiat Study Hub Init Error:", err);
+  }
 });
